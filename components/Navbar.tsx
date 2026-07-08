@@ -1,62 +1,41 @@
 import Link from "next/link";
 
 const links = [
-  { label: "Home", href: "/" },
   { label: "Courses", href: "/#courses" },
   { label: "Notes", href: "/#notes" },
   { label: "Tests", href: "/#tests" },
-  { label: "Login", href: "/login" },
 ];
 
 export default function Navbar() {
   return (
-    <nav
-      style={{
-        background: "rgba(17, 24, 39, 0.96)",
-        color: "white",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        gap: "20px",
-        padding: "18px clamp(20px, 6vw, 80px)",
-        position: "fixed",
-        width: "100%",
-        top: 0,
-        left: 0,
-        zIndex: 10,
-        boxSizing: "border-box",
-        borderBottom: "1px solid rgba(148, 163, 184, 0.18)",
-        flexWrap: "wrap",
-      }}
-    >
-      <Link
-        href="/"
-        style={{
-          color: "#38BDF8",
-          fontSize: "26px",
-          fontWeight: 800,
-          textDecoration: "none",
-        }}
-      >
-        MAPHY
-      </Link>
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#07111f]/95 text-white backdrop-blur">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:px-16">
+        <Link href="/" className="flex items-center gap-3 text-white">
+          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-300 text-lg font-black text-slate-950">
+            M
+          </span>
+          <span className="text-xl font-black tracking-normal">MAPHY</span>
+        </Link>
 
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        {links.map((link) => (
-          <Link
-            key={link.label}
-            href={link.href}
-            style={{
-              color: "white",
-              textDecoration: "none",
-              fontSize: "16px",
-              fontWeight: 600,
-            }}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
-    </nav>
+        <div className="hidden items-center gap-7 md:flex">
+          {links.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="text-sm font-bold text-slate-200 transition hover:text-cyan-200"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <Link
+          href="/login"
+          className="rounded-lg bg-white px-4 py-2.5 text-sm font-black text-slate-950 transition hover:bg-cyan-100"
+        >
+          Login
+        </Link>
+      </nav>
+    </header>
   );
 }
