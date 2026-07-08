@@ -1,9 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { signInWithPopup } from "firebase/auth";
+import { FirebaseError } from "firebase/app";
+import {
+  getRedirectResult,
+  signInWithPopup,
+  signInWithRedirect,
+} from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const benefits = [
   "Access saved notes and practice material",
@@ -13,14 +19,41 @@ const benefits = [
 
 export default function LoginPage() {
   const router = useRouter();
+  const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    getRedirectResult(auth)
+      .then((result) => {
+        if (result?.user) {
+          router.push("/");
+        }
+      })
+      .catch((error: unknown) => {
+        setErrorMessage(getLoginErrorMessage(error));
+      });
+  }, [router]);
 
   const handleGoogleLogin = async () => {
+    setErrorMessage("");
+
     try {
       await signInWithPopup(auth, googleProvider);
       router.push("/");
     } catch (error) {
       console.error(error);
-      alert("Google Login Failed");
+
+      if (error instanceof FirebaseError) {
+        if (
+          error.code === "auth/popup-blocked" ||
+          error.code === "auth/cancelled-popup-request" ||
+          error.code === "auth/popup-closed-by-user"
+        ) {
+          await signInWithRedirect(auth, googleProvider);
+          return;
+        }
+      }
+
+      setErrorMessage(getLoginErrorMessage(error));
     }
   };
 
@@ -100,6 +133,12 @@ export default function LoginPage() {
             Continue with Google
           </button>
 
+          {errorMessage ? (
+            <p className="mt-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold leading-6 text-red-700">
+              {errorMessage}
+            </p>
+          ) : null}
+
           <Link
             href="/"
             className="mt-6 block text-center text-sm font-bold text-cyan-700 transition hover:text-cyan-900"
@@ -110,4 +149,16 @@ export default function LoginPage() {
       </section>
     </main>
   );
+}
+
+function getLoginErrorMessage(error: unknown) {
+  if (error instanceof FirebaseError) {
+    if (error.code === "auth/unauthorized-domain") {
+      return "Firebase me www.maphy.in authorized domain add nahi hai. Firebase Console > Authentication > Settings > Authorized domains me maphy.in aur www.maphy.in add karein.";
+    }
+
+    return `Google login failed: ${error.code}`;
+  }
+
+  return "Google login failed. Please try again.";
 }
