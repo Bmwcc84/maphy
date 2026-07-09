@@ -2,11 +2,7 @@
 
 import Link from "next/link";
 import { FirebaseError } from "firebase/app";
-import {
-  getRedirectResult,
-  signInWithPopup,
-  signInWithRedirect,
-} from "firebase/auth";
+import { getRedirectResult, signInWithRedirect } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -37,22 +33,9 @@ export default function LoginPage() {
     setErrorMessage("");
 
     try {
-      await signInWithPopup(auth, googleProvider);
-      router.push("/");
+      await signInWithRedirect(auth, googleProvider);
     } catch (error) {
       console.error(error);
-
-      if (error instanceof FirebaseError) {
-        if (
-          error.code === "auth/popup-blocked" ||
-          error.code === "auth/cancelled-popup-request" ||
-          error.code === "auth/popup-closed-by-user"
-        ) {
-          await signInWithRedirect(auth, googleProvider);
-          return;
-        }
-      }
-
       setErrorMessage(getLoginErrorMessage(error));
     }
   };
@@ -155,6 +138,10 @@ function getLoginErrorMessage(error: unknown) {
   if (error instanceof FirebaseError) {
     if (error.code === "auth/unauthorized-domain") {
       return "Firebase me www.maphy.in authorized domain add nahi hai. Firebase Console > Authentication > Settings > Authorized domains me maphy.in aur www.maphy.in add karein.";
+    }
+
+    if (error.code === "auth/network-request-failed") {
+      return "Google login network request fail hua. Browser extensions/ad blocker band karke refresh karein, ya Chrome Incognito me try karein.";
     }
 
     return `Google login failed: ${error.code}`;
