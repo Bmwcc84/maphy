@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { FirebaseError } from "firebase/app";
-import { getRedirectResult, signInWithRedirect } from "firebase/auth";
-import { auth, googleProvider } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 const benefits = [
   "Access saved notes and practice material",
@@ -15,29 +13,56 @@ const benefits = [
 
 export default function LoginPage() {
   const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [otp, setOtp] = useState("");
+  const [step, setStep] = useState<"email" | "otp">("email");
+  const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    getRedirectResult(auth)
-      .then((result) => {
-        if (result?.user) {
-          router.push("/");
-        }
-      })
-      .catch((error: unknown) => {
-        setErrorMessage(getLoginErrorMessage(error));
-      });
-  }, [router]);
-
-  const handleGoogleLogin = async () => {
+  const sendOtp = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     setErrorMessage("");
+    setMessage("");
+    setIsLoading(true);
 
-    try {
-      await signInWithRedirect(auth, googleProvider);
-    } catch (error) {
-      console.error(error);
-      setErrorMessage(getLoginErrorMessage(error));
+    const { error } = await supabase.auth.signInWithOtp({
+      email: email.trim(),
+      options: { shouldCreateUser: true },
+    });
+
+    setIsLoading(false);
+
+    if (error) {
+      setErrorMessage(error.message);
+      return;
     }
+
+    setStep("otp");
+    setMessage("6-digit login code aapke email par bhej diya gaya hai.");
+  };
+
+  const verifyOtp = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setErrorMessage("");
+    setMessage("");
+    setIsLoading(true);
+
+    const { error } = await supabase.auth.verifyOtp({
+      email: email.trim(),
+      token: otp.trim(),
+      type: "email",
+    });
+
+    setIsLoading(false);
+
+    if (error) {
+      setErrorMessage("Code galat ya expire ho gaya hai. Naya code mangayein.");
+      return;
+    }
+
+    router.push("/");
+    router.refresh();
   };
 
   return (
@@ -79,42 +104,82 @@ export default function LoginPage() {
             Student Login
           </p>
           <h2 className="mt-3 text-3xl font-black tracking-normal">
-            Enter your MAPHY account
+            {step === "email" ? "Login with email OTP" : "Enter login code"}
           </h2>
           <p className="mt-3 leading-7 text-slate-600">
-            Use Google login for quick and secure access.
+            {step === "email"
+              ? "Password ki zaroorat nahi. Hum aapke email par secure login code bhejenge."
+              : `Code ${email} par bheja gaya hai.`}
           </p>
 
-          <div className="mt-8 space-y-4">
-            <label className="block">
-              <span className="mb-2 block text-sm font-bold text-slate-700">
-                Email
-              </span>
-              <input
-                type="email"
-                placeholder="student@example.com"
-                className="h-12 w-full rounded-lg border border-slate-300 px-4 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
-              />
-            </label>
+          {step === "email" ? (
+            <form className="mt-8" onSubmit={sendOtp}>
+              <label className="block">
+                <span className="mb-2 block text-sm font-bold text-slate-700">
+                  Email address
+                </span>
+                <input
+                  required
+                  type="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder="student@example.com"
+                  className="h-12 w-full rounded-lg border border-slate-300 px-4 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
+                />
+              </label>
+              <button
+                disabled={isLoading}
+                className="mt-6 w-full rounded-lg bg-orange-500 px-5 py-4 text-base font-black text-white transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {isLoading ? "Sending code..." : "Send login code"}
+              </button>
+            </form>
+          ) : (
+            <form className="mt-8" onSubmit={verifyOtp}>
+              <label className="block">
+                <span className="mb-2 block text-sm font-bold text-slate-700">
+                  6-digit code
+                </span>
+                <input
+                  required
+                  inputMode="numeric"
+                  autoComplete="one-time-code"
+                  maxLength={6}
+                  value={otp}
+                  onChange={(event) =>
+                    setOtp(event.target.value.replace(/\D/g, "").slice(0, 6))
+                  }
+                  placeholder="123456"
+                  className="h-14 w-full rounded-lg border border-slate-300 px-4 text-center text-2xl font-black tracking-[0.35em] text-slate-950 outline-none transition placeholder:text-slate-300 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
+                />
+              </label>
+              <button
+                disabled={isLoading || otp.length !== 6}
+                className="mt-6 w-full rounded-lg bg-orange-500 px-5 py-4 text-base font-black text-white transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {isLoading ? "Checking code..." : "Verify and login"}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setStep("email");
+                  setOtp("");
+                  setMessage("");
+                  setErrorMessage("");
+                }}
+                className="mt-4 w-full text-sm font-bold text-cyan-700 hover:text-cyan-900"
+              >
+                Change email or resend code
+              </button>
+            </form>
+          )}
 
-            <label className="block">
-              <span className="mb-2 block text-sm font-bold text-slate-700">
-                Password
-              </span>
-              <input
-                type="password"
-                placeholder="Your password"
-                className="h-12 w-full rounded-lg border border-slate-300 px-4 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
-              />
-            </label>
-          </div>
-
-          <button
-            onClick={handleGoogleLogin}
-            className="mt-6 w-full rounded-lg bg-orange-500 px-5 py-4 text-base font-black text-white transition hover:bg-orange-400"
-          >
-            Continue with Google
-          </button>
+          {message ? (
+            <p className="mt-4 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold leading-6 text-emerald-700">
+              {message}
+            </p>
+          ) : null}
 
           {errorMessage ? (
             <p className="mt-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold leading-6 text-red-700">
@@ -132,20 +197,4 @@ export default function LoginPage() {
       </section>
     </main>
   );
-}
-
-function getLoginErrorMessage(error: unknown) {
-  if (error instanceof FirebaseError) {
-    if (error.code === "auth/unauthorized-domain") {
-      return "Firebase me www.maphy.in authorized domain add nahi hai. Firebase Console > Authentication > Settings > Authorized domains me maphy.in aur www.maphy.in add karein.";
-    }
-
-    if (error.code === "auth/network-request-failed") {
-      return "Google login network request fail hua. Browser extensions/ad blocker band karke refresh karein, ya Chrome Incognito me try karein.";
-    }
-
-    return `Google login failed: ${error.code}`;
-  }
-
-  return "Google login failed. Please try again.";
 }
