@@ -139,23 +139,23 @@ export default function LoginPage() {
             <form className="mt-8" onSubmit={verifyOtp}>
               <label className="block">
                 <span className="mb-2 block text-sm font-bold text-slate-700">
-                  6-digit code
+                  8-digit code
                 </span>
                 <input
                   required
                   inputMode="numeric"
                   autoComplete="one-time-code"
-                  maxLength={6}
+                  maxLength={8}
                   value={otp}
                   onChange={(event) =>
-                    setOtp(event.target.value.replace(/\D/g, "").slice(0, 6))
+                    setOtp(event.target.value.replace(/\D/g, "").slice(0, 8))
                   }
-                  placeholder="123456"
-                  className="h-14 w-full rounded-lg border border-slate-300 px-4 text-center text-2xl font-black tracking-[0.35em] text-slate-950 outline-none transition placeholder:text-slate-300 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
+                  placeholder="12345678"
+                  className="h-14 w-full rounded-lg border border-slate-300 px-4 text-center text-2xl font-black tracking-[0.25em] text-slate-950 outline-none transition placeholder:text-slate-300 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-100"
                 />
               </label>
               <button
-                disabled={isLoading || otp.length !== 6}
+                disabled={isLoading || otp.length !== 8}
                 className="mt-6 w-full rounded-lg bg-orange-500 px-5 py-4 text-base font-black text-white transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isLoading ? "Checking code..." : "Verify and login"}
