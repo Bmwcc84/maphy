@@ -7,7 +7,7 @@ import { supabase } from "@/lib/supabase";
 
 const learningCards = [
   { eyebrow: "CONTINUE LEARNING", title: "Kinematics Sprint", text: "Relative motion, graphs and selected numericals.", action: "Open class", accent: "bg-cyan-300 text-slate-950" },
-  { eyebrow: "STUDY NOTES", title: "Chapter-wise Notes", text: "Formula sheets and revision PDFs in one place.", action: "View notes", accent: "bg-orange-500 text-white" },
+  { eyebrow: "STUDY NOTES", title: "Chapter-wise Notes", text: "Formula sheets and revision PDFs in one place.", action: "View notes", accent: "bg-orange-500 text-white", href: "/notes" },
   { eyebrow: "PRACTICE", title: "Daily Problem Set", text: "35 exam-focused questions for today.", action: "Start practice", accent: "bg-emerald-500 text-white" },
 ];
 
@@ -91,7 +91,13 @@ export default function DashboardPage() {
                 <p className="text-xs font-black tracking-[0.16em] text-cyan-700">{card.eyebrow}</p>
                 <h2 className="mt-3 text-2xl font-black">{card.title}</h2>
                 <p className="mt-3 min-h-14 leading-7 text-slate-600">{card.text}</p>
-                <button type="button" className={`mt-6 w-full rounded-lg px-4 py-3 text-sm font-black ${card.accent}`}>{card.action}</button>
+                {card.href ? (
+                  <Link href={card.href} className={`mt-6 block w-full rounded-lg px-4 py-3 text-center text-sm font-black ${card.accent}`}>
+                    {card.action}
+                  </Link>
+                ) : (
+                  <button type="button" className={`mt-6 w-full rounded-lg px-4 py-3 text-sm font-black ${card.accent}`}>{card.action}</button>
+                )}
               </article>
             ))}
           </div>
