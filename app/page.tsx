@@ -208,7 +208,7 @@ export default function Home() {
                       {course.price}
                     </p>
                     <Link
-                      href="/login"
+                      href="/courses"
                       className="rounded-lg bg-slate-950 px-4 py-3 text-sm font-bold text-white transition hover:bg-cyan-700"
                     >
                       Enroll

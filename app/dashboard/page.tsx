@@ -122,7 +122,7 @@ export default function DashboardPage() {
               <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-100">Account</p>
               <h2 className="mt-3 text-2xl font-black">Free access</h2>
               <p className="mt-3 leading-7 text-orange-50">Premium course access payment ke baad yahin activate hoga.</p>
-              <Link href="/#courses" className="mt-6 block rounded-lg bg-white px-4 py-3 text-center text-sm font-black text-orange-600">View courses</Link>
+              <Link href="/courses" className="mt-6 block rounded-lg bg-white px-4 py-3 text-center text-sm font-black text-orange-600">Choose course</Link>
             </aside>
           </div>
         </div>
