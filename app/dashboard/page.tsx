@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 
 const learningCards = [
-  { eyebrow: "CONTINUE LEARNING", title: "Kinematics Sprint", text: "Relative motion, graphs and selected numericals.", action: "Open class", accent: "bg-cyan-300 text-slate-950" },
+  { eyebrow: "CONTINUE LEARNING", title: "Kinematics Sprint", text: "Relative motion, graphs and selected numericals.", action: "Open class", accent: "bg-cyan-300 text-slate-950", href: "/class" },
   { eyebrow: "STUDY NOTES", title: "Chapter-wise Notes", text: "Formula sheets and revision PDFs in one place.", action: "View notes", accent: "bg-orange-500 text-white", href: "/notes" },
   { eyebrow: "PRACTICE", title: "Daily Problem Set", text: "35 exam-focused questions for today.", action: "Start practice", accent: "bg-emerald-500 text-white" },
 ];
