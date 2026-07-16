@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { courses, type CourseId } from "@/lib/courses";
 import { supabase } from "@/lib/supabase";
 
 const learningCards = [
@@ -16,6 +17,7 @@ export default function DashboardPage() {
   const [email, setEmail] = useState("");
   const [isChecking, setIsChecking] = useState(true);
   const [isSigningOut, setIsSigningOut] = useState(false);
+  const [enrolledCourseIds, setEnrolledCourseIds] = useState<CourseId[]>([]);
 
   useEffect(() => {
     let isMounted = true;
@@ -25,9 +27,27 @@ export default function DashboardPage() {
         router.replace("/login");
         return;
       }
-      if (isMounted) {
-        setEmail(data.session.user.email ?? "Student");
-        setIsChecking(false);
+      if (!isMounted) return;
+      setEmail(data.session.user.email ?? "Student");
+
+      try {
+        const response = await fetch("/api/enrollments", {
+          headers: { Authorization: `Bearer ${data.session.access_token}` },
+          cache: "no-store",
+        });
+        const result = (await response.json()) as { enrollments?: Array<{ course_id: string }> };
+        if (response.ok && isMounted) {
+          const validCourseIds = new Set(courses.map((course) => course.id));
+          setEnrolledCourseIds(
+            (result.enrollments ?? [])
+              .map((enrollment) => enrollment.course_id)
+              .filter((courseId): courseId is CourseId => validCourseIds.has(courseId as CourseId)),
+          );
+        }
+      } catch (error) {
+        console.error("Enrollment load failed", error);
+      } finally {
+        if (isMounted) setIsChecking(false);
       }
     };
     void checkSession();
@@ -46,6 +66,8 @@ export default function DashboardPage() {
     router.replace("/login");
     router.refresh();
   };
+
+  const hasPremiumAccess = enrolledCourseIds.length > 0;
 
   if (isChecking) {
     return (
@@ -120,9 +142,15 @@ export default function DashboardPage() {
 
             <aside className="rounded-lg bg-orange-500 p-6 text-white shadow-sm">
               <p className="text-sm font-black uppercase tracking-[0.16em] text-orange-100">Account</p>
-              <h2 className="mt-3 text-2xl font-black">Free access</h2>
-              <p className="mt-3 leading-7 text-orange-50">Premium course access payment ke baad yahin activate hoga.</p>
-              <Link href="/courses" className="mt-6 block rounded-lg bg-white px-4 py-3 text-center text-sm font-black text-orange-600">Choose course</Link>
+              <h2 className="mt-3 text-2xl font-black">{hasPremiumAccess ? "Premium access" : "Free access"}</h2>
+              <p className="mt-3 leading-7 text-orange-50">
+                {hasPremiumAccess
+                  ? `${enrolledCourseIds.length} paid course${enrolledCourseIds.length > 1 ? "s" : ""} active hai.`
+                  : "Premium course access payment ke baad yahin activate hoga."}
+              </p>
+              <Link href="/courses" className="mt-6 block rounded-lg bg-white px-4 py-3 text-center text-sm font-black text-orange-600">
+                {hasPremiumAccess ? "View courses" : "Choose course"}
+              </Link>
             </aside>
           </div>
         </div>

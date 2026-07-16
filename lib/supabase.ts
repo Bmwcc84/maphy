@@ -4,8 +4,14 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabasePublishableKey =
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
-if (!supabaseUrl || !supabasePublishableKey) {
-  throw new Error("Supabase environment variables are missing.");
-}
+export const isSupabaseConfigured = Boolean(
+  supabaseUrl && supabasePublishableKey,
+);
 
-export const supabase = createClient(supabaseUrl, supabasePublishableKey);
+// Keep static builds and the public landing page available even before the
+// deployment environment has been configured. Auth calls still fail safely
+// until the real public Supabase values are provided in Vercel.
+export const supabase = createClient(
+  supabaseUrl ?? "https://placeholder.supabase.co",
+  supabasePublishableKey ?? "placeholder-publishable-key",
+);

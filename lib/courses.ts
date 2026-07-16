@@ -4,7 +4,7 @@ export const courses = [
     title: "NEET Physics",
     detail: "Complete NEET Physics course with concepts, DPPs, PYQs and revision support.",
     priceInPaise: 199900,
-    displayPrice: "₹1,999",
+    displayPrice: "Rs 1,999",
     tag: "Medical",
   },
   {
@@ -12,7 +12,7 @@ export const courses = [
     title: "JEE Physics",
     detail: "JEE Main and Advanced preparation with problem-solving sessions and test strategy.",
     priceInPaise: 249900,
-    displayPrice: "₹2,499",
+    displayPrice: "Rs 2,499",
     tag: "Engineering",
   },
   {
@@ -20,7 +20,7 @@ export const courses = [
     title: "Class 12 Board",
     detail: "CBSE and Bihar Board Physics with exam-focused notes, numericals and revision.",
     priceInPaise: 149900,
-    displayPrice: "₹1,499",
+    displayPrice: "Rs 1,499",
     tag: "Boards",
   },
 ] as const;
