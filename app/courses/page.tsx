@@ -215,6 +215,7 @@ export default function CoursesPage() {
             const isEnrolled = enrolledCourseIds.includes(course.id);
             return (
               <article
+                id={course.id}
                 key={course.id}
                 className={`flex min-h-80 flex-col rounded-xl border bg-white p-7 shadow-sm ${isEnrolled ? "border-emerald-300 ring-2 ring-emerald-100" : "border-slate-200"}`}
               >

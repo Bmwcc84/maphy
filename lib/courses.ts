@@ -23,6 +23,14 @@ export const courses = [
     displayPrice: "Rs 1,499",
     tag: "Boards",
   },
+  {
+    id: "electrostatics-handwritten-notes",
+    title: "Electrostatics Handwritten Notes",
+    detail: "Class 12 Physics Electrostatics handwritten notes for quick revision and board-level clarity.",
+    priceInPaise: 5000,
+    displayPrice: "Rs 50",
+    tag: "12th Physics Notes",
+  },
 ] as const;
 
 export type CourseId = (typeof courses)[number]["id"];
