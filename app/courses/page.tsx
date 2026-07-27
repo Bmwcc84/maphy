@@ -133,6 +133,7 @@ export default function CoursesPage() {
         orderId?: string;
         amount?: number;
         currency?: string;
+        mode?: "live" | "test";
         course?: { title: string };
       };
       if (!orderResponse.ok || !order.key || !order.orderId || !order.amount || !order.currency) {
@@ -203,10 +204,6 @@ export default function CoursesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-12">
-        <div className="mb-8 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm font-semibold text-amber-900">
-          Abhi Test Mode setup hai. Test payment mein real paisa charge nahi hota.
-        </div>
-
         {message && (
           <div className={`mb-8 rounded-lg border p-4 font-semibold ${isSuccess ? "border-emerald-300 bg-emerald-50 text-emerald-800" : "border-red-300 bg-red-50 text-red-800"}`}>
             {message}

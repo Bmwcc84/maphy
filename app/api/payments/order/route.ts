@@ -20,7 +20,7 @@ export async function POST(request: Request) {
   const keySecret = process.env.RAZORPAY_KEY_SECRET;
   if (!keyId || !keySecret) {
     return NextResponse.json(
-      { error: "Razorpay Test Mode keys abhi configure nahi hui hain." },
+      { error: "Razorpay keys abhi configure nahi hui hain." },
       { status: 503 },
     );
   }
@@ -61,6 +61,7 @@ export async function POST(request: Request) {
     orderId: razorpayOrder.id,
     amount: razorpayOrder.amount ?? course.priceInPaise,
     currency: razorpayOrder.currency ?? "INR",
+    mode: keyId.startsWith("rzp_live_") ? "live" : "test",
     course: { id: course.id, title: course.title },
   });
 }
