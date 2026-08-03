@@ -35,6 +35,16 @@ export const courses = [
 
 export type CourseId = (typeof courses)[number]["id"];
 
+export const class12PhysicsFolder = {
+  title: "12th Physics",
+  description: "Chapter-wise handwritten notes aur revision material.",
+  courseIds: ["electrostatics-handwritten-notes"],
+} as const;
+
+export const class12PhysicsChapters = courses.filter((course) =>
+  class12PhysicsFolder.courseIds.includes(course.id as (typeof class12PhysicsFolder.courseIds)[number]),
+);
+
 export function getCourse(courseId: string) {
   return courses.find((course) => course.id === courseId);
 }

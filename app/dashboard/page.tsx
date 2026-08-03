@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { courses, type CourseId } from "@/lib/courses";
+import { class12PhysicsChapters, class12PhysicsFolder, courses, type CourseId } from "@/lib/courses";
 import { supabase } from "@/lib/supabase";
 
 const learningCards = [
   { eyebrow: "CONTINUE LEARNING", title: "Kinematics Sprint", text: "Relative motion, graphs and selected numericals.", action: "Open class", accent: "bg-cyan-300 text-slate-950", href: "/class" },
   { eyebrow: "STUDY NOTES", title: "Chapter-wise Notes", text: "Formula sheets and revision PDFs in one place.", action: "View notes", accent: "bg-orange-500 text-white", href: "/notes" },
-  { eyebrow: "HANDWRITTEN NOTES", title: "Physics 12th Notes", text: "Electrostatics handwritten notes available for Rs 50.", action: "Buy Electrostatics", accent: "bg-violet-600 text-white", href: "/courses#electrostatics-handwritten-notes" },
   { eyebrow: "PRACTICE", title: "Daily Problem Set", text: "35 exam-focused questions for today.", action: "Start practice", accent: "bg-emerald-500 text-white" },
 ];
 
@@ -108,7 +107,7 @@ export default function DashboardPage() {
 
       <section className="px-5 py-10 sm:px-8 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-5 md:grid-cols-3">
             {learningCards.map((card) => (
               <article key={card.title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
                 <p className="text-xs font-black tracking-[0.16em] text-cyan-700">{card.eyebrow}</p>
@@ -124,6 +123,43 @@ export default function DashboardPage() {
               </article>
             ))}
           </div>
+
+          <section className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-violet-700">Folder</p>
+                <h2 className="mt-2 text-3xl font-black">{class12PhysicsFolder.title}</h2>
+                <p className="mt-2 leading-7 text-slate-600">{class12PhysicsFolder.description}</p>
+              </div>
+              <Link href="/courses#electrostatics-handwritten-notes" className="rounded-lg bg-slate-950 px-5 py-3 text-center text-sm font-black text-white">
+                Open folder
+              </Link>
+            </div>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {class12PhysicsChapters.map((chapter) => {
+                const isEnrolled = enrolledCourseIds.includes(chapter.id);
+                return (
+                  <article key={chapter.id} className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+                    <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-700">{chapter.tag}</p>
+                    <h3 className="mt-3 text-2xl font-black">{chapter.title}</h3>
+                    <p className="mt-3 min-h-16 leading-7 text-slate-600">{chapter.detail}</p>
+                    <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <span className="text-3xl font-black">{chapter.displayPrice}</span>
+                      <Link
+                        href={`/courses#${chapter.id}`}
+                        className={`rounded-lg px-5 py-3 text-center text-sm font-black ${
+                          isEnrolled ? "bg-emerald-600 text-white" : "bg-orange-500 text-white"
+                        }`}
+                      >
+                        {isEnrolled ? "Access active" : "Buy chapter"}
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
 
           <div className="mt-8 grid gap-5 lg:grid-cols-[1.3fr_0.7fr]">
             <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
