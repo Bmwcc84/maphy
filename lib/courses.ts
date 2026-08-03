@@ -6,6 +6,7 @@ export const courses = [
     priceInPaise: 199900,
     displayPrice: "Rs 1,999",
     tag: "Medical",
+    contentFile: null,
   },
   {
     id: "jee-physics",
@@ -14,6 +15,7 @@ export const courses = [
     priceInPaise: 249900,
     displayPrice: "Rs 2,499",
     tag: "Engineering",
+    contentFile: null,
   },
   {
     id: "class-12-board",
@@ -22,6 +24,7 @@ export const courses = [
     priceInPaise: 149900,
     displayPrice: "Rs 1,499",
     tag: "Boards",
+    contentFile: null,
   },
   {
     id: "electrostatics-handwritten-notes",
@@ -30,6 +33,7 @@ export const courses = [
     priceInPaise: 5000,
     displayPrice: "Rs 50",
     tag: "12th Physics Notes",
+    contentFile: "electrostatics-handwritten-notes.pdf",
   },
 ] as const;
 

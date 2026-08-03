@@ -61,6 +61,7 @@ export default function CoursesPage() {
   const [email, setEmail] = useState("");
   const [isChecking, setIsChecking] = useState(true);
   const [processingCourse, setProcessingCourse] = useState<CourseId | null>(null);
+  const [openingContentCourse, setOpeningContentCourse] = useState<CourseId | null>(null);
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
   const [enrolledCourseIds, setEnrolledCourseIds] = useState<CourseId[]>([]);
@@ -179,6 +180,42 @@ export default function CoursesPage() {
     }
   };
 
+  const openCourseContent = async (courseId: CourseId) => {
+    setOpeningContentCourse(courseId);
+    setMessage("");
+    setIsSuccess(false);
+
+    const notesWindow = window.open("", "_blank");
+    if (!notesWindow) {
+      setMessage("Browser ne notes window block kar di. Popup allow karke phir try karein.");
+      setOpeningContentCourse(null);
+      return;
+    }
+    notesWindow.document.write("<p style='font-family: sans-serif'>Opening notes...</p>");
+
+    try {
+      const response = await fetch(`/api/course-content/${courseId}`, {
+        headers: { Authorization: `Bearer ${accessToken}` },
+        cache: "no-store",
+      });
+      if (!response.ok) {
+        const result = (await response.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(result?.error ?? "Notes open nahi ho saka.");
+      }
+
+      const file = await response.blob();
+      const fileUrl = URL.createObjectURL(file);
+      notesWindow.location.href = fileUrl;
+      window.setTimeout(() => URL.revokeObjectURL(fileUrl), 60_000);
+    } catch (error) {
+      notesWindow.close();
+      setMessage(error instanceof Error ? error.message : "Notes open nahi ho saka.");
+      setIsSuccess(false);
+    } finally {
+      setOpeningContentCourse(null);
+    }
+  };
+
   if (isChecking) {
     return <main className="grid min-h-screen place-items-center bg-slate-950 text-white">Checking login...</main>;
   }
@@ -224,18 +261,29 @@ export default function CoursesPage() {
                 <p className="mt-4 leading-7 text-slate-600">{course.detail}</p>
                 <div className="mt-auto pt-8">
                   <p className="mb-4 text-3xl font-black">{course.displayPrice}</p>
-                  <button
-                    type="button"
-                    onClick={() => void startPayment(course.id)}
-                    disabled={isEnrolled || processingCourse !== null}
-                    className={`w-full rounded-lg px-5 py-3 font-black text-white transition disabled:cursor-not-allowed ${isEnrolled ? "bg-emerald-500" : "bg-orange-500 hover:bg-orange-600 disabled:opacity-60"}`}
-                  >
-                    {isEnrolled
-                      ? "Enrolled"
-                      : processingCourse === course.id
-                        ? "Opening checkout..."
-                        : `Pay ${course.displayPrice}`}
-                  </button>
+                  {isEnrolled && course.contentFile ? (
+                    <button
+                      type="button"
+                      onClick={() => void openCourseContent(course.id)}
+                      disabled={openingContentCourse !== null}
+                      className="w-full rounded-lg bg-emerald-600 px-5 py-3 font-black text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      {openingContentCourse === course.id ? "Opening notes..." : "Open notes"}
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => void startPayment(course.id)}
+                      disabled={isEnrolled || processingCourse !== null}
+                      className={`w-full rounded-lg px-5 py-3 font-black text-white transition disabled:cursor-not-allowed ${isEnrolled ? "bg-emerald-500" : "bg-orange-500 hover:bg-orange-600 disabled:opacity-60"}`}
+                    >
+                      {isEnrolled
+                        ? "Enrolled"
+                        : processingCourse === course.id
+                          ? "Opening checkout..."
+                          : `Pay ${course.displayPrice}`}
+                    </button>
+                  )}
                 </div>
               </article>
             );
