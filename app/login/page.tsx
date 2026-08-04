@@ -11,6 +11,15 @@ const benefits = [
   "Continue preparation across devices",
 ];
 
+function getSafeNextPath() {
+  if (typeof window === "undefined") return "/dashboard";
+  const nextPath = new URLSearchParams(window.location.search).get("next");
+  if (!nextPath || !nextPath.startsWith("/") || nextPath.startsWith("//")) {
+    return "/dashboard";
+  }
+  return nextPath;
+}
+
 export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -61,7 +70,7 @@ export default function LoginPage() {
       return;
     }
 
-    router.push("/dashboard");
+    router.push(getSafeNextPath());
     router.refresh();
   };
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ElectrostaticsPreview from "../components/ElectrostaticsPreview";
 import Navbar from "../components/Navbar";
 
 const highlights = [
@@ -63,28 +64,28 @@ export default function Home() {
           <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-white/[0.08] px-4 py-2 text-sm font-semibold text-cyan-100">
-                Physics + Mathematics for JEE, NEET and Boards
+                Class 12 Physics handwritten notes
               </p>
               <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal sm:text-6xl lg:text-7xl">
-                Build exam confidence with MAPHY.
+                Start Electrostatics with a free 1-minute preview.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Learn concepts clearly, practice with discipline, and revise from
-                organized notes made for serious preparation.
+                First page turant dekhein. 1 minute ke baad complete handwritten
+                notes unlock karne ke liye Rs 50 payment demand aayegi.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
-                  href="#courses"
+                  href="#electrostatics-preview"
                 className="rounded-lg bg-orange-500 px-6 py-4 text-base font-bold text-white shadow-lg shadow-orange-950/30 transition hover:bg-orange-400"
                 >
-                  Explore Courses
+                  View Free Preview
                 </Link>
                 <Link
-                  href="/login"
+                  href="/login?next=/courses%23electrostatics-handwritten-notes"
                   className="rounded-lg border border-white/20 bg-white/10 px-6 py-4 text-base font-bold text-white transition hover:bg-white/15"
                 >
-                  Student Login
+                  Pay Rs 50
                 </Link>
               </div>
 
@@ -105,42 +106,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-lg border border-white/10 bg-white/[0.07] p-5 shadow-2xl shadow-black/30 backdrop-blur">
-              <div className="rounded-lg bg-slate-950/70 p-6">
-                <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                  <div>
-                    <p className="text-sm font-semibold text-cyan-200">
-                      Today&apos;s Study Plan
-                    </p>
-                    <h2 className="mt-1 text-2xl font-black">Kinematics Sprint</h2>
-                  </div>
-                  <span className="rounded-full bg-emerald-400/15 px-3 py-1 text-sm font-bold text-emerald-200">
-                    Live
-                  </span>
-                </div>
-
-                <div className="mt-6 space-y-4">
-                  {[
-                    ["Concept class", "Relative motion and graphs"],
-                    ["Practice", "35 selected numericals"],
-                    ["Revision", "Formula sheet + PYQ set"],
-                  ].map(([title, text], index) => (
-                    <div
-                      key={title}
-                      className="flex gap-4 rounded-lg bg-white/[0.06] p-4"
-                    >
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cyan-300 text-sm font-black text-slate-950">
-                        {index + 1}
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-white">{title}</h3>
-                        <p className="mt-1 text-sm text-slate-300">{text}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <ElectrostaticsPreview />
           </div>
         </section>
 
