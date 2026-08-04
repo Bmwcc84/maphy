@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ElectrostaticsPreview from "../components/ElectrostaticsPreview";
 import Navbar from "../components/Navbar";
 
 const highlights = [
@@ -67,19 +66,19 @@ export default function Home() {
                 Class 12 Physics handwritten notes
               </p>
               <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal sm:text-6xl lg:text-7xl">
-                Start Electrostatics with a free 1-minute preview.
+                Electrostatics handwritten notes ready hain.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                First page turant dekhein. 1 minute ke baad complete handwritten
-                notes unlock karne ke liye Rs 50 payment demand aayegi.
+                Student ko pehle notes ka card dikhega. Click karne ke baad
+                1 minute preview milega, phir Rs 50 payment demand aayegi.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
-                  href="#electrostatics-preview"
+                  href="/preview/electrostatics"
                 className="rounded-lg bg-orange-500 px-6 py-4 text-base font-bold text-white shadow-lg shadow-orange-950/30 transition hover:bg-orange-400"
                 >
-                  View Free Preview
+                  Open Notes Preview
                 </Link>
                 <Link
                   href="/login?next=/courses%23electrostatics-handwritten-notes"
@@ -106,7 +105,51 @@ export default function Home() {
               </div>
             </div>
 
-            <ElectrostaticsPreview />
+            <Link
+              href="/preview/electrostatics"
+              className="group block overflow-hidden rounded-lg border border-white/10 bg-white/[0.07] p-5 shadow-2xl shadow-black/30 transition hover:-translate-y-1 hover:bg-white/[0.1]"
+            >
+              <div className="rounded-lg bg-slate-950/70 p-6">
+                <div className="flex items-start justify-between gap-4 border-b border-white/10 pb-5">
+                  <div>
+                    <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-200">
+                      12th Physics Notes
+                    </p>
+                    <h2 className="mt-2 text-3xl font-black text-white">
+                      Electrostatics Handwritten Notes
+                    </h2>
+                  </div>
+                  <span className="rounded-full bg-orange-500 px-3 py-1 text-sm font-black text-white">
+                    Rs 50
+                  </span>
+                </div>
+
+                <div className="mt-6 space-y-4">
+                  {[
+                    ["Free preview", "Click ke baad 1 minute tak notes dikhenge"],
+                    ["Handwritten PDF", "Electrostatics chapter revision material"],
+                    ["Unlock full notes", "Preview ke baad payment demand aayegi"],
+                  ].map(([title, text], index) => (
+                    <div
+                      key={title}
+                      className="flex gap-4 rounded-lg bg-white/[0.06] p-4"
+                    >
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cyan-300 text-sm font-black text-slate-950">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-white">{title}</h3>
+                        <p className="mt-1 text-sm text-slate-300">{text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 rounded-lg bg-white px-5 py-4 text-center text-sm font-black text-slate-950 transition group-hover:bg-cyan-100">
+                  Click to preview
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 

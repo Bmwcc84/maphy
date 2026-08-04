@@ -37,7 +37,7 @@ export default function ElectrostaticsPreview() {
         </span>
       </div>
 
-      <div className="relative h-[520px] overflow-hidden rounded-lg bg-slate-100">
+      <div className="relative h-[72vh] min-h-[520px] overflow-hidden rounded-lg bg-slate-100">
         <Image
           src="/previews/electrostatics-page-01.png"
           alt="Electrostatics handwritten notes first page preview"
