@@ -1,7 +1,13 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
-import { getCourse } from "@/lib/courses";
-import { getAuthenticatedUser } from "@/lib/server-auth";
+import { startClass12ProgressCycle } from "@/lib/class12-test-progress";
+import {
+  courseEntitlementCookieName,
+  createCourseEntitlementToken,
+  getCourseEntitlementMaxAge,
+} from "@/lib/course-entitlement";
+import { class12BoardTestSeries, getCourse } from "@/lib/courses";
+import { getAuthenticatedUser, getRequestAccessToken } from "@/lib/server-auth";
 import { upsertEnrollment } from "@/lib/server-supabase";
 
 export const runtime = "nodejs";
@@ -39,7 +45,8 @@ async function razorpayRequest<T>(path: string, keyId: string, keySecret: string
 
 export async function POST(request: Request) {
   const user = await getAuthenticatedUser(request);
-  if (!user) {
+  const accessToken = getRequestAccessToken(request);
+  if (!user || !accessToken) {
     return NextResponse.json({ error: "Please login first." }, { status: 401 });
   }
 
@@ -113,27 +120,67 @@ export async function POST(request: Request) {
       );
     }
 
-    await upsertEnrollment({
-      userId: user.id,
-      userEmail: user.email,
-      courseId: course.id,
-      razorpayOrderId: orderId,
-      razorpayPaymentId: paymentId,
-      amount: payment.amount,
-      currency: payment.currency,
-      paymentStatus: "captured",
-    });
+    let activated = true;
+    try {
+      await upsertEnrollment({
+        userId: user.id,
+        userEmail: user.email,
+        courseId: course.id,
+        razorpayOrderId: orderId,
+        razorpayPaymentId: paymentId,
+        amount: payment.amount,
+        currency: payment.currency,
+        paymentStatus: "captured",
+      });
+    } catch (error) {
+      activated = false;
+      console.error("Database enrollment save failed; signed access granted", error);
+    }
 
-    return NextResponse.json({
+    const entitlementMaxAge = getCourseEntitlementMaxAge(course.id);
+    const expiresAt = Date.now() + entitlementMaxAge * 1000;
+    const entitlementToken = createCourseEntitlementToken(
+      user.id,
+      course.id,
+      expiresAt,
+      orderId,
+    );
+    if (!entitlementToken) {
+      return NextResponse.json(
+        { error: "Payment was received, but secure access is not configured." },
+        { status: 503 },
+      );
+    }
+
+    if (course.id === class12BoardTestSeries.id) {
+      try {
+        await startClass12ProgressCycle(accessToken, orderId, expiresAt);
+      } catch (error) {
+        console.error("Fresh Class 12 test progress could not be initialized", error);
+      }
+    }
+
+    const response = NextResponse.json({
       verified: true,
-      activated: true,
+      activated,
+      expiresAt,
       course: { id: course.id, title: course.title },
       user: { id: user.id, email: user.email },
     });
+    response.cookies.set({
+      name: courseEntitlementCookieName(course.id),
+      value: entitlementToken,
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      path: "/",
+      maxAge: entitlementMaxAge,
+    });
+    return response;
   } catch (error) {
-    console.error("Payment activation failed", error);
+    console.error("Payment verification failed", error);
     return NextResponse.json(
-      { error: "Payment was received, but course activation is temporarily unavailable." },
+      { error: "Payment verification is temporarily unavailable. Please use Recover PDF." },
       { status: 503 },
     );
   }

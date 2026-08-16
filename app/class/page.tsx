@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import BrandLogo from "@/components/BrandLogo";
 import { supabase } from "@/lib/supabase";
 
 const videoUrl = "https://youtu.be/MdDhFdfxhUg?si=w_ebjSZ90bfFtRP3";
@@ -42,11 +43,8 @@ export default function ClassPage() {
     <main className="min-h-screen bg-slate-100 text-slate-950">
       <header className="border-b border-slate-800 bg-slate-950 text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <Link href="/dashboard" className="flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-300 text-xl font-black text-slate-950">
-              M
-            </span>
-            <span className="text-2xl font-black">MAPHY</span>
+          <Link href="/dashboard" aria-label="MAPHY dashboard">
+            <BrandLogo size="lg" />
           </Link>
           <Link
             href="/dashboard"

@@ -7,6 +7,7 @@ export const courses = [
     displayPrice: "Rs 1,999",
     tag: "Medical",
     contentFile: null,
+    previewPath: null,
   },
   {
     id: "jee-physics",
@@ -16,6 +17,7 @@ export const courses = [
     displayPrice: "Rs 2,499",
     tag: "Engineering",
     contentFile: null,
+    previewPath: null,
   },
   {
     id: "class-12-board",
@@ -25,6 +27,7 @@ export const courses = [
     displayPrice: "Rs 1,499",
     tag: "Boards",
     contentFile: null,
+    previewPath: null,
   },
   {
     id: "electrostatics-handwritten-notes",
@@ -34,15 +37,59 @@ export const courses = [
     displayPrice: "Rs 50",
     tag: "12th Physics Notes",
     contentFile: "electrostatics-handwritten-notes.pdf",
+    previewPath: "/preview/electrostatics",
+  },
+  {
+    id: "current-electricity-handwritten-notes",
+    title: "Current Electricity Handwritten Notes",
+    detail: "Class 12 Physics Current Electricity handwritten notes with concepts, circuits, cells and power revision.",
+    priceInPaise: 5000,
+    displayPrice: "Rs 50",
+    tag: "12th Physics Notes",
+    contentFile: "current-electricity-handwritten-notes.pdf",
+    previewPath: "/preview/current-electricity",
   },
 ] as const;
 
-export type CourseId = (typeof courses)[number]["id"];
+export const bpscPhysicsTest = {
+  id: "bpsc-physics-tre-4-test-series",
+  title: "BPSC Physics TRE 4.0 Complete Test",
+  detail: "One bilingual shuffled Physics test with all questions, instant result, explanations and a downloadable question PDF.",
+  priceInPaise: 9900,
+  displayPrice: "Rs 99",
+  tag: "BPSC TRE 4.0",
+  contentFile: null,
+  previewPath: null,
+  accessDurationDays: 30,
+} as const;
+
+export const class12BoardTestSeries = {
+  id: "class-12-board-2027-physics-test-series",
+  title: "Class 12 Board 2027 Physics Test Series",
+    detail: "Complete 30-test bilingual Physics cycle with instant results and explanations.",
+  priceInPaise: 3000,
+  displayPrice: "Rs 30",
+  tag: "Board 2027 Test Series",
+  contentFile: null,
+  previewPath: null,
+  accessDurationDays: 30,
+} as const;
+
+export const paymentProducts = [
+  ...courses,
+  bpscPhysicsTest,
+  class12BoardTestSeries,
+] as const;
+
+export type CourseId = (typeof paymentProducts)[number]["id"];
 
 export const class12PhysicsFolder = {
   title: "12th Physics",
   description: "Chapter-wise handwritten notes aur revision material.",
-  courseIds: ["electrostatics-handwritten-notes"],
+  courseIds: [
+    "electrostatics-handwritten-notes",
+    "current-electricity-handwritten-notes",
+  ],
 } as const;
 
 export const class12PhysicsChapters = courses.filter((course) =>
@@ -50,5 +97,16 @@ export const class12PhysicsChapters = courses.filter((course) =>
 );
 
 export function getCourse(courseId: string) {
-  return courses.find((course) => course.id === courseId);
+  return paymentProducts.find((course) => course.id === courseId);
+}
+
+export function getCourseAccessDurationSeconds(courseId: string) {
+  const course = getCourse(courseId);
+  if (!course || !("accessDurationDays" in course)) return null;
+  return course.accessDurationDays * 24 * 60 * 60;
+}
+
+export function getCourseAccessExpiresAt(courseId: string, activatedAt: number) {
+  const durationSeconds = getCourseAccessDurationSeconds(courseId);
+  return durationSeconds === null ? null : activatedAt + durationSeconds * 1000;
 }

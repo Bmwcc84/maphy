@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import BrandLogo from "@/components/BrandLogo";
 import { supabase } from "@/lib/supabase";
 
 const benefits = [
@@ -79,11 +80,8 @@ export default function LoginPage() {
       <section className="relative flex items-center overflow-hidden px-5 py-20 sm:px-8 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(14,165,233,0.22),transparent_32%),radial-gradient(circle_at_80%_70%,rgba(249,115,22,0.16),transparent_30%)]" />
         <div className="relative mx-auto max-w-xl">
-          <Link href="/" className="inline-flex items-center gap-3 text-white">
-            <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-cyan-300 text-lg font-black text-slate-950">
-              M
-            </span>
-            <span className="text-2xl font-black">MAPHY</span>
+          <Link href="/" className="inline-flex text-white" aria-label="MAPHY home">
+            <BrandLogo size="lg" priority />
           </Link>
 
           <h1 className="mt-12 text-5xl font-black leading-tight tracking-normal sm:text-6xl">

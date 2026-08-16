@@ -1,13 +1,18 @@
 type AuthenticatedUser = {
   id: string;
   email: string;
+  userMetadata: Record<string, unknown>;
 };
 
-export async function getAuthenticatedUser(request: Request): Promise<AuthenticatedUser | null> {
+export function getRequestAccessToken(request: Request) {
   const authorization = request.headers.get("authorization");
-  const accessToken = authorization?.startsWith("Bearer ")
+  return authorization?.startsWith("Bearer ")
     ? authorization.slice("Bearer ".length)
     : null;
+}
+
+export async function getAuthenticatedUser(request: Request): Promise<AuthenticatedUser | null> {
+  const accessToken = getRequestAccessToken(request);
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const publishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
@@ -23,8 +28,16 @@ export async function getAuthenticatedUser(request: Request): Promise<Authentica
 
   if (!response.ok) return null;
 
-  const user = (await response.json()) as { id?: string; email?: string };
+  const user = (await response.json()) as {
+    id?: string;
+    email?: string;
+    user_metadata?: Record<string, unknown>;
+  };
   if (!user.id) return null;
 
-  return { id: user.id, email: user.email ?? "" };
+  return {
+    id: user.id,
+    email: user.email ?? "",
+    userMetadata: user.user_metadata ?? {},
+  };
 }

@@ -1,0 +1,3258 @@
+{
+  "tests": [
+    {
+      "id": "set-01",
+      "number": 1,
+      "titleEn": "Electrostatics Test Set 01",
+      "titleHi": "स्थिर वैद्युतिकी टेस्ट सेट 01",
+      "focusEn": "Foundation Mix",
+      "focusHi": "आधारभूत मिश्रित प्रश्न",
+      "downloadPath": "/downloads/class-12-board-2027-electrostatics-test-set-01.pdf",
+      "questions": [
+        {
+          "id": 1,
+          "questionEn": "Which expression represents the quantisation of electric charge?",
+          "questionHi": "विद्युत आवेश के क्वांटीकरण को कौन-सा व्यंजक दर्शाता है?",
+          "options": [
+            {
+              "en": "q = ne",
+              "hi": "q = ne"
+            },
+            {
+              "en": "q = n/e",
+              "hi": "q = n/e"
+            },
+            {
+              "en": "q = e/n",
+              "hi": "q = e/n"
+            },
+            {
+              "en": "q = ne²",
+              "hi": "q = ne²"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Charge exists in integral multiples of the elementary charge e, so q = ne, where n is an integer.",
+          "explanationHi": "आवेश मूल आवेश e के पूर्णांक गुणज में पाया जाता है, इसलिए q = ne, जहाँ n एक पूर्णांक है।"
+        },
+        {
+          "id": 2,
+          "questionEn": "If the separation between two point charges is doubled, their electrostatic force becomes:",
+          "questionHi": "यदि दो बिंदु आवेशों के बीच की दूरी दोगुनी कर दी जाए, तो उनके बीच विद्युत स्थैतिक बल होगा:",
+          "options": [
+            {
+              "en": "2F",
+              "hi": "2F"
+            },
+            {
+              "en": "F/2",
+              "hi": "F/2"
+            },
+            {
+              "en": "F/4",
+              "hi": "F/4"
+            },
+            {
+              "en": "4F",
+              "hi": "4F"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Coulomb's force varies as 1/r². Replacing r by 2r changes F to F/4.",
+          "explanationHi": "कूलॉम बल 1/r² के समानुपाती है। r के स्थान पर 2r रखने पर बल F/4 हो जाता है।"
+        },
+        {
+          "id": 3,
+          "questionEn": "Two charges exert force F in vacuum. In a medium of dielectric constant K, the force is:",
+          "questionHi": "निर्वात में दो आवेशों के बीच बल F है। परावैद्युतांक K वाले माध्यम में बल होगा:",
+          "options": [
+            {
+              "en": "KF",
+              "hi": "KF"
+            },
+            {
+              "en": "F/K",
+              "hi": "F/K"
+            },
+            {
+              "en": "F/K²",
+              "hi": "F/K²"
+            },
+            {
+              "en": "K²F",
+              "hi": "K²F"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The permittivity of the medium is Kε₀, so Coulomb's force is reduced to F/K.",
+          "explanationHi": "माध्यम की विद्युतशीलता Kε₀ होती है, इसलिए कूलॉम बल घटकर F/K हो जाता है।"
+        },
+        {
+          "id": 4,
+          "questionEn": "What is the SI unit of electric field?",
+          "questionHi": "विद्युत क्षेत्र का SI मात्रक क्या है?",
+          "options": [
+            {
+              "en": "N C⁻¹",
+              "hi": "N C⁻¹"
+            },
+            {
+              "en": "C N⁻¹",
+              "hi": "C N⁻¹"
+            },
+            {
+              "en": "J C",
+              "hi": "J C"
+            },
+            {
+              "en": "C m⁻¹",
+              "hi": "C m⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Electric field is force per unit positive test charge, E = F/q, so its unit is N C⁻¹.",
+          "explanationHi": "विद्युत क्षेत्र प्रति इकाई धन परीक्षण आवेश पर लगने वाला बल है, E = F/q, इसलिए इसका मात्रक N C⁻¹ है।"
+        },
+        {
+          "id": 5,
+          "questionEn": "The magnitude of electric field at distance r from a point charge q in vacuum is:",
+          "questionHi": "निर्वात में बिंदु आवेश q से दूरी r पर विद्युत क्षेत्र का परिमाण है:",
+          "options": [
+            {
+              "en": "E = q/(4πε₀r²)",
+              "hi": "E = q/(4πε₀r²)"
+            },
+            {
+              "en": "E = q/(4πε₀r)",
+              "hi": "E = q/(4πε₀r)"
+            },
+            {
+              "en": "E = 4πε₀q/r²",
+              "hi": "E = 4πε₀q/r²"
+            },
+            {
+              "en": "E = q r²/(4πε₀)",
+              "hi": "E = q r²/(4πε₀)"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "By Coulomb's law, the field of a point charge is E = (1/4πε₀)(q/r²).",
+          "explanationHi": "कूलॉम नियम के अनुसार बिंदु आवेश का क्षेत्र E = (1/4πε₀)(q/r²) होता है।"
+        },
+        {
+          "id": 6,
+          "questionEn": "The electric field lines due to an isolated positive charge are directed:",
+          "questionHi": "एक विलगित धन आवेश के कारण विद्युत क्षेत्र रेखाएँ किस दिशा में होती हैं?",
+          "options": [
+            {
+              "en": "Radially inward",
+              "hi": "त्रिज्यीय रूप से अंदर की ओर"
+            },
+            {
+              "en": "Radially outward",
+              "hi": "त्रिज्यीय रूप से बाहर की ओर"
+            },
+            {
+              "en": "Circularly clockwise",
+              "hi": "वृत्ताकार दक्षिणावर्त"
+            },
+            {
+              "en": "Parallel to one another",
+              "hi": "एक-दूसरे के समानांतर"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Electric field lines originate from positive charges and terminate on negative charges or at infinity.",
+          "explanationHi": "विद्युत क्षेत्र रेखाएँ धन आवेश से निकलती हैं और ऋण आवेश या अनंत पर समाप्त होती हैं।"
+        },
+        {
+          "id": 7,
+          "questionEn": "Two equal positive charges are placed at the ends of a line segment. The electric field at its midpoint is:",
+          "questionHi": "दो समान धन आवेश एक रेखाखंड के सिरों पर रखे हैं। उसके मध्य बिंदु पर विद्युत क्षेत्र होगा:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "Along the line toward the left charge",
+              "hi": "रेखा के अनुदिश बाएँ आवेश की ओर"
+            },
+            {
+              "en": "Along the line toward the right charge",
+              "hi": "रेखा के अनुदिश दाएँ आवेश की ओर"
+            },
+            {
+              "en": "Perpendicular to the line",
+              "hi": "रेखा के लंबवत"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "At the midpoint, the two equal fields have opposite directions, so their vector sum is zero.",
+          "explanationHi": "मध्य बिंदु पर दोनों समान क्षेत्रों की दिशाएँ विपरीत होती हैं, इसलिए उनका सदिश योग शून्य है।"
+        },
+        {
+          "id": 8,
+          "questionEn": "A uniform electric field E makes angle θ with the area vector of a surface of area A. The electric flux is:",
+          "questionHi": "एकसमान विद्युत क्षेत्र E, क्षेत्रफल A के पृष्ठ के क्षेत्रफल सदिश से θ कोण बनाता है। विद्युत फ्लक्स है:",
+          "options": [
+            {
+              "en": "Φ = EA sin θ",
+              "hi": "Φ = EA sin θ"
+            },
+            {
+              "en": "Φ = EA cos θ",
+              "hi": "Φ = EA cos θ"
+            },
+            {
+              "en": "Φ = E/A",
+              "hi": "Φ = E/A"
+            },
+            {
+              "en": "Φ = A/E",
+              "hi": "Φ = A/E"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Electric flux is the scalar product E · A, therefore Φ = EA cos θ.",
+          "explanationHi": "विद्युत फ्लक्स E और A का अदिश गुणनफल है, इसलिए Φ = EA cos θ।"
+        },
+        {
+          "id": 9,
+          "questionEn": "According to Gauss's law, the net electric flux through a closed surface is:",
+          "questionHi": "गाउस नियम के अनुसार किसी बंद पृष्ठ से कुल विद्युत फ्लक्स है:",
+          "options": [
+            {
+              "en": "qₑₙc ε₀",
+              "hi": "qₑₙc ε₀"
+            },
+            {
+              "en": "qₑₙc/ε₀",
+              "hi": "qₑₙc/ε₀"
+            },
+            {
+              "en": "ε₀/qₑₙc",
+              "hi": "ε₀/qₑₙc"
+            },
+            {
+              "en": "Always zero",
+              "hi": "सदैव शून्य"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Gauss's law states ∮E · dA = qₑₙc/ε₀, where qₑₙc is the enclosed charge.",
+          "explanationHi": "गाउस नियम के अनुसार ∮E · dA = qₑₙc/ε₀, जहाँ qₑₙc बंद पृष्ठ के अंदर का आवेश है।"
+        },
+        {
+          "id": 10,
+          "questionEn": "A closed surface encloses no net charge. The net electric flux through it is:",
+          "questionHi": "एक बंद पृष्ठ के अंदर कोई शुद्ध आवेश नहीं है। उससे कुल विद्युत फ्लक्स होगा:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "Positive",
+              "hi": "धनात्मक"
+            },
+            {
+              "en": "Negative",
+              "hi": "ऋणात्मक"
+            },
+            {
+              "en": "Infinite",
+              "hi": "अनंत"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Since qₑₙc = 0, Gauss's law gives zero net flux even if external charges create a field on the surface.",
+          "explanationHi": "qₑₙc = 0 होने के कारण गाउस नियम से कुल फ्लक्स शून्य है, भले ही बाहरी आवेश पृष्ठ पर क्षेत्र उत्पन्न करें।"
+        },
+        {
+          "id": 11,
+          "questionEn": "Under electrostatic equilibrium, the electric field inside the material of a conductor is:",
+          "questionHi": "विद्युत स्थैतिक संतुलन में चालक के पदार्थ के अंदर विद्युत क्षेत्र होता है:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "Constant but non-zero",
+              "hi": "नियत परंतु अशून्य"
+            },
+            {
+              "en": "Infinite",
+              "hi": "अनंत"
+            },
+            {
+              "en": "Dependent only on its volume",
+              "hi": "केवल उसके आयतन पर निर्भर"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Free charges rearrange until the internal electric field becomes zero; otherwise they would keep moving.",
+          "explanationHi": "मुक्त आवेश तब तक पुनर्व्यवस्थित होते हैं जब तक अंदर का विद्युत क्षेत्र शून्य न हो जाए; अन्यथा वे चलते रहते।"
+        },
+        {
+          "id": 12,
+          "questionEn": "The electric field at any point inside a uniformly charged thin spherical shell is:",
+          "questionHi": "एकसमान आवेशित पतले गोलीय खोल के अंदर किसी भी बिंदु पर विद्युत क्षेत्र है:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "kQ/r²",
+              "hi": "kQ/r²"
+            },
+            {
+              "en": "kQ/R²",
+              "hi": "kQ/R²"
+            },
+            {
+              "en": "Proportional to r",
+              "hi": "r के समानुपाती"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "A Gaussian surface inside the shell encloses no charge, so spherical symmetry gives E = 0.",
+          "explanationHi": "खोल के अंदर गाउसीय पृष्ठ कोई आवेश नहीं घेरता, इसलिए गोलीय सममिति से E = 0 मिलता है।"
+        },
+        {
+          "id": 13,
+          "questionEn": "The electric field due to an infinite plane sheet with surface charge density σ is:",
+          "questionHi": "पृष्ठ आवेश घनत्व σ वाली अनंत समतल चादर के कारण विद्युत क्षेत्र है:",
+          "options": [
+            {
+              "en": "σ/ε₀",
+              "hi": "σ/ε₀"
+            },
+            {
+              "en": "σ/(2ε₀)",
+              "hi": "σ/(2ε₀)"
+            },
+            {
+              "en": "2σ/ε₀",
+              "hi": "2σ/ε₀"
+            },
+            {
+              "en": "σ/(4πε₀r²)",
+              "hi": "σ/(4πε₀r²)"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Applying Gauss's law to a pillbox gives 2EA = σA/ε₀, hence E = σ/(2ε₀).",
+          "explanationHi": "पिलबॉक्स गाउसीय पृष्ठ पर गाउस नियम लगाने से 2EA = σA/ε₀, अतः E = σ/(2ε₀)।"
+        },
+        {
+          "id": 14,
+          "questionEn": "Electric potential at distance r from a point charge q in vacuum is:",
+          "questionHi": "निर्वात में बिंदु आवेश q से दूरी r पर विद्युत विभव है:",
+          "options": [
+            {
+              "en": "V = q/(4πε₀r)",
+              "hi": "V = q/(4πε₀r)"
+            },
+            {
+              "en": "V = q/(4πε₀r²)",
+              "hi": "V = q/(4πε₀r²)"
+            },
+            {
+              "en": "V = 4πε₀qr",
+              "hi": "V = 4πε₀qr"
+            },
+            {
+              "en": "V = q r/(4πε₀)",
+              "hi": "V = q r/(4πε₀)"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Taking potential zero at infinity, the potential of a point charge is V = (1/4πε₀)(q/r).",
+          "explanationHi": "अनंत पर विभव शून्य मानने पर बिंदु आवेश का विभव V = (1/4πε₀)(q/r) होता है।"
+        },
+        {
+          "id": 15,
+          "questionEn": "In one dimension, the relation between electric field and potential is:",
+          "questionHi": "एक विमा में विद्युत क्षेत्र और विभव के बीच संबंध है:",
+          "options": [
+            {
+              "en": "E = dV/dr",
+              "hi": "E = dV/dr"
+            },
+            {
+              "en": "E = -dV/dr",
+              "hi": "E = -dV/dr"
+            },
+            {
+              "en": "E = V/r²",
+              "hi": "E = V/r²"
+            },
+            {
+              "en": "E = Vr",
+              "hi": "E = Vr"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Electric field points in the direction of decreasing potential, so E = -dV/dr.",
+          "explanationHi": "विद्युत क्षेत्र घटते हुए विभव की दिशा में होता है, इसलिए E = -dV/dr।"
+        },
+        {
+          "id": 16,
+          "questionEn": "The work done in moving a test charge between two points on the same equipotential surface is:",
+          "questionHi": "एक ही समविभव पृष्ठ के दो बिंदुओं के बीच परीक्षण आवेश को ले जाने में किया गया कार्य है:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "Positive",
+              "hi": "धनात्मक"
+            },
+            {
+              "en": "Negative",
+              "hi": "ऋणात्मक"
+            },
+            {
+              "en": "Infinite",
+              "hi": "अनंत"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Both points have the same potential, so ΔV = 0 and W = qΔV = 0.",
+          "explanationHi": "दोनों बिंदुओं का विभव समान है, इसलिए ΔV = 0 तथा W = qΔV = 0।"
+        },
+        {
+          "id": 17,
+          "questionEn": "For charges -q and +q separated by distance 2a, the electric dipole moment is:",
+          "questionHi": "2a दूरी से पृथक -q और +q आवेशों के लिए विद्युत द्विध्रुव आघूर्ण है:",
+          "options": [
+            {
+              "en": "p = qa, from +q to -q",
+              "hi": "p = qa, +q से -q की ओर"
+            },
+            {
+              "en": "p = 2qa, from -q to +q",
+              "hi": "p = 2qa, -q से +q की ओर"
+            },
+            {
+              "en": "p = q/(2a), from -q to +q",
+              "hi": "p = q/(2a), -q से +q की ओर"
+            },
+            {
+              "en": "p = 0",
+              "hi": "p = 0"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Dipole moment equals charge times separation and is directed from negative to positive charge: p = q(2a).",
+          "explanationHi": "द्विध्रुव आघूर्ण आवेश और पृथक्करण का गुणनफल है तथा ऋण से धन आवेश की ओर होता है: p = q(2a)।"
+        },
+        {
+          "id": 18,
+          "questionEn": "The torque on an electric dipole of moment p in a uniform field E at angle θ is:",
+          "questionHi": "एकसमान क्षेत्र E में θ कोण पर रखे द्विध्रुव आघूर्ण p पर बलाघूर्ण है:",
+          "options": [
+            {
+              "en": "τ = pE cos θ",
+              "hi": "τ = pE cos θ"
+            },
+            {
+              "en": "τ = pE sin θ",
+              "hi": "τ = pE sin θ"
+            },
+            {
+              "en": "τ = p/E",
+              "hi": "τ = p/E"
+            },
+            {
+              "en": "τ = E/p",
+              "hi": "τ = E/p"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The torque magnitude is |p × E| = pE sin θ and tends to align the dipole with the field.",
+          "explanationHi": "बलाघूर्ण का परिमाण |p × E| = pE sin θ है और यह द्विध्रुव को क्षेत्र की दिशा में संरेखित करता है।"
+        },
+        {
+          "id": 19,
+          "questionEn": "At a distant point on the equatorial line of an electric dipole, the electric potential is:",
+          "questionHi": "विद्युत द्विध्रुव की निरक्षीय रेखा पर दूर स्थित बिंदु पर विद्युत विभव है:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "kp/r²",
+              "hi": "kp/r²"
+            },
+            {
+              "en": "2kp/r³",
+              "hi": "2kp/r³"
+            },
+            {
+              "en": "kq/r",
+              "hi": "kq/r"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Points on the equatorial line are equidistant from +q and -q, so their scalar potentials cancel.",
+          "explanationHi": "निरक्षीय रेखा के बिंदु +q और -q से समान दूरी पर होते हैं, इसलिए उनके अदिश विभव परस्पर निरस्त हो जाते हैं।"
+        },
+        {
+          "id": 20,
+          "questionEn": "At the same large distance from a short dipole, the ratio of axial field to equatorial field magnitude is:",
+          "questionHi": "एक लघु द्विध्रुव से समान अधिक दूरी पर अक्षीय और निरक्षीय क्षेत्र के परिमाणों का अनुपात है:",
+          "options": [
+            {
+              "en": "1 : 1",
+              "hi": "1 : 1"
+            },
+            {
+              "en": "1 : 2",
+              "hi": "1 : 2"
+            },
+            {
+              "en": "2 : 1",
+              "hi": "2 : 1"
+            },
+            {
+              "en": "4 : 1",
+              "hi": "4 : 1"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "For a short dipole, Eₐₓᵢₐₗ = 2kp/r³ and Eₑqᵤₐₜₒᵣᵢₐₗ = kp/r³, giving 2 : 1.",
+          "explanationHi": "लघु द्विध्रुव के लिए Eₐₓᵢₐₗ = 2kp/r³ तथा Eₑqᵤₐₜₒᵣᵢₐₗ = kp/r³, अतः अनुपात 2 : 1 है।"
+        },
+        {
+          "id": 21,
+          "questionEn": "What is the SI unit of capacitance?",
+          "questionHi": "धारिता का SI मात्रक क्या है?",
+          "options": [
+            {
+              "en": "Farad",
+              "hi": "फैरड"
+            },
+            {
+              "en": "Volt",
+              "hi": "वोल्ट"
+            },
+            {
+              "en": "Coulomb",
+              "hi": "कूलॉम"
+            },
+            {
+              "en": "Ohm",
+              "hi": "ओम"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Capacitance is C = Q/V, so its SI unit C V⁻¹ is called the farad (F).",
+          "explanationHi": "धारिता C = Q/V है, इसलिए इसका SI मात्रक C V⁻¹ है जिसे फैरड (F) कहते हैं।"
+        },
+        {
+          "id": 22,
+          "questionEn": "The capacitance of a vacuum parallel-plate capacitor of plate area A and separation d is:",
+          "questionHi": "प्लेट क्षेत्रफल A और दूरी d वाले निर्वात समांतर-प्लेट संधारित्र की धारिता है:",
+          "options": [
+            {
+              "en": "C = ε₀A/d",
+              "hi": "C = ε₀A/d"
+            },
+            {
+              "en": "C = ε₀d/A",
+              "hi": "C = ε₀d/A"
+            },
+            {
+              "en": "C = A/(ε₀d)",
+              "hi": "C = A/(ε₀d)"
+            },
+            {
+              "en": "C = d/(ε₀A)",
+              "hi": "C = d/(ε₀A)"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Ignoring edge effects, the parallel-plate capacitance is directly proportional to A and inversely proportional to d: C = ε₀A/d.",
+          "explanationHi": "किनारी प्रभाव की उपेक्षा पर धारिता A के समानुपाती और d के व्युत्क्रमानुपाती है: C = ε₀A/d।"
+        },
+        {
+          "id": 23,
+          "questionEn": "If the plate separation of an isolated parallel-plate capacitor is doubled, its capacitance becomes:",
+          "questionHi": "यदि एक समांतर-प्लेट संधारित्र की प्लेट दूरी दोगुनी कर दी जाए, तो उसकी धारिता होगी:",
+          "options": [
+            {
+              "en": "2C",
+              "hi": "2C"
+            },
+            {
+              "en": "C/2",
+              "hi": "C/2"
+            },
+            {
+              "en": "4C",
+              "hi": "4C"
+            },
+            {
+              "en": "C/4",
+              "hi": "C/4"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Since C = ε₀A/d, doubling d reduces the capacitance to C/2.",
+          "explanationHi": "चूँकि C = ε₀A/d, इसलिए d को दोगुना करने पर धारिता C/2 हो जाती है।"
+        },
+        {
+          "id": 24,
+          "questionEn": "A dielectric of constant K completely fills a capacitor. Its capacitance changes from C to:",
+          "questionHi": "परावैद्युतांक K का पदार्थ संधारित्र को पूरी तरह भर देता है। उसकी धारिता C से बदलकर होगी:",
+          "options": [
+            {
+              "en": "C/K",
+              "hi": "C/K"
+            },
+            {
+              "en": "KC",
+              "hi": "KC"
+            },
+            {
+              "en": "K²C",
+              "hi": "K²C"
+            },
+            {
+              "en": "C",
+              "hi": "C"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The dielectric increases the permittivity by factor K, so capacitance becomes C' = KC.",
+          "explanationHi": "परावैद्युत पदार्थ विद्युतशीलता को K गुना बढ़ाता है, इसलिए धारिता C' = KC हो जाती है।"
+        },
+        {
+          "id": 25,
+          "questionEn": "For capacitors C₁, C₂ and C₃ connected in series, the equivalent capacitance satisfies:",
+          "questionHi": "श्रेणीक्रम में जुड़े C₁, C₂ और C₃ संधारित्रों के लिए तुल्य धारिता का संबंध है:",
+          "options": [
+            {
+              "en": "Cₑq = C₁ + C₂ + C₃",
+              "hi": "Cₑq = C₁ + C₂ + C₃"
+            },
+            {
+              "en": "1/Cₑq = 1/C₁ + 1/C₂ + 1/C₃",
+              "hi": "1/Cₑq = 1/C₁ + 1/C₂ + 1/C₃"
+            },
+            {
+              "en": "Cₑq = C₁C₂C₃",
+              "hi": "Cₑq = C₁C₂C₃"
+            },
+            {
+              "en": "Cₑq = (C₁ + C₂)/C₃",
+              "hi": "Cₑq = (C₁ + C₂)/C₃"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Series capacitors carry the same charge while their potential differences add, giving the reciprocal sum.",
+          "explanationHi": "श्रेणीक्रम में सभी संधारित्रों पर आवेश समान होता है और विभवांतर जुड़ते हैं, इसलिए व्युत्क्रमों का योग मिलता है।"
+        },
+        {
+          "id": 26,
+          "questionEn": "Two capacitors C and 2C are connected in series. Their equivalent capacitance is:",
+          "questionHi": "C और 2C धारिता वाले दो संधारित्र श्रेणीक्रम में जुड़े हैं। उनकी तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "3C",
+              "hi": "3C"
+            },
+            {
+              "en": "2C/3",
+              "hi": "2C/3"
+            },
+            {
+              "en": "3C/2",
+              "hi": "3C/2"
+            },
+            {
+              "en": "C/3",
+              "hi": "C/3"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "For two series capacitors, Cₑq = C₁C₂/(C₁ + C₂) = 2C²/3C = 2C/3.",
+          "explanationHi": "दो श्रेणी संधारित्रों के लिए Cₑq = C₁C₂/(C₁ + C₂) = 2C²/3C = 2C/3।"
+        },
+        {
+          "id": 27,
+          "questionEn": "Two capacitors C and 2C are connected in parallel. Their equivalent capacitance is:",
+          "questionHi": "C और 2C धारिता वाले दो संधारित्र समानांतर क्रम में जुड़े हैं। उनकी तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "C/3",
+              "hi": "C/3"
+            },
+            {
+              "en": "2C/3",
+              "hi": "2C/3"
+            },
+            {
+              "en": "3C",
+              "hi": "3C"
+            },
+            {
+              "en": "2C",
+              "hi": "2C"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Parallel capacitances add directly, so Cₑq = C + 2C = 3C.",
+          "explanationHi": "समानांतर क्रम में धारिताएँ सीधे जुड़ती हैं, इसलिए Cₑq = C + 2C = 3C।"
+        },
+        {
+          "id": 28,
+          "questionEn": "The electrostatic energy stored in a capacitor of capacitance C at potential V is:",
+          "questionHi": "धारिता C और विभव V वाले संधारित्र में संचित विद्युत स्थैतिक ऊर्जा है:",
+          "options": [
+            {
+              "en": "U = CV²",
+              "hi": "U = CV²"
+            },
+            {
+              "en": "U = ½CV²",
+              "hi": "U = ½CV²"
+            },
+            {
+              "en": "U = 2CV²",
+              "hi": "U = 2CV²"
+            },
+            {
+              "en": "U = C/(2V²)",
+              "hi": "U = C/(2V²)"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The work done in charging a capacitor from 0 to Q is U = Q²/(2C) = ½CV².",
+          "explanationHi": "संधारित्र को 0 से Q तक आवेशित करने में किया गया कार्य U = Q²/(2C) = ½CV² है।"
+        },
+        {
+          "id": 29,
+          "questionEn": "A charged capacitor is disconnected from the battery. A dielectric of constant K is inserted fully. Its potential becomes:",
+          "questionHi": "आवेशित संधारित्र को बैटरी से अलग कर दिया गया है। परावैद्युतांक K का पदार्थ पूरी तरह डालने पर उसका विभव होगा:",
+          "options": [
+            {
+              "en": "KV",
+              "hi": "KV"
+            },
+            {
+              "en": "V/K",
+              "hi": "V/K"
+            },
+            {
+              "en": "K²V",
+              "hi": "K²V"
+            },
+            {
+              "en": "V",
+              "hi": "V"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "After disconnection Q remains constant while C becomes KC. Thus V' = Q/(KC) = V/K.",
+          "explanationHi": "बैटरी से अलग करने पर Q नियत रहता है और C बढ़कर KC हो जाता है। अतः V' = Q/(KC) = V/K।"
+        },
+        {
+          "id": 30,
+          "questionEn": "The energy density of an electric field E in vacuum is:",
+          "questionHi": "निर्वात में विद्युत क्षेत्र E की ऊर्जा घनत्व है:",
+          "options": [
+            {
+              "en": "u = ε₀E²",
+              "hi": "u = ε₀E²"
+            },
+            {
+              "en": "u = ½ε₀E²",
+              "hi": "u = ½ε₀E²"
+            },
+            {
+              "en": "u = E²/(2ε₀)",
+              "hi": "u = E²/(2ε₀)"
+            },
+            {
+              "en": "u = ε₀/(2E²)",
+              "hi": "u = ε₀/(2E²)"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The electrostatic energy per unit volume in vacuum is u = ½ε₀E².",
+          "explanationHi": "निर्वात में प्रति इकाई आयतन विद्युत स्थैतिक ऊर्जा u = ½ε₀E² होती है।"
+        }
+      ]
+    },
+    {
+      "id": "set-02",
+      "number": 2,
+      "titleEn": "Electrostatics Test Set 02",
+      "titleHi": "स्थिर वैद्युतिकी टेस्ट सेट 02",
+      "focusEn": "Theory and Concepts",
+      "focusHi": "सिद्धांत एवं अवधारणाएँ",
+      "downloadPath": "/downloads/class-12-board-2027-electrostatics-test-set-02.pdf",
+      "questions": [
+        {
+          "id": 1,
+          "category": "Theory",
+          "questionEn": "Which law ensures that the total charge of an isolated system remains constant?",
+          "questionHi": "कौन-सा नियम सुनिश्चित करता है कि एक विलगित निकाय का कुल आवेश नियत रहता है?",
+          "options": [
+            {
+              "en": "Conservation of charge",
+              "hi": "आवेश संरक्षण"
+            },
+            {
+              "en": "Gauss's law",
+              "hi": "गाउस का नियम"
+            },
+            {
+              "en": "Ohm's law",
+              "hi": "ओम का नियम"
+            },
+            {
+              "en": "Faraday's law",
+              "hi": "फैराडे का नियम"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Electric charge can transfer between bodies, but the total charge of an isolated system is conserved.",
+          "explanationHi": "विद्युत आवेश वस्तुओं के बीच स्थानांतरित हो सकता है, परंतु विलगित निकाय का कुल आवेश संरक्षित रहता है।"
+        },
+        {
+          "id": 2,
+          "category": "Theory",
+          "questionEn": "Charging a neutral conductor without touching it is called:",
+          "questionHi": "किसी उदासीन चालक को बिना स्पर्श किए आवेशित करने की प्रक्रिया कहलाती है:",
+          "options": [
+            {
+              "en": "Conduction",
+              "hi": "चालन"
+            },
+            {
+              "en": "Induction",
+              "hi": "प्रेरण"
+            },
+            {
+              "en": "Polarisation only",
+              "hi": "केवल ध्रुवण"
+            },
+            {
+              "en": "Earthing only",
+              "hi": "केवल भू-संपर्क"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Electrostatic induction separates and transfers charge without direct contact with the charged body.",
+          "explanationHi": "विद्युत स्थैतिक प्रेरण में आवेशित वस्तु से सीधे स्पर्श के बिना आवेशों का पृथक्करण और स्थानांतरण होता है।"
+        },
+        {
+          "id": 3,
+          "category": "Fact",
+          "questionEn": "Why can two electric field lines never intersect?",
+          "questionHi": "दो विद्युत क्षेत्र रेखाएँ कभी एक-दूसरे को क्यों नहीं काट सकतीं?",
+          "options": [
+            {
+              "en": "The field would have two directions at one point",
+              "hi": "एक बिंदु पर क्षेत्र की दो दिशाएँ हो जाएँगी"
+            },
+            {
+              "en": "The field would become zero everywhere",
+              "hi": "क्षेत्र हर जगह शून्य हो जाएगा"
+            },
+            {
+              "en": "Charge would not be conserved",
+              "hi": "आवेश संरक्षित नहीं रहेगा"
+            },
+            {
+              "en": "Potential would become infinite",
+              "hi": "विभव अनंत हो जाएगा"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The tangent to a field line gives the unique field direction. Intersection would imply two directions at one point.",
+          "explanationHi": "क्षेत्र रेखा की स्पर्शरेखा क्षेत्र की एक निश्चित दिशा बताती है। प्रतिच्छेदन से एक ही बिंदु पर दो दिशाएँ मिलेंगी।"
+        },
+        {
+          "id": 4,
+          "category": "Theory",
+          "questionEn": "In electrostatic equilibrium, excess charge given to a conductor resides:",
+          "questionHi": "विद्युत स्थैतिक संतुलन में चालक को दिया गया अतिरिक्त आवेश कहाँ रहता है?",
+          "options": [
+            {
+              "en": "Only at its centre",
+              "hi": "केवल केंद्र पर"
+            },
+            {
+              "en": "Throughout its volume uniformly",
+              "hi": "पूरे आयतन में समान रूप से"
+            },
+            {
+              "en": "On its outer surface",
+              "hi": "उसकी बाहरी सतह पर"
+            },
+            {
+              "en": "Only at the lowest point",
+              "hi": "केवल सबसे निचले बिंदु पर"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Free charges rearrange until the internal field vanishes, leaving excess charge on the outer surface.",
+          "explanationHi": "मुक्त आवेश तब तक पुनर्व्यवस्थित होते हैं जब तक आंतरिक क्षेत्र शून्य न हो जाए; अतिरिक्त आवेश बाहरी सतह पर रहता है।"
+        },
+        {
+          "id": 5,
+          "category": "Fact",
+          "questionEn": "The electric field immediately outside a charged conductor is directed:",
+          "questionHi": "आवेशित चालक के ठीक बाहर विद्युत क्षेत्र की दिशा होती है:",
+          "options": [
+            {
+              "en": "Tangential to the surface",
+              "hi": "सतह के स्पर्शीय"
+            },
+            {
+              "en": "Normal to the surface",
+              "hi": "सतह के अभिलंब"
+            },
+            {
+              "en": "Always horizontal",
+              "hi": "सदैव क्षैतिज"
+            },
+            {
+              "en": "Always vertically downward",
+              "hi": "सदैव ऊर्ध्वाधर नीचे"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "A tangential component would move free charges, so the electrostatic field must be normal to the surface.",
+          "explanationHi": "स्पर्शीय घटक मुक्त आवेशों को चला देगा, इसलिए विद्युत स्थैतिक क्षेत्र सतह के अभिलंब होना चाहिए।"
+        },
+        {
+          "id": 6,
+          "category": "Theory",
+          "questionEn": "The electric potential throughout a conductor in electrostatic equilibrium is:",
+          "questionHi": "विद्युत स्थैतिक संतुलन में चालक के पूरे भाग का विद्युत विभव होता है:",
+          "options": [
+            {
+              "en": "Zero in every case",
+              "hi": "हर स्थिति में शून्य"
+            },
+            {
+              "en": "Constant",
+              "hi": "नियत"
+            },
+            {
+              "en": "Maximum only at the centre",
+              "hi": "केवल केंद्र पर अधिकतम"
+            },
+            {
+              "en": "Inversely proportional to volume",
+              "hi": "आयतन के व्युत्क्रमानुपाती"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Since E = -dV/dr and the internal electric field is zero, the conductor is an equipotential body.",
+          "explanationHi": "चूँकि E = -dV/dr और आंतरिक विद्युत क्षेत्र शून्य है, इसलिए चालक एक समविभव पिंड है।"
+        },
+        {
+          "id": 7,
+          "category": "Application",
+          "questionEn": "The protection of a sensitive instrument inside a closed conducting enclosure is based on:",
+          "questionHi": "बंद चालक आवरण के भीतर संवेदनशील यंत्र की सुरक्षा किस सिद्धांत पर आधारित है?",
+          "options": [
+            {
+              "en": "Electrostatic shielding",
+              "hi": "विद्युत स्थैतिक परिरक्षण"
+            },
+            {
+              "en": "Resonance",
+              "hi": "अनुनाद"
+            },
+            {
+              "en": "Electromagnetic induction",
+              "hi": "विद्युत चुंबकीय प्रेरण"
+            },
+            {
+              "en": "Photoelectric effect",
+              "hi": "प्रकाश-विद्युत प्रभाव"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "A closed conductor shields its cavity from external static electric fields.",
+          "explanationHi": "बंद चालक अपने अंदर की गुहा को बाहरी स्थिर विद्युत क्षेत्रों से सुरक्षित रखता है।"
+        },
+        {
+          "id": 8,
+          "category": "Theory",
+          "questionEn": "An empty cavity inside a conductor is placed in electrostatic equilibrium with no charge inside the cavity. The field in the cavity is:",
+          "questionHi": "विद्युत स्थैतिक संतुलन वाले चालक की खाली गुहा में कोई आवेश नहीं है। गुहा के भीतर क्षेत्र होगा:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "Uniform and non-zero",
+              "hi": "एकसमान और अशून्य"
+            },
+            {
+              "en": "Infinite",
+              "hi": "अनंत"
+            },
+            {
+              "en": "Dependent on cavity volume only",
+              "hi": "केवल गुहा के आयतन पर निर्भर"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Electrostatic shielding makes the field zero in an empty closed cavity of a conductor.",
+          "explanationHi": "विद्युत स्थैतिक परिरक्षण के कारण चालक की खाली बंद गुहा में क्षेत्र शून्य होता है।"
+        },
+        {
+          "id": 9,
+          "category": "Theory",
+          "questionEn": "When a neutral conductor is placed in an external electric field, its net charge:",
+          "questionHi": "उदासीन चालक को बाहरी विद्युत क्षेत्र में रखने पर उसका कुल आवेश:",
+          "options": [
+            {
+              "en": "Becomes positive",
+              "hi": "धनात्मक हो जाता है"
+            },
+            {
+              "en": "Becomes negative",
+              "hi": "ऋणात्मक हो जाता है"
+            },
+            {
+              "en": "Remains zero although charges redistribute",
+              "hi": "शून्य रहता है, यद्यपि आवेश पुनर्वितरित होते हैं"
+            },
+            {
+              "en": "Becomes infinite",
+              "hi": "अनंत हो जाता है"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "The field induces surface-charge separation, but the conductor's total charge remains zero.",
+          "explanationHi": "क्षेत्र सतही आवेशों का पृथक्करण करता है, पर चालक का कुल आवेश शून्य ही रहता है।"
+        },
+        {
+          "id": 10,
+          "category": "Fact",
+          "questionEn": "For a fixed enclosed charge, changing the shape of a closed Gaussian surface changes the net flux by:",
+          "questionHi": "नियत परिबद्ध आवेश के लिए बंद गाउसीय पृष्ठ का आकार बदलने पर कुल फ्लक्स में परिवर्तन होगा:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "Zero"
+            },
+            {
+              "en": "q/ε₀",
+              "hi": "q/ε₀"
+            },
+            {
+              "en": "2q/ε₀",
+              "hi": "2q/ε₀"
+            },
+            {
+              "en": "Depends on surface area",
+              "hi": "Depends on surface area"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Gauss's law makes net flux depend only on enclosed charge, not on the surface shape.",
+          "explanationHi": "गाउस नियम के अनुसार कुल फ्लक्स केवल परिबद्ध आवेश पर निर्भर करता है, पृष्ठ के आकार पर नहीं।"
+        },
+        {
+          "id": 11,
+          "category": "Theory",
+          "questionEn": "A point charge lies outside a closed surface. Its contribution to the net flux through that surface is:",
+          "questionHi": "एक बिंदु आवेश बंद पृष्ठ के बाहर स्थित है। उस पृष्ठ से कुल फ्लक्स में उसका योगदान है:",
+          "options": [
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "q/ε₀",
+              "hi": "q/ε₀"
+            },
+            {
+              "en": "q/(2ε₀)",
+              "hi": "q/(2ε₀)"
+            },
+            {
+              "en": "Infinite",
+              "hi": "अनंत"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Field lines entering and leaving due to an external charge contribute equal and opposite flux, giving zero net flux.",
+          "explanationHi": "बाहरी आवेश के कारण प्रवेश और निर्गमन करने वाली क्षेत्र रेखाओं के फ्लक्स बराबर और विपरीत होते हैं, इसलिए कुल फ्लक्स शून्य है।"
+        },
+        {
+          "id": 12,
+          "category": "Fact",
+          "questionEn": "Electric field lines of a dipole begin and end respectively on:",
+          "questionHi": "विद्युत द्विध्रुव की क्षेत्र रेखाएँ क्रमशः कहाँ से आरंभ और समाप्त होती हैं?",
+          "options": [
+            {
+              "en": "Negative and positive charges",
+              "hi": "ऋण और धन आवेश"
+            },
+            {
+              "en": "Positive and negative charges",
+              "hi": "धन और ऋण आवेश"
+            },
+            {
+              "en": "Both at infinity",
+              "hi": "दोनों अनंत पर"
+            },
+            {
+              "en": "The midpoint and infinity",
+              "hi": "मध्य बिंदु और अनंत पर"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Electric field lines originate on positive charge and terminate on negative charge.",
+          "explanationHi": "विद्युत क्षेत्र रेखाएँ धन आवेश से निकलती हैं और ऋण आवेश पर समाप्त होती हैं।"
+        },
+        {
+          "id": 13,
+          "category": "Theory",
+          "questionEn": "A dipole is in stable equilibrium in a uniform electric field when its dipole moment is:",
+          "questionHi": "एकसमान विद्युत क्षेत्र में द्विध्रुव स्थायी संतुलन में होता है जब उसका द्विध्रुव आघूर्ण:",
+          "options": [
+            {
+              "en": "Parallel to the field",
+              "hi": "क्षेत्र के समानांतर"
+            },
+            {
+              "en": "Antiparallel to the field",
+              "hi": "क्षेत्र के विपरीत समानांतर"
+            },
+            {
+              "en": "Perpendicular to the field",
+              "hi": "क्षेत्र के लंबवत"
+            },
+            {
+              "en": "Zero",
+              "hi": "शून्य"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Potential energy U = -pE cos θ is minimum at θ = 0, which is stable equilibrium.",
+          "explanationHi": "स्थितिज ऊर्जा U = -pE cos θ का मान θ = 0 पर न्यूनतम होता है, अतः यह स्थायी संतुलन है।"
+        },
+        {
+          "id": 14,
+          "category": "Theory",
+          "questionEn": "A dipole is in unstable equilibrium in a uniform electric field when its dipole moment is:",
+          "questionHi": "एकसमान विद्युत क्षेत्र में द्विध्रुव अस्थायी संतुलन में होता है जब उसका द्विध्रुव आघूर्ण:",
+          "options": [
+            {
+              "en": "Parallel to the field",
+              "hi": "क्षेत्र के समानांतर"
+            },
+            {
+              "en": "Antiparallel to the field",
+              "hi": "क्षेत्र के विपरीत समानांतर"
+            },
+            {
+              "en": "At 60° to the field",
+              "hi": "क्षेत्र से 60° पर"
+            },
+            {
+              "en": "At 90° to the field",
+              "hi": "क्षेत्र से 90° पर"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "At θ = π, U = +pE is maximum, so the equilibrium is unstable.",
+          "explanationHi": "θ = π पर U = +pE अधिकतम होता है, इसलिए संतुलन अस्थायी है।"
+        },
+        {
+          "id": 15,
+          "category": "Theory",
+          "questionEn": "Electrostatic work between two fixed points is independent of:",
+          "questionHi": "दो निश्चित बिंदुओं के बीच विद्युत स्थैतिक कार्य किससे स्वतंत्र होता है?",
+          "options": [
+            {
+              "en": "The path followed",
+              "hi": "अपनाए गए पथ"
+            },
+            {
+              "en": "The end-point potentials",
+              "hi": "अंतिम बिंदुओं के विभव"
+            },
+            {
+              "en": "The test charge",
+              "hi": "परीक्षण आवेश"
+            },
+            {
+              "en": "The potential difference",
+              "hi": "विभवांतर"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Electrostatic force is conservative, so work depends only on the initial and final points.",
+          "explanationHi": "विद्युत स्थैतिक बल संरक्षी है, इसलिए कार्य केवल प्रारंभिक और अंतिम बिंदुओं पर निर्भर करता है।"
+        },
+        {
+          "id": 16,
+          "category": "Fact",
+          "questionEn": "The direction of the electric field is the direction in which electric potential:",
+          "questionHi": "विद्युत क्षेत्र की दिशा वह दिशा है जिसमें विद्युत विभव:",
+          "options": [
+            {
+              "en": "Increases most rapidly",
+              "hi": "सबसे तेजी से बढ़ता है"
+            },
+            {
+              "en": "Decreases most rapidly",
+              "hi": "सबसे तेजी से घटता है"
+            },
+            {
+              "en": "Always remains zero",
+              "hi": "सदैव शून्य रहता है"
+            },
+            {
+              "en": "Oscillates",
+              "hi": "दोलन करता है"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Because E = -∇V, the field points toward the steepest decrease of potential.",
+          "explanationHi": "E = -∇V के कारण क्षेत्र विभव के सबसे तीव्र ह्रास की दिशा में होता है।"
+        },
+        {
+          "id": 17,
+          "category": "Theory",
+          "questionEn": "Electric field lines cross an equipotential surface:",
+          "questionHi": "विद्युत क्षेत्र रेखाएँ समविभव पृष्ठ को किस प्रकार काटती हैं?",
+          "options": [
+            {
+              "en": "Tangentially",
+              "hi": "स्पर्शीय रूप से"
+            },
+            {
+              "en": "Normally",
+              "hi": "अभिलंब रूप से"
+            },
+            {
+              "en": "At 45° always",
+              "hi": "सदैव 45° पर"
+            },
+            {
+              "en": "They never meet it",
+              "hi": "वे उसे कभी नहीं मिलतीं"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "No tangential field can exist on an equipotential surface, so field lines are normal to it.",
+          "explanationHi": "समविभव पृष्ठ पर स्पर्शीय क्षेत्र नहीं हो सकता, इसलिए क्षेत्र रेखाएँ उस पर अभिलंब होती हैं।"
+        },
+        {
+          "id": 18,
+          "category": "Theory",
+          "questionEn": "The electric potential due to several point charges is found using:",
+          "questionHi": "अनेक बिंदु आवेशों के कारण विद्युत विभव किस सिद्धांत से ज्ञात किया जाता है?",
+          "options": [
+            {
+              "en": "Scalar superposition",
+              "hi": "अदिश अध्यारोपण"
+            },
+            {
+              "en": "Vector multiplication",
+              "hi": "सदिश गुणन"
+            },
+            {
+              "en": "Only Gauss's law",
+              "hi": "केवल गाउस नियम"
+            },
+            {
+              "en": "Kirchhoff's current law",
+              "hi": "किरचॉफ का धारा नियम"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Potential is a scalar, so individual potentials are added algebraically.",
+          "explanationHi": "विभव एक अदिश राशि है, इसलिए अलग-अलग विभव बीजगणितीय रूप से जोड़े जाते हैं।"
+        },
+        {
+          "id": 19,
+          "category": "Fact",
+          "questionEn": "At a point where electric potential is zero, the electric field:",
+          "questionHi": "जिस बिंदु पर विद्युत विभव शून्य है, वहाँ विद्युत क्षेत्र:",
+          "options": [
+            {
+              "en": "Must always be zero",
+              "hi": "सदैव शून्य होना चाहिए"
+            },
+            {
+              "en": "May be non-zero",
+              "hi": "अशून्य हो सकता है"
+            },
+            {
+              "en": "Must be infinite",
+              "hi": "अनंत होना चाहिए"
+            },
+            {
+              "en": "Must reverse every second",
+              "hi": "हर सेकंड दिशा बदलनी चाहिए"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Zero potential is a scalar cancellation or reference value; its gradient may still be non-zero.",
+          "explanationHi": "शून्य विभव अदिश निरस्तीकरण या संदर्भ मान हो सकता है; उसका प्रवणता फिर भी अशून्य हो सकती है।"
+        },
+        {
+          "id": 20,
+          "category": "Theory",
+          "questionEn": "The capacitance of an isolated conductor primarily depends on:",
+          "questionHi": "एक विलगित चालक की धारिता मुख्यतः किस पर निर्भर करती है?",
+          "options": [
+            {
+              "en": "Its charge only",
+              "hi": "केवल उसके आवेश पर"
+            },
+            {
+              "en": "Its potential only",
+              "hi": "केवल उसके विभव पर"
+            },
+            {
+              "en": "Geometry and surrounding medium",
+              "hi": "ज्यामिति और आसपास के माध्यम पर"
+            },
+            {
+              "en": "Time of charging",
+              "hi": "आवेशन के समय पर"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Capacitance is determined by conductor geometry and the permittivity of its surroundings.",
+          "explanationHi": "धारिता चालक की ज्यामिति और उसके आसपास के माध्यम की विद्युतशीलता से निर्धारित होती है।"
+        },
+        {
+          "id": 21,
+          "category": "Formula",
+          "questionEn": "The capacitance of an isolated spherical conductor of radius R in vacuum is:",
+          "questionHi": "निर्वात में त्रिज्या R वाले विलगित गोलाकार चालक की धारिता है:",
+          "options": [
+            {
+              "en": "4πε₀R",
+              "hi": "4πε₀R"
+            },
+            {
+              "en": "ε₀R",
+              "hi": "ε₀R"
+            },
+            {
+              "en": "4πε₀/R",
+              "hi": "4πε₀/R"
+            },
+            {
+              "en": "R/(4πε₀)",
+              "hi": "R/(4πε₀)"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Using V = Q/(4πε₀R), capacitance C = Q/V = 4πε₀R.",
+          "explanationHi": "V = Q/(4πε₀R) से धारिता C = Q/V = 4πε₀R प्राप्त होती है।"
+        },
+        {
+          "id": 22,
+          "category": "Application",
+          "questionEn": "A charged capacitor remains connected to a battery while a dielectric of constant K is inserted. Its charge changes from Q to:",
+          "questionHi": "एक आवेशित संधारित्र बैटरी से जुड़ा रहता है और K परावैद्युतांक का पदार्थ डाला जाता है। उसका आवेश Q से बदलकर होगा:",
+          "options": [
+            {
+              "en": "Q/K",
+              "hi": "Q/K"
+            },
+            {
+              "en": "KQ",
+              "hi": "KQ"
+            },
+            {
+              "en": "Q",
+              "hi": "Q"
+            },
+            {
+              "en": "K²Q",
+              "hi": "K²Q"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The battery keeps V constant while C becomes KC, so Q = CV becomes KQ.",
+          "explanationHi": "बैटरी V को नियत रखती है और C का मान KC हो जाता है, इसलिए Q = CV से आवेश KQ हो जाता है।"
+        },
+        {
+          "id": 23,
+          "category": "Application",
+          "questionEn": "A capacitor remains connected to a battery while a dielectric of constant K is inserted. Its stored energy changes from U to:",
+          "questionHi": "संधारित्र बैटरी से जुड़ा है और K परावैद्युतांक का पदार्थ डाला जाता है। उसकी संचित ऊर्जा U से बदलकर होगी:",
+          "options": [
+            {
+              "en": "U/K",
+              "hi": "U/K"
+            },
+            {
+              "en": "KU",
+              "hi": "KU"
+            },
+            {
+              "en": "U",
+              "hi": "U"
+            },
+            {
+              "en": "K²U",
+              "hi": "K²U"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "At constant V, U = ½CV². Since C becomes KC, energy becomes KU.",
+          "explanationHi": "नियत V पर U = ½CV² है। C का मान KC होने से ऊर्जा KU हो जाती है।"
+        },
+        {
+          "id": 24,
+          "category": "Application",
+          "questionEn": "An isolated charged capacitor receives a dielectric of constant K. Its stored energy changes from U to:",
+          "questionHi": "एक विलगित आवेशित संधारित्र में K परावैद्युतांक का पदार्थ डाला जाता है। उसकी ऊर्जा U से बदलकर होगी:",
+          "options": [
+            {
+              "en": "KU",
+              "hi": "KU"
+            },
+            {
+              "en": "U/K",
+              "hi": "U/K"
+            },
+            {
+              "en": "U",
+              "hi": "U"
+            },
+            {
+              "en": "K²U",
+              "hi": "K²U"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "For an isolated capacitor Q is constant and U = Q²/(2C). Increasing C to KC reduces energy to U/K.",
+          "explanationHi": "विलगित संधारित्र में Q नियत और U = Q²/(2C) है। C से KC होने पर ऊर्जा U/K हो जाती है।"
+        },
+        {
+          "id": 25,
+          "category": "Application",
+          "questionEn": "A parallel-plate capacitor stays connected to a battery. If plate separation is doubled, its charge becomes:",
+          "questionHi": "समांतर-पट्ट संधारित्र बैटरी से जुड़ा है। पट्टों की दूरी दोगुनी करने पर उसका आवेश होगा:",
+          "options": [
+            {
+              "en": "2Q",
+              "hi": "2Q"
+            },
+            {
+              "en": "Q/2",
+              "hi": "Q/2"
+            },
+            {
+              "en": "Q",
+              "hi": "Q"
+            },
+            {
+              "en": "4Q",
+              "hi": "4Q"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "C = ε₀A/d halves when d doubles. With fixed V, Q = CV also halves.",
+          "explanationHi": "d दोगुना होने पर C = ε₀A/d आधा हो जाता है। V नियत होने से Q = CV भी आधा होता है।"
+        },
+        {
+          "id": 26,
+          "category": "Fact",
+          "questionEn": "Capacitors connected in parallel have the same:",
+          "questionHi": "समांतर क्रम में जुड़े संधारित्रों में कौन-सी राशि समान होती है?",
+          "options": [
+            {
+              "en": "Charge",
+              "hi": "आवेश"
+            },
+            {
+              "en": "Potential difference",
+              "hi": "विभवांतर"
+            },
+            {
+              "en": "Capacitance",
+              "hi": "धारिता"
+            },
+            {
+              "en": "Stored energy",
+              "hi": "संचित ऊर्जा"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Each parallel branch is connected across the same two nodes, so its potential difference is the same.",
+          "explanationHi": "प्रत्येक समांतर शाखा समान दो बिंदुओं के बीच जुड़ी होती है, इसलिए विभवांतर समान होता है।"
+        },
+        {
+          "id": 27,
+          "category": "Fact",
+          "questionEn": "Ideal capacitors connected in series carry equal magnitude of:",
+          "questionHi": "श्रेणी क्रम में जुड़े आदर्श संधारित्रों पर किस राशि का परिमाण समान होता है?",
+          "options": [
+            {
+              "en": "Potential difference",
+              "hi": "विभवांतर"
+            },
+            {
+              "en": "Charge",
+              "hi": "आवेश"
+            },
+            {
+              "en": "Capacitance",
+              "hi": "धारिता"
+            },
+            {
+              "en": "Energy density",
+              "hi": "ऊर्जा घनत्व"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The intermediate conductors remain neutral, giving equal and opposite charge magnitudes on every series capacitor.",
+          "explanationHi": "मध्यवर्ती चालक उदासीन रहते हैं, जिससे प्रत्येक श्रेणी संधारित्र पर समान परिमाण के विपरीत आवेश होते हैं।"
+        },
+        {
+          "id": 28,
+          "category": "Theory",
+          "questionEn": "A dielectric reduces the electric field inside a capacitor mainly because its molecules:",
+          "questionHi": "परावैद्युत पदार्थ संधारित्र के भीतर विद्युत क्षेत्र को मुख्यतः इसलिए घटाता है क्योंकि उसके अणु:",
+          "options": [
+            {
+              "en": "Become radioactive",
+              "hi": "रेडियोधर्मी हो जाते हैं"
+            },
+            {
+              "en": "Polarise and create an opposing field",
+              "hi": "ध्रुवित होकर विपरीत क्षेत्र बनाते हैं"
+            },
+            {
+              "en": "Lose all electrons",
+              "hi": "सभी इलेक्ट्रॉन खो देते हैं"
+            },
+            {
+              "en": "Stop moving permanently",
+              "hi": "स्थायी रूप से गति रोक देते हैं"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Polarisation produces bound surface charges whose field opposes the applied field.",
+          "explanationHi": "ध्रुवण से बंधित सतही आवेश उत्पन्न होते हैं जिनका क्षेत्र लगाए गए क्षेत्र का विरोध करता है।"
+        },
+        {
+          "id": 29,
+          "category": "Fact",
+          "questionEn": "Dielectric breakdown occurs when:",
+          "questionHi": "परावैद्युत भंजन कब होता है?",
+          "options": [
+            {
+              "en": "The electric field exceeds the dielectric strength",
+              "hi": "विद्युत क्षेत्र परावैद्युत सामर्थ्य से अधिक हो जाता है"
+            },
+            {
+              "en": "Capacitance becomes zero",
+              "hi": "धारिता शून्य हो जाती है"
+            },
+            {
+              "en": "The plates become exactly parallel",
+              "hi": "पट्ट पूर्णतः समांतर हो जाते हैं"
+            },
+            {
+              "en": "Potential is one volt",
+              "hi": "विभव एक वोल्ट होता है"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Beyond dielectric strength, the material ionises and begins conducting strongly.",
+          "explanationHi": "परावैद्युत सामर्थ्य से अधिक क्षेत्र पर पदार्थ आयनित होकर प्रबल चालन करने लगता है।"
+        },
+        {
+          "id": 30,
+          "category": "Theory",
+          "questionEn": "The electrostatic force is called conservative because:",
+          "questionHi": "विद्युत स्थैतिक बल को संरक्षी क्यों कहा जाता है?",
+          "options": [
+            {
+              "en": "Its work over a closed path is zero",
+              "hi": "बंद पथ पर उसका कार्य शून्य होता है"
+            },
+            {
+              "en": "It is always attractive",
+              "hi": "यह सदैव आकर्षी होता है"
+            },
+            {
+              "en": "It acts only in conductors",
+              "hi": "यह केवल चालकों में कार्य करता है"
+            },
+            {
+              "en": "It has no direction",
+              "hi": "इसकी कोई दिशा नहीं होती"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "A conservative force does zero net work around any closed path.",
+          "explanationHi": "संरक्षी बल किसी भी बंद पथ पर शुद्ध कार्य शून्य करता है।"
+        }
+      ]
+    },
+    {
+      "id": "set-03",
+      "number": 3,
+      "titleEn": "Electrostatics Test Set 03",
+      "titleHi": "स्थिर वैद्युतिकी टेस्ट सेट 03",
+      "focusEn": "Formula and Applications",
+      "focusHi": "सूत्र एवं अनुप्रयोग",
+      "downloadPath": "/downloads/class-12-board-2027-electrostatics-test-set-03.pdf",
+      "questions": [
+        {
+          "id": 1,
+          "category": "Formula",
+          "questionEn": "Charges 2 μC and 3 μC are 0.30 m apart in vacuum. The force between them is:",
+          "questionHi": "2 μC और 3 μC के आवेश निर्वात में 0.30 m दूर हैं। उनके बीच बल है:",
+          "options": [
+            {
+              "en": "0.2 N",
+              "hi": "0.2 N"
+            },
+            {
+              "en": "0.6 N",
+              "hi": "0.6 N"
+            },
+            {
+              "en": "1.8 N",
+              "hi": "1.8 N"
+            },
+            {
+              "en": "6 N",
+              "hi": "6 N"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "F = kq₁q₂/r² = 9×10⁹×2×10⁻⁶×3×10⁻⁶/(0.30)² = 0.6 N.",
+          "explanationHi": "F = kq₁q₂/r² = 9×10⁹×2×10⁻⁶×3×10⁻⁶/(0.30)² = 0.6 N।"
+        },
+        {
+          "id": 2,
+          "category": "Formula",
+          "questionEn": "Charges 4 μC and 5 μC are separated by 0.20 m. Their Coulomb force in vacuum is:",
+          "questionHi": "4 μC और 5 μC के आवेश 0.20 m दूर हैं। निर्वात में कूलॉम बल है:",
+          "options": [
+            {
+              "en": "0.45 N",
+              "hi": "0.45 N"
+            },
+            {
+              "en": "2.25 N",
+              "hi": "2.25 N"
+            },
+            {
+              "en": "4.5 N",
+              "hi": "4.5 N"
+            },
+            {
+              "en": "9 N",
+              "hi": "9 N"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "F = 9×10⁹×4×10⁻⁶×5×10⁻⁶/(0.20)² = 4.5 N.",
+          "explanationHi": "F = 9×10⁹×4×10⁻⁶×5×10⁻⁶/(0.20)² = 4.5 N।"
+        },
+        {
+          "id": 3,
+          "category": "Formula",
+          "questionEn": "Two equal charges of 1 μC each are 0.10 m apart. The electrostatic force is:",
+          "questionHi": "1 μC के दो समान आवेश 0.10 m दूर हैं। विद्युत स्थैतिक बल है:",
+          "options": [
+            {
+              "en": "0.09 N",
+              "hi": "0.09 N"
+            },
+            {
+              "en": "0.9 N",
+              "hi": "0.9 N"
+            },
+            {
+              "en": "9 N",
+              "hi": "9 N"
+            },
+            {
+              "en": "90 N",
+              "hi": "90 N"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "F = 9×10⁹×(10⁻⁶)²/(0.10)² = 0.9 N.",
+          "explanationHi": "F = 9×10⁹×(10⁻⁶)²/(0.10)² = 0.9 N।"
+        },
+        {
+          "id": 4,
+          "category": "Formula",
+          "questionEn": "If the distance between two unchanged point charges becomes three times, the new force is:",
+          "questionHi": "दो अपरिवर्तित बिंदु आवेशों की दूरी तीन गुनी होने पर नया बल होगा:",
+          "options": [
+            {
+              "en": "3F",
+              "hi": "3F"
+            },
+            {
+              "en": "F/3",
+              "hi": "F/3"
+            },
+            {
+              "en": "F/6",
+              "hi": "F/6"
+            },
+            {
+              "en": "F/9",
+              "hi": "F/9"
+            }
+          ],
+          "correctOption": 3,
+          "explanationEn": "Coulomb force varies as 1/r²; replacing r by 3r gives F/9.",
+          "explanationHi": "कूलॉम बल 1/r² के अनुसार बदलता है; r के स्थान पर 3r रखने से F/9 मिलता है।"
+        },
+        {
+          "id": 5,
+          "category": "Formula",
+          "questionEn": "Both point charges are doubled while their separation remains unchanged. The force becomes:",
+          "questionHi": "दोनों बिंदु आवेश दोगुने किए जाते हैं और दूरी नियत रहती है। बल होगा:",
+          "options": [
+            {
+              "en": "2F",
+              "hi": "2F"
+            },
+            {
+              "en": "4F",
+              "hi": "4F"
+            },
+            {
+              "en": "F/2",
+              "hi": "F/2"
+            },
+            {
+              "en": "F/4",
+              "hi": "F/4"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Since F ∝ q₁q₂, doubling both charges multiplies force by 2×2 = 4.",
+          "explanationHi": "F ∝ q₁q₂ होने से दोनों आवेश दोगुने करने पर बल 2×2 = 4 गुना होता है।"
+        },
+        {
+          "id": 6,
+          "category": "Formula",
+          "questionEn": "The electric field 0.30 m from a 2 μC point charge in vacuum is:",
+          "questionHi": "निर्वात में 2 μC बिंदु आवेश से 0.30 m दूरी पर विद्युत क्षेत्र है:",
+          "options": [
+            {
+              "en": "2×10⁴ N C⁻¹",
+              "hi": "2×10⁴ N C⁻¹"
+            },
+            {
+              "en": "2×10⁵ N C⁻¹",
+              "hi": "2×10⁵ N C⁻¹"
+            },
+            {
+              "en": "6×10⁵ N C⁻¹",
+              "hi": "6×10⁵ N C⁻¹"
+            },
+            {
+              "en": "9×10⁵ N C⁻¹",
+              "hi": "9×10⁵ N C⁻¹"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "E = kq/r² = 9×10⁹×2×10⁻⁶/(0.30)² = 2×10⁵ N C⁻¹.",
+          "explanationHi": "E = kq/r² = 9×10⁹×2×10⁻⁶/(0.30)² = 2×10⁵ N C⁻¹।"
+        },
+        {
+          "id": 7,
+          "category": "Formula",
+          "questionEn": "The electric field 0.50 m from a 5 μC charge is:",
+          "questionHi": "5 μC आवेश से 0.50 m दूरी पर विद्युत क्षेत्र है:",
+          "options": [
+            {
+              "en": "1.8×10⁴ N C⁻¹",
+              "hi": "1.8×10⁴ N C⁻¹"
+            },
+            {
+              "en": "9×10⁴ N C⁻¹",
+              "hi": "9×10⁴ N C⁻¹"
+            },
+            {
+              "en": "1.8×10⁵ N C⁻¹",
+              "hi": "1.8×10⁵ N C⁻¹"
+            },
+            {
+              "en": "4.5×10⁵ N C⁻¹",
+              "hi": "4.5×10⁵ N C⁻¹"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "E = 9×10⁹×5×10⁻⁶/(0.50)² = 1.8×10⁵ N C⁻¹.",
+          "explanationHi": "E = 9×10⁹×5×10⁻⁶/(0.50)² = 1.8×10⁵ N C⁻¹।"
+        },
+        {
+          "id": 8,
+          "category": "Application",
+          "questionEn": "A charge of 3 μC is placed in an electric field of 2×10⁴ N C⁻¹. The force is:",
+          "questionHi": "3 μC आवेश को 2×10⁴ N C⁻¹ के क्षेत्र में रखा गया है। बल है:",
+          "options": [
+            {
+              "en": "0.006 N",
+              "hi": "0.006 N"
+            },
+            {
+              "en": "0.06 N",
+              "hi": "0.06 N"
+            },
+            {
+              "en": "0.6 N",
+              "hi": "0.6 N"
+            },
+            {
+              "en": "6 N",
+              "hi": "6 N"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "F = qE = 3×10⁻⁶×2×10⁴ = 0.06 N.",
+          "explanationHi": "F = qE = 3×10⁻⁶×2×10⁴ = 0.06 N।"
+        },
+        {
+          "id": 9,
+          "category": "Formula",
+          "questionEn": "At what distance from a 4 μC charge is the electric field 9×10⁴ N C⁻¹?",
+          "questionHi": "4 μC आवेश से किस दूरी पर विद्युत क्षेत्र 9×10⁴ N C⁻¹ होगा?",
+          "options": [
+            {
+              "en": "0.20 m",
+              "hi": "0.20 m"
+            },
+            {
+              "en": "0.40 m",
+              "hi": "0.40 m"
+            },
+            {
+              "en": "0.63 m",
+              "hi": "0.63 m"
+            },
+            {
+              "en": "1.0 m",
+              "hi": "1.0 m"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "r = √(kq/E) = √(9×10⁹×4×10⁻⁶/9×10⁴) ≈ 0.63 m.",
+          "explanationHi": "r = √(kq/E) = √(9×10⁹×4×10⁻⁶/9×10⁴) ≈ 0.63 m।"
+        },
+        {
+          "id": 10,
+          "category": "Formula",
+          "questionEn": "A uniform field of 200 N C⁻¹ is normal to an area of 0.50 m². The electric flux is:",
+          "questionHi": "200 N C⁻¹ का एकसमान क्षेत्र 0.50 m² क्षेत्रफल के अभिलंब है। विद्युत फ्लक्स है:",
+          "options": [
+            {
+              "en": "50 N m² C⁻¹",
+              "hi": "50 N m² C⁻¹"
+            },
+            {
+              "en": "100 N m² C⁻¹",
+              "hi": "100 N m² C⁻¹"
+            },
+            {
+              "en": "200 N m² C⁻¹",
+              "hi": "200 N m² C⁻¹"
+            },
+            {
+              "en": "400 N m² C⁻¹",
+              "hi": "400 N m² C⁻¹"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Φ = EA cos 0° = 200×0.50 = 100 N m² C⁻¹.",
+          "explanationHi": "Φ = EA cos 0° = 200×0.50 = 100 N m² C⁻¹।"
+        },
+        {
+          "id": 11,
+          "category": "Formula",
+          "questionEn": "A closed surface encloses charge 8.85×10⁻¹² C. Taking ε₀ = 8.85×10⁻¹² C² N⁻¹ m⁻², its flux is:",
+          "questionHi": "एक बंद पृष्ठ 8.85×10⁻¹² C आवेश घेरता है। ε₀ = 8.85×10⁻¹² C² N⁻¹ m⁻² लेने पर फ्लक्स है:",
+          "options": [
+            {
+              "en": "0",
+              "hi": "0"
+            },
+            {
+              "en": "1 N m² C⁻¹",
+              "hi": "1 N m² C⁻¹"
+            },
+            {
+              "en": "8.85 N m² C⁻¹",
+              "hi": "8.85 N m² C⁻¹"
+            },
+            {
+              "en": "9×10⁹ N m² C⁻¹",
+              "hi": "9×10⁹ N m² C⁻¹"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "By Gauss's law, Φ = q/ε₀ = 1 N m² C⁻¹.",
+          "explanationHi": "गाउस नियम से Φ = q/ε₀ = 1 N m² C⁻¹।"
+        },
+        {
+          "id": 12,
+          "category": "Formula",
+          "questionEn": "The potential 0.20 m from a 2 μC point charge is:",
+          "questionHi": "2 μC बिंदु आवेश से 0.20 m दूरी पर विभव है:",
+          "options": [
+            {
+              "en": "9×10³ V",
+              "hi": "9×10³ V"
+            },
+            {
+              "en": "9×10⁴ V",
+              "hi": "9×10⁴ V"
+            },
+            {
+              "en": "1.8×10⁵ V",
+              "hi": "1.8×10⁵ V"
+            },
+            {
+              "en": "4.5×10⁵ V",
+              "hi": "4.5×10⁵ V"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "V = kq/r = 9×10⁹×2×10⁻⁶/0.20 = 9×10⁴ V.",
+          "explanationHi": "V = kq/r = 9×10⁹×2×10⁻⁶/0.20 = 9×10⁴ V।"
+        },
+        {
+          "id": 13,
+          "category": "Formula",
+          "questionEn": "The potential 0.50 m from a 5 μC point charge is:",
+          "questionHi": "5 μC बिंदु आवेश से 0.50 m दूरी पर विभव है:",
+          "options": [
+            {
+              "en": "4.5×10⁴ V",
+              "hi": "4.5×10⁴ V"
+            },
+            {
+              "en": "9×10⁴ V",
+              "hi": "9×10⁴ V"
+            },
+            {
+              "en": "1.8×10⁵ V",
+              "hi": "1.8×10⁵ V"
+            },
+            {
+              "en": "9×10⁵ V",
+              "hi": "9×10⁵ V"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "V = 9×10⁹×5×10⁻⁶/0.50 = 9×10⁴ V.",
+          "explanationHi": "V = 9×10⁹×5×10⁻⁶/0.50 = 9×10⁴ V।"
+        },
+        {
+          "id": 14,
+          "category": "Application",
+          "questionEn": "The potential difference across a 2 μC charge changes by 50 V. The magnitude of work is:",
+          "questionHi": "2 μC आवेश के लिए विभवांतर 50 V बदलता है। कार्य का परिमाण है:",
+          "options": [
+            {
+              "en": "1×10⁻⁵ J",
+              "hi": "1×10⁻⁵ J"
+            },
+            {
+              "en": "1×10⁻⁴ J",
+              "hi": "1×10⁻⁴ J"
+            },
+            {
+              "en": "1×10⁻³ J",
+              "hi": "1×10⁻³ J"
+            },
+            {
+              "en": "0.1 J",
+              "hi": "0.1 J"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "W = qΔV = 2×10⁻⁶×50 = 1×10⁻⁴ J.",
+          "explanationHi": "W = qΔV = 2×10⁻⁶×50 = 1×10⁻⁴ J।"
+        },
+        {
+          "id": 15,
+          "category": "Formula",
+          "questionEn": "The potential energy of charges 2 μC and 3 μC separated by 0.30 m is:",
+          "questionHi": "0.30 m दूरी पर स्थित 2 μC और 3 μC आवेशों की स्थितिज ऊर्जा है:",
+          "options": [
+            {
+              "en": "0.018 J",
+              "hi": "0.018 J"
+            },
+            {
+              "en": "0.18 J",
+              "hi": "0.18 J"
+            },
+            {
+              "en": "1.8 J",
+              "hi": "1.8 J"
+            },
+            {
+              "en": "18 J",
+              "hi": "18 J"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "U = kq₁q₂/r = 9×10⁹×2×10⁻⁶×3×10⁻⁶/0.30 = 0.18 J.",
+          "explanationHi": "U = kq₁q₂/r = 9×10⁹×2×10⁻⁶×3×10⁻⁶/0.30 = 0.18 J।"
+        },
+        {
+          "id": 16,
+          "category": "Formula",
+          "questionEn": "Charges ±2 μC are separated by 4 mm. Their dipole moment is:",
+          "questionHi": "±2 μC आवेशों के बीच दूरी 4 mm है। द्विध्रुव आघूर्ण है:",
+          "options": [
+            {
+              "en": "2×10⁻⁹ C m",
+              "hi": "2×10⁻⁹ C m"
+            },
+            {
+              "en": "4×10⁻⁹ C m",
+              "hi": "4×10⁻⁹ C m"
+            },
+            {
+              "en": "8×10⁻⁹ C m",
+              "hi": "8×10⁻⁹ C m"
+            },
+            {
+              "en": "8×10⁻⁶ C m",
+              "hi": "8×10⁻⁶ C m"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "p = qd = 2×10⁻⁶×4×10⁻³ = 8×10⁻⁹ C m.",
+          "explanationHi": "p = qd = 2×10⁻⁶×4×10⁻³ = 8×10⁻⁹ C m।"
+        },
+        {
+          "id": 17,
+          "category": "Formula",
+          "questionEn": "A dipole p = 3×10⁻⁸ C m is at 30° in a field 2×10⁵ N C⁻¹. Its torque is:",
+          "questionHi": "p = 3×10⁻⁸ C m का द्विध्रुव 2×10⁵ N C⁻¹ क्षेत्र में 30° पर है। बल आघूर्ण है:",
+          "options": [
+            {
+              "en": "3×10⁻⁴ N m",
+              "hi": "3×10⁻⁴ N m"
+            },
+            {
+              "en": "3×10⁻³ N m",
+              "hi": "3×10⁻³ N m"
+            },
+            {
+              "en": "6×10⁻³ N m",
+              "hi": "6×10⁻³ N m"
+            },
+            {
+              "en": "1.2×10⁻² N m",
+              "hi": "1.2×10⁻² N m"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "τ = pE sin 30° = 3×10⁻⁸×2×10⁵×½ = 3×10⁻³ N m.",
+          "explanationHi": "τ = pE sin 30° = 3×10⁻⁸×2×10⁵×½ = 3×10⁻³ N m।"
+        },
+        {
+          "id": 18,
+          "category": "Formula",
+          "questionEn": "The work required to rotate a dipole from θ = 0 to θ = π in a uniform field is:",
+          "questionHi": "एकसमान क्षेत्र में द्विध्रुव को θ = 0 से θ = π तक घुमाने के लिए आवश्यक कार्य है:",
+          "options": [
+            {
+              "en": "0",
+              "hi": "0"
+            },
+            {
+              "en": "pE",
+              "hi": "pE"
+            },
+            {
+              "en": "2pE",
+              "hi": "2pE"
+            },
+            {
+              "en": "4pE",
+              "hi": "4pE"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "ΔU = Uπ - U₀ = (+pE) - (-pE) = 2pE.",
+          "explanationHi": "ΔU = Uπ - U₀ = (+pE) - (-pE) = 2pE।"
+        },
+        {
+          "id": 19,
+          "category": "Formula",
+          "questionEn": "A vacuum parallel-plate capacitor has A = 0.020 m² and d = 1.0 mm. Its capacitance is approximately:",
+          "questionHi": "निर्वात समांतर-पट्ट संधारित्र में A = 0.020 m² और d = 1.0 mm है। इसकी धारिता लगभग है:",
+          "options": [
+            {
+              "en": "17.7 pF",
+              "hi": "17.7 pF"
+            },
+            {
+              "en": "88.5 pF",
+              "hi": "88.5 pF"
+            },
+            {
+              "en": "177 pF",
+              "hi": "177 pF"
+            },
+            {
+              "en": "885 pF",
+              "hi": "885 pF"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "C = ε₀A/d = 8.85×10⁻¹²×0.020/10⁻³ = 177 pF.",
+          "explanationHi": "C = ε₀A/d = 8.85×10⁻¹²×0.020/10⁻³ = 177 pF।"
+        },
+        {
+          "id": 20,
+          "category": "Formula",
+          "questionEn": "A 4 μF capacitor is charged to 12 V. The charge on it is:",
+          "questionHi": "4 μF संधारित्र को 12 V तक आवेशित किया गया है। उस पर आवेश है:",
+          "options": [
+            {
+              "en": "3 μC",
+              "hi": "3 μC"
+            },
+            {
+              "en": "16 μC",
+              "hi": "16 μC"
+            },
+            {
+              "en": "48 μC",
+              "hi": "48 μC"
+            },
+            {
+              "en": "96 μC",
+              "hi": "96 μC"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Q = CV = 4 μF×12 V = 48 μC.",
+          "explanationHi": "Q = CV = 4 μF×12 V = 48 μC।"
+        },
+        {
+          "id": 21,
+          "category": "Formula",
+          "questionEn": "Energy stored in a 5 μF capacitor at 10 V is:",
+          "questionHi": "10 V पर 5 μF संधारित्र में संचित ऊर्जा है:",
+          "options": [
+            {
+              "en": "25 μJ",
+              "hi": "25 μJ"
+            },
+            {
+              "en": "100 μJ",
+              "hi": "100 μJ"
+            },
+            {
+              "en": "250 μJ",
+              "hi": "250 μJ"
+            },
+            {
+              "en": "500 μJ",
+              "hi": "500 μJ"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "U = ½CV² = ½×5×10⁻⁶×100 = 250 μJ.",
+          "explanationHi": "U = ½CV² = ½×5×10⁻⁶×100 = 250 μJ।"
+        },
+        {
+          "id": 22,
+          "category": "Formula",
+          "questionEn": "Two 3 μF capacitors connected in series have equivalent capacitance:",
+          "questionHi": "दो 3 μF संधारित्र श्रेणी क्रम में जुड़े हैं। तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "1.5 μF",
+              "hi": "1.5 μF"
+            },
+            {
+              "en": "3 μF",
+              "hi": "3 μF"
+            },
+            {
+              "en": "6 μF",
+              "hi": "6 μF"
+            },
+            {
+              "en": "9 μF",
+              "hi": "9 μF"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "For two equal series capacitors, Cₑq = C/2 = 1.5 μF.",
+          "explanationHi": "दो समान श्रेणी संधारित्रों के लिए Cₑq = C/2 = 1.5 μF।"
+        },
+        {
+          "id": 23,
+          "category": "Formula",
+          "questionEn": "Capacitors 2 μF and 3 μF connected in parallel have equivalent capacitance:",
+          "questionHi": "2 μF और 3 μF संधारित्र समांतर क्रम में जुड़े हैं। तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "1.2 μF",
+              "hi": "1.2 μF"
+            },
+            {
+              "en": "2.5 μF",
+              "hi": "2.5 μF"
+            },
+            {
+              "en": "5 μF",
+              "hi": "5 μF"
+            },
+            {
+              "en": "6 μF",
+              "hi": "6 μF"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Parallel capacitances add: Cₑq = 2 + 3 = 5 μF.",
+          "explanationHi": "समांतर धारिताएँ जुड़ती हैं: Cₑq = 2 + 3 = 5 μF।"
+        },
+        {
+          "id": 24,
+          "category": "Formula",
+          "questionEn": "Capacitors 6 μF and 3 μF connected in series have equivalent capacitance:",
+          "questionHi": "6 μF और 3 μF संधारित्र श्रेणी क्रम में जुड़े हैं। तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "1 μF",
+              "hi": "1 μF"
+            },
+            {
+              "en": "2 μF",
+              "hi": "2 μF"
+            },
+            {
+              "en": "3 μF",
+              "hi": "3 μF"
+            },
+            {
+              "en": "9 μF",
+              "hi": "9 μF"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Cₑq = C₁C₂/(C₁+C₂) = 18/9 = 2 μF.",
+          "explanationHi": "Cₑq = C₁C₂/(C₁+C₂) = 18/9 = 2 μF।"
+        },
+        {
+          "id": 25,
+          "category": "Formula",
+          "questionEn": "Capacitors 2 μF, 3 μF and 6 μF are in series. Their equivalent capacitance is:",
+          "questionHi": "2 μF, 3 μF और 6 μF संधारित्र श्रेणी क्रम में हैं। तुल्य धारिता है:",
+          "options": [
+            {
+              "en": "1 μF",
+              "hi": "1 μF"
+            },
+            {
+              "en": "2 μF",
+              "hi": "2 μF"
+            },
+            {
+              "en": "3 μF",
+              "hi": "3 μF"
+            },
+            {
+              "en": "11 μF",
+              "hi": "11 μF"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "1/Cₑq = 1/2 + 1/3 + 1/6 = 1, so Cₑq = 1 μF.",
+          "explanationHi": "1/Cₑq = 1/2 + 1/3 + 1/6 = 1, इसलिए Cₑq = 1 μF।"
+        },
+        {
+          "id": 26,
+          "category": "Formula",
+          "questionEn": "A capacitor has Q = 20 μC and C = 4 μF. Its stored energy is:",
+          "questionHi": "एक संधारित्र में Q = 20 μC और C = 4 μF है। संचित ऊर्जा है:",
+          "options": [
+            {
+              "en": "25 μJ",
+              "hi": "25 μJ"
+            },
+            {
+              "en": "50 μJ",
+              "hi": "50 μJ"
+            },
+            {
+              "en": "100 μJ",
+              "hi": "100 μJ"
+            },
+            {
+              "en": "200 μJ",
+              "hi": "200 μJ"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "U = Q²/(2C) = (20×10⁻⁶)²/(8×10⁻⁶) = 50 μJ.",
+          "explanationHi": "U = Q²/(2C) = (20×10⁻⁶)²/(8×10⁻⁶) = 50 μJ।"
+        },
+        {
+          "id": 27,
+          "category": "Application",
+          "questionEn": "A capacitor remains connected to a battery while its plate separation is doubled. Its stored energy becomes:",
+          "questionHi": "संधारित्र बैटरी से जुड़ा है और पट्टों की दूरी दोगुनी की जाती है। उसकी संचित ऊर्जा होगी:",
+          "options": [
+            {
+              "en": "2U",
+              "hi": "2U"
+            },
+            {
+              "en": "U",
+              "hi": "U"
+            },
+            {
+              "en": "U/2",
+              "hi": "U/2"
+            },
+            {
+              "en": "U/4",
+              "hi": "U/4"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "At fixed V, U = ½CV² and C ∝ 1/d, so doubling d makes U/2.",
+          "explanationHi": "नियत V पर U = ½CV² और C ∝ 1/d है, इसलिए d दोगुना करने पर ऊर्जा U/2 होती है।"
+        },
+        {
+          "id": 28,
+          "category": "Application",
+          "questionEn": "An isolated charged parallel-plate capacitor has its plate separation doubled. Its stored energy becomes:",
+          "questionHi": "विलगित आवेशित समांतर-पट्ट संधारित्र के पट्टों की दूरी दोगुनी की जाती है। उसकी ऊर्जा होगी:",
+          "options": [
+            {
+              "en": "U/2",
+              "hi": "U/2"
+            },
+            {
+              "en": "U",
+              "hi": "U"
+            },
+            {
+              "en": "2U",
+              "hi": "2U"
+            },
+            {
+              "en": "4U",
+              "hi": "4U"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "For fixed Q, U = Q²/(2C). Since C halves, energy doubles to 2U.",
+          "explanationHi": "नियत Q पर U = Q²/(2C) है। C आधा होने से ऊर्जा 2U हो जाती है।"
+        },
+        {
+          "id": 29,
+          "category": "Formula",
+          "questionEn": "A dielectric of constant 4 fully fills a capacitor of capacitance C. The new capacitance is:",
+          "questionHi": "परावैद्युतांक 4 का पदार्थ C धारिता वाले संधारित्र को पूर्णतः भरता है। नई धारिता है:",
+          "options": [
+            {
+              "en": "C/4",
+              "hi": "C/4"
+            },
+            {
+              "en": "C",
+              "hi": "C"
+            },
+            {
+              "en": "2C",
+              "hi": "2C"
+            },
+            {
+              "en": "4C",
+              "hi": "4C"
+            }
+          ],
+          "correctOption": 3,
+          "explanationEn": "For full dielectric filling, C' = KC = 4C.",
+          "explanationHi": "पूर्ण परावैद्युत भराव के लिए C' = KC = 4C।"
+        },
+        {
+          "id": 30,
+          "category": "Formula",
+          "questionEn": "The potential of a short dipole at a distant point (r, θ) is proportional to:",
+          "questionHi": "लघु द्विध्रुव से दूर बिंदु (r, θ) पर विभव किसके समानुपाती है?",
+          "options": [
+            {
+              "en": "p cos θ/r²",
+              "hi": "p cos θ/r²"
+            },
+            {
+              "en": "p sin θ/r²",
+              "hi": "p sin θ/r²"
+            },
+            {
+              "en": "p cos θ/r",
+              "hi": "p cos θ/r"
+            },
+            {
+              "en": "p/r³",
+              "hi": "p/r³"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The dipole potential is V = p cos θ/(4πε₀r²).",
+          "explanationHi": "द्विध्रुव का विभव V = p cos θ/(4πε₀r²) होता है।"
+        }
+      ]
+    },
+    {
+      "id": "set-04",
+      "number": 4,
+      "titleEn": "Electrostatics Test Set 04",
+      "titleHi": "स्थिर वैद्युतिकी टेस्ट सेट 04",
+      "focusEn": "Units, Dimensions and Facts",
+      "focusHi": "मात्रक, विमाएँ एवं तथ्य",
+      "downloadPath": "/downloads/class-12-board-2027-electrostatics-test-set-04.pdf",
+      "questions": [
+        {
+          "id": 1,
+          "category": "Dimension",
+          "questionEn": "The dimensional formula of electric charge is:",
+          "questionHi": "विद्युत आवेश का विमीय सूत्र है:",
+          "options": [
+            {
+              "en": "[IT]",
+              "hi": "[IT]"
+            },
+            {
+              "en": "[I/T]",
+              "hi": "[I/T]"
+            },
+            {
+              "en": "[MLT⁻²]",
+              "hi": "[MLT⁻²]"
+            },
+            {
+              "en": "[ML²T⁻³I⁻¹]",
+              "hi": "[ML²T⁻³I⁻¹]"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Charge Q = current×time, so [Q] = [IT].",
+          "explanationHi": "आवेश Q = धारा×समय, इसलिए [Q] = [IT]।"
+        },
+        {
+          "id": 2,
+          "category": "Dimension",
+          "questionEn": "The dimensional formula of electric field is:",
+          "questionHi": "विद्युत क्षेत्र का विमीय सूत्र है:",
+          "options": [
+            {
+              "en": "[MLT⁻³I⁻¹]",
+              "hi": "[MLT⁻³I⁻¹]"
+            },
+            {
+              "en": "[ML²T⁻³I⁻¹]",
+              "hi": "[ML²T⁻³I⁻¹]"
+            },
+            {
+              "en": "[M⁻¹L⁻³T⁴I²]",
+              "hi": "[M⁻¹L⁻³T⁴I²]"
+            },
+            {
+              "en": "[IT]",
+              "hi": "[IT]"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "E = F/Q, hence [E] = [MLT⁻²]/[IT] = [MLT⁻³I⁻¹].",
+          "explanationHi": "E = F/Q, अतः [E] = [MLT⁻²]/[IT] = [MLT⁻³I⁻¹]।"
+        },
+        {
+          "id": 3,
+          "category": "Dimension",
+          "questionEn": "The dimensional formula of electric potential is:",
+          "questionHi": "विद्युत विभव का विमीय सूत्र है:",
+          "options": [
+            {
+              "en": "[MLT⁻³I⁻¹]",
+              "hi": "[MLT⁻³I⁻¹]"
+            },
+            {
+              "en": "[ML²T⁻³I⁻¹]",
+              "hi": "[ML²T⁻³I⁻¹]"
+            },
+            {
+              "en": "[M⁻¹L⁻²T⁴I²]",
+              "hi": "[M⁻¹L⁻²T⁴I²]"
+            },
+            {
+              "en": "[ML²T⁻²]",
+              "hi": "[ML²T⁻²]"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Potential is work per charge, so [V] = [ML²T⁻²]/[IT] = [ML²T⁻³I⁻¹].",
+          "explanationHi": "विभव प्रति आवेश कार्य है, इसलिए [V] = [ML²T⁻²]/[IT] = [ML²T⁻³I⁻¹]।"
+        },
+        {
+          "id": 4,
+          "category": "Dimension",
+          "questionEn": "The dimensional formula of capacitance is:",
+          "questionHi": "धारिता का विमीय सूत्र है:",
+          "options": [
+            {
+              "en": "[M⁻¹L⁻²T⁴I²]",
+              "hi": "[M⁻¹L⁻²T⁴I²]"
+            },
+            {
+              "en": "[ML²T⁻⁴I⁻²]",
+              "hi": "[ML²T⁻⁴I⁻²]"
+            },
+            {
+              "en": "[M⁻¹L⁻³T⁴I²]",
+              "hi": "[M⁻¹L⁻³T⁴I²]"
+            },
+            {
+              "en": "[IT]",
+              "hi": "[IT]"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "C = Q/V gives [C] = [IT]/[ML²T⁻³I⁻¹] = [M⁻¹L⁻²T⁴I²].",
+          "explanationHi": "C = Q/V से [C] = [IT]/[ML²T⁻³I⁻¹] = [M⁻¹L⁻²T⁴I²]।"
+        },
+        {
+          "id": 5,
+          "category": "Dimension",
+          "questionEn": "The dimensional formula of vacuum permittivity ε₀ is:",
+          "questionHi": "निर्वात विद्युतशीलता ε₀ का विमीय सूत्र है:",
+          "options": [
+            {
+              "en": "[M⁻¹L⁻³T⁴I²]",
+              "hi": "[M⁻¹L⁻³T⁴I²]"
+            },
+            {
+              "en": "[ML³T⁻⁴I⁻²]",
+              "hi": "[ML³T⁻⁴I⁻²]"
+            },
+            {
+              "en": "[M⁻¹L⁻²T⁴I²]",
+              "hi": "[M⁻¹L⁻²T⁴I²]"
+            },
+            {
+              "en": "[MLT⁻³I⁻¹]",
+              "hi": "[MLT⁻³I⁻¹]"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "From Coulomb's law, ε₀ has dimensions [Q²/(Fr²)] = [M⁻¹L⁻³T⁴I²].",
+          "explanationHi": "कूलॉम नियम से ε₀ की विमा [Q²/(Fr²)] = [M⁻¹L⁻³T⁴I²] है।"
+        },
+        {
+          "id": 6,
+          "category": "Unit",
+          "questionEn": "The SI unit of electric flux is:",
+          "questionHi": "विद्युत फ्लक्स का SI मात्रक है:",
+          "options": [
+            {
+              "en": "N m² C⁻¹",
+              "hi": "N m² C⁻¹"
+            },
+            {
+              "en": "N C⁻²",
+              "hi": "N C⁻²"
+            },
+            {
+              "en": "V m⁻²",
+              "hi": "V m⁻²"
+            },
+            {
+              "en": "C m⁻²",
+              "hi": "C m⁻²"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Flux Φ = E·A, so its unit is (N C⁻¹)m² = N m² C⁻¹.",
+          "explanationHi": "फ्लक्स Φ = E·A, इसलिए मात्रक (N C⁻¹)m² = N m² C⁻¹ है।"
+        },
+        {
+          "id": 7,
+          "category": "Unit",
+          "questionEn": "The SI unit of electric dipole moment is:",
+          "questionHi": "विद्युत द्विध्रुव आघूर्ण का SI मात्रक है:",
+          "options": [
+            {
+              "en": "C m",
+              "hi": "C m"
+            },
+            {
+              "en": "C m⁻¹",
+              "hi": "C m⁻¹"
+            },
+            {
+              "en": "N C⁻¹",
+              "hi": "N C⁻¹"
+            },
+            {
+              "en": "J C⁻¹",
+              "hi": "J C⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Dipole moment p = charge×separation, giving unit C m.",
+          "explanationHi": "द्विध्रुव आघूर्ण p = आवेश×दूरी, इसलिए मात्रक C m है।"
+        },
+        {
+          "id": 8,
+          "category": "Unit",
+          "questionEn": "The SI unit of surface charge density is:",
+          "questionHi": "पृष्ठ आवेश घनत्व का SI मात्रक है:",
+          "options": [
+            {
+              "en": "C m⁻¹",
+              "hi": "C m⁻¹"
+            },
+            {
+              "en": "C m⁻²",
+              "hi": "C m⁻²"
+            },
+            {
+              "en": "C m⁻³",
+              "hi": "C m⁻³"
+            },
+            {
+              "en": "N C⁻¹",
+              "hi": "N C⁻¹"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Surface charge density σ = Q/A, so its unit is C m⁻².",
+          "explanationHi": "पृष्ठ आवेश घनत्व σ = Q/A, इसलिए मात्रक C m⁻² है।"
+        },
+        {
+          "id": 9,
+          "category": "Unit",
+          "questionEn": "The SI unit of electrostatic energy density is:",
+          "questionHi": "विद्युत स्थैतिक ऊर्जा घनत्व का SI मात्रक है:",
+          "options": [
+            {
+              "en": "J m⁻¹",
+              "hi": "J m⁻¹"
+            },
+            {
+              "en": "J m⁻²",
+              "hi": "J m⁻²"
+            },
+            {
+              "en": "J m⁻³",
+              "hi": "J m⁻³"
+            },
+            {
+              "en": "J C⁻¹",
+              "hi": "J C⁻¹"
+            }
+          ],
+          "correctOption": 2,
+          "explanationEn": "Energy density is energy per volume, so its SI unit is J m⁻³.",
+          "explanationHi": "ऊर्जा घनत्व प्रति आयतन ऊर्जा है, इसलिए SI मात्रक J m⁻³ है।"
+        },
+        {
+          "id": 10,
+          "category": "Unit",
+          "questionEn": "The SI unit of Coulomb constant k is:",
+          "questionHi": "कूलॉम नियतांक k का SI मात्रक है:",
+          "options": [
+            {
+              "en": "N m² C⁻²",
+              "hi": "N m² C⁻²"
+            },
+            {
+              "en": "N m C⁻¹",
+              "hi": "N m C⁻¹"
+            },
+            {
+              "en": "C² N⁻¹ m⁻²",
+              "hi": "C² N⁻¹ m⁻²"
+            },
+            {
+              "en": "J C⁻¹",
+              "hi": "J C⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "From F = kq₁q₂/r², k has unit N m² C⁻².",
+          "explanationHi": "F = kq₁q₂/r² से k का मात्रक N m² C⁻² है।"
+        },
+        {
+          "id": 11,
+          "category": "Dimension",
+          "questionEn": "Relative permittivity (dielectric constant) is:",
+          "questionHi": "सापेक्ष विद्युतशीलता (परावैद्युतांक) है:",
+          "options": [
+            {
+              "en": "Dimensionless",
+              "hi": "विमाहीन"
+            },
+            {
+              "en": "Measured in farad",
+              "hi": "फैराड में मापी जाती है"
+            },
+            {
+              "en": "Measured in volt",
+              "hi": "वोल्ट में मापी जाती है"
+            },
+            {
+              "en": "Measured in coulomb",
+              "hi": "कूलॉम में मापी जाती है"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Relative permittivity is the ratio ε/ε₀ and therefore has no dimensions.",
+          "explanationHi": "सापेक्ष विद्युतशीलता ε/ε₀ का अनुपात है, इसलिए यह विमाहीन है।"
+        },
+        {
+          "id": 12,
+          "category": "Unit",
+          "questionEn": "The SI unit of potential coefficient is:",
+          "questionHi": "विभव गुणांक का SI मात्रक है:",
+          "options": [
+            {
+              "en": "V C⁻¹",
+              "hi": "V C⁻¹"
+            },
+            {
+              "en": "V C",
+              "hi": "V C"
+            },
+            {
+              "en": "C V⁻¹",
+              "hi": "C V⁻¹"
+            },
+            {
+              "en": "N C⁻¹",
+              "hi": "N C⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "A potential coefficient relates potential to charge, so its unit is V/C.",
+          "explanationHi": "विभव गुणांक विभव को आवेश से संबंधित करता है, इसलिए इसका मात्रक V/C है।"
+        },
+        {
+          "id": 13,
+          "category": "Unit",
+          "questionEn": "The reciprocal of capacitance is called elastance and has unit:",
+          "questionHi": "धारिता के व्युत्क्रम को इलास्टेंस कहते हैं और इसका मात्रक है:",
+          "options": [
+            {
+              "en": "F",
+              "hi": "F"
+            },
+            {
+              "en": "F⁻¹",
+              "hi": "F⁻¹"
+            },
+            {
+              "en": "V",
+              "hi": "V"
+            },
+            {
+              "en": "C",
+              "hi": "C"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "Elastance S = 1/C, so its unit is inverse farad, F⁻¹.",
+          "explanationHi": "इलास्टेंस S = 1/C, इसलिए इसका मात्रक प्रतिलोम फैराड F⁻¹ है।"
+        },
+        {
+          "id": 14,
+          "category": "Unit",
+          "questionEn": "Which of the following is NOT a unit of energy?",
+          "questionHi": "निम्न में से कौन ऊर्जा का मात्रक नहीं है?",
+          "options": [
+            {
+              "en": "J",
+              "hi": "J"
+            },
+            {
+              "en": "C V",
+              "hi": "C V"
+            },
+            {
+              "en": "N m",
+              "hi": "N m"
+            },
+            {
+              "en": "F",
+              "hi": "F"
+            }
+          ],
+          "correctOption": 3,
+          "explanationEn": "Farad is the unit of capacitance; J, C V and N m are energy units.",
+          "explanationHi": "फैराड धारिता का मात्रक है; J, C V और N m ऊर्जा के मात्रक हैं।"
+        },
+        {
+          "id": 15,
+          "category": "Unit",
+          "questionEn": "Electric field can also be expressed in the equivalent SI unit:",
+          "questionHi": "विद्युत क्षेत्र को किस समतुल्य SI मात्रक में भी व्यक्त किया जा सकता है?",
+          "options": [
+            {
+              "en": "V m⁻¹",
+              "hi": "V m⁻¹"
+            },
+            {
+              "en": "V m",
+              "hi": "V m"
+            },
+            {
+              "en": "C m⁻¹",
+              "hi": "C m⁻¹"
+            },
+            {
+              "en": "J m⁻¹",
+              "hi": "J m⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Since E = -dV/dr, N C⁻¹ is equivalent to V m⁻¹.",
+          "explanationHi": "E = -dV/dr होने से N C⁻¹ का समतुल्य मात्रक V m⁻¹ है।"
+        },
+        {
+          "id": 16,
+          "category": "Fact",
+          "questionEn": "One microfarad equals:",
+          "questionHi": "एक माइक्रोफैराड बराबर है:",
+          "options": [
+            {
+              "en": "10⁻³ F",
+              "hi": "10⁻³ F"
+            },
+            {
+              "en": "10⁻⁶ F",
+              "hi": "10⁻⁶ F"
+            },
+            {
+              "en": "10⁻⁹ F",
+              "hi": "10⁻⁹ F"
+            },
+            {
+              "en": "10⁻¹² F",
+              "hi": "10⁻¹² F"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "The SI prefix micro (μ) denotes 10⁻⁶.",
+          "explanationHi": "SI उपसर्ग माइक्रो (μ) का अर्थ 10⁻⁶ है।"
+        },
+        {
+          "id": 17,
+          "category": "Fact",
+          "questionEn": "The magnitude of the elementary charge is approximately:",
+          "questionHi": "मूल आवेश का परिमाण लगभग है:",
+          "options": [
+            {
+              "en": "1.6×10⁻¹⁹ C",
+              "hi": "1.6×10⁻¹⁹ C"
+            },
+            {
+              "en": "9.1×10⁻³¹ C",
+              "hi": "9.1×10⁻³¹ C"
+            },
+            {
+              "en": "6.67×10⁻¹¹ C",
+              "hi": "6.67×10⁻¹¹ C"
+            },
+            {
+              "en": "8.85×10⁻¹² C",
+              "hi": "8.85×10⁻¹² C"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The elementary charge magnitude is e = 1.602×10⁻¹⁹ C.",
+          "explanationHi": "मूल आवेश का परिमाण e = 1.602×10⁻¹⁹ C है।"
+        },
+        {
+          "id": 18,
+          "category": "Fact",
+          "questionEn": "The approximate value of vacuum permittivity ε₀ is:",
+          "questionHi": "निर्वात विद्युतशीलता ε₀ का लगभग मान है:",
+          "options": [
+            {
+              "en": "8.85×10⁻¹² C² N⁻¹ m⁻²",
+              "hi": "8.85×10⁻¹² C² N⁻¹ m⁻²"
+            },
+            {
+              "en": "9×10⁹ C² N⁻¹ m⁻²",
+              "hi": "9×10⁹ C² N⁻¹ m⁻²"
+            },
+            {
+              "en": "1.6×10⁻¹⁹ C",
+              "hi": "1.6×10⁻¹⁹ C"
+            },
+            {
+              "en": "6.02×10²³ F m⁻¹",
+              "hi": "6.02×10²³ F m⁻¹"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "In SI units ε₀ ≈ 8.85×10⁻¹² C² N⁻¹ m⁻².",
+          "explanationHi": "SI मात्रकों में ε₀ ≈ 8.85×10⁻¹² C² N⁻¹ m⁻²।"
+        },
+        {
+          "id": 19,
+          "category": "Fact",
+          "questionEn": "The approximate value of 1/(4πε₀) in vacuum is:",
+          "questionHi": "निर्वात में 1/(4πε₀) का लगभग मान है:",
+          "options": [
+            {
+              "en": "9×10⁹ N m² C⁻²",
+              "hi": "9×10⁹ N m² C⁻²"
+            },
+            {
+              "en": "8.85×10⁻¹² N m² C⁻²",
+              "hi": "8.85×10⁻¹² N m² C⁻²"
+            },
+            {
+              "en": "3×10⁸ N m² C⁻²",
+              "hi": "3×10⁸ N m² C⁻²"
+            },
+            {
+              "en": "1.6×10⁻¹⁹ N m² C⁻²",
+              "hi": "1.6×10⁻¹⁹ N m² C⁻²"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The Coulomb constant k = 1/(4πε₀) ≈ 9×10⁹ N m² C⁻².",
+          "explanationHi": "कूलॉम नियतांक k = 1/(4πε₀) ≈ 9×10⁹ N m² C⁻²।"
+        },
+        {
+          "id": 20,
+          "category": "Fact",
+          "questionEn": "One electron-volt is equal to:",
+          "questionHi": "एक इलेक्ट्रॉन-वोल्ट बराबर है:",
+          "options": [
+            {
+              "en": "1.6×10⁻¹⁹ J",
+              "hi": "1.6×10⁻¹⁹ J"
+            },
+            {
+              "en": "1 J",
+              "hi": "1 J"
+            },
+            {
+              "en": "9×10⁹ J",
+              "hi": "9×10⁹ J"
+            },
+            {
+              "en": "8.85×10⁻¹² J",
+              "hi": "8.85×10⁻¹² J"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "1 eV is the energy gained by charge e across 1 V, equal to 1.602×10⁻¹⁹ J.",
+          "explanationHi": "1 eV वह ऊर्जा है जो आवेश e को 1 V विभवांतर से मिलती है, अर्थात 1.602×10⁻¹⁹ J।"
+        },
+        {
+          "id": 21,
+          "category": "Fact",
+          "questionEn": "A greater density of electric field lines in a region represents:",
+          "questionHi": "किसी क्षेत्र में विद्युत क्षेत्र रेखाओं का अधिक घनत्व दर्शाता है:",
+          "options": [
+            {
+              "en": "A stronger electric field",
+              "hi": "अधिक प्रबल विद्युत क्षेत्र"
+            },
+            {
+              "en": "A weaker electric field",
+              "hi": "कमजोर विद्युत क्षेत्र"
+            },
+            {
+              "en": "Zero potential only",
+              "hi": "केवल शून्य विभव"
+            },
+            {
+              "en": "No charge anywhere",
+              "hi": "कहीं कोई आवेश नहीं"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Field-line density is drawn proportional to the magnitude of the electric field.",
+          "explanationHi": "क्षेत्र रेखाओं का घनत्व विद्युत क्षेत्र के परिमाण के समानुपाती दर्शाया जाता है।"
+        },
+        {
+          "id": 22,
+          "category": "Fact",
+          "questionEn": "Electric flux is a:",
+          "questionHi": "विद्युत फ्लक्स एक है:",
+          "options": [
+            {
+              "en": "Scalar quantity",
+              "hi": "अदिश राशि"
+            },
+            {
+              "en": "Vector quantity",
+              "hi": "सदिश राशि"
+            },
+            {
+              "en": "Dimensionless vector",
+              "hi": "विमाहीन सदिश"
+            },
+            {
+              "en": "Tensor only",
+              "hi": "केवल टेन्सर"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Flux is the scalar surface integral ∫E·dA, so it is a scalar.",
+          "explanationHi": "फ्लक्स अदिश पृष्ठ समाकल ∫E·dA है, इसलिए यह अदिश राशि है।"
+        },
+        {
+          "id": 23,
+          "category": "Fact",
+          "questionEn": "The electric dipole moment vector points from:",
+          "questionHi": "विद्युत द्विध्रुव आघूर्ण सदिश की दिशा होती है:",
+          "options": [
+            {
+              "en": "Positive to negative charge",
+              "hi": "धन से ऋण आवेश की ओर"
+            },
+            {
+              "en": "Negative to positive charge",
+              "hi": "ऋण से धन आवेश की ओर"
+            },
+            {
+              "en": "The midpoint to infinity",
+              "hi": "मध्य बिंदु से अनंत की ओर"
+            },
+            {
+              "en": "Higher mass to lower mass",
+              "hi": "अधिक द्रव्यमान से कम द्रव्यमान की ओर"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "By convention, dipole moment points from negative charge to positive charge.",
+          "explanationHi": "परंपरा के अनुसार द्विध्रुव आघूर्ण ऋण आवेश से धन आवेश की ओर होता है।"
+        },
+        {
+          "id": 24,
+          "category": "Fact",
+          "questionEn": "At any point, the tangent to an electric field line gives:",
+          "questionHi": "किसी बिंदु पर विद्युत क्षेत्र रेखा की स्पर्शरेखा बताती है:",
+          "options": [
+            {
+              "en": "Direction of electric field",
+              "hi": "विद्युत क्षेत्र की दिशा"
+            },
+            {
+              "en": "Direction of current always",
+              "hi": "सदैव धारा की दिशा"
+            },
+            {
+              "en": "Value of potential only",
+              "hi": "केवल विभव का मान"
+            },
+            {
+              "en": "Mass of test charge",
+              "hi": "परीक्षण आवेश का द्रव्यमान"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The tangent to a field line is defined to be along the local electric field.",
+          "explanationHi": "क्षेत्र रेखा की स्पर्शरेखा स्थानीय विद्युत क्षेत्र की दिशा में परिभाषित होती है।"
+        },
+        {
+          "id": 25,
+          "category": "Fact",
+          "questionEn": "Electrostatic field lines do not form closed loops because the field is:",
+          "questionHi": "विद्युत स्थैतिक क्षेत्र रेखाएँ बंद लूप नहीं बनातीं क्योंकि क्षेत्र है:",
+          "options": [
+            {
+              "en": "Conservative",
+              "hi": "संरक्षी"
+            },
+            {
+              "en": "Always uniform",
+              "hi": "सदैव एकसमान"
+            },
+            {
+              "en": "Always radial",
+              "hi": "सदैव त्रिज्यीय"
+            },
+            {
+              "en": "Time varying",
+              "hi": "समय परिवर्ती"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "A closed field-line loop would imply non-zero work around a closed path, contradicting conservative electrostatics.",
+          "explanationHi": "बंद क्षेत्र रेखा लूप बंद पथ पर अशून्य कार्य दर्शाएगा, जो संरक्षी विद्युत स्थैतिक क्षेत्र के विपरीत है।"
+        },
+        {
+          "id": 26,
+          "category": "Fact",
+          "questionEn": "Inside a charged conducting spherical shell, electric potential is:",
+          "questionHi": "आवेशित चालक गोलाकार खोल के भीतर विद्युत विभव है:",
+          "options": [
+            {
+              "en": "Constant and equal to the surface potential",
+              "hi": "नियत और सतही विभव के बराबर"
+            },
+            {
+              "en": "Zero in every case",
+              "hi": "हर स्थिति में शून्य"
+            },
+            {
+              "en": "Proportional to distance from centre",
+              "hi": "केंद्र से दूरी के समानुपाती"
+            },
+            {
+              "en": "Infinite at the centre",
+              "hi": "केंद्र पर अनंत"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The internal field is zero, so potential has no spatial change and equals the surface value.",
+          "explanationHi": "आंतरिक क्षेत्र शून्य है, इसलिए विभव स्थान के साथ नहीं बदलता और सतही मान के बराबर रहता है।"
+        },
+        {
+          "id": 27,
+          "category": "Formula",
+          "questionEn": "The electric field just outside a conductor with surface charge density σ is:",
+          "questionHi": "पृष्ठ आवेश घनत्व σ वाले चालक के ठीक बाहर विद्युत क्षेत्र है:",
+          "options": [
+            {
+              "en": "σ/ε₀",
+              "hi": "σ/ε₀"
+            },
+            {
+              "en": "σ/(2ε₀)",
+              "hi": "σ/(2ε₀)"
+            },
+            {
+              "en": "2σ/ε₀",
+              "hi": "2σ/ε₀"
+            },
+            {
+              "en": "ε₀σ",
+              "hi": "ε₀σ"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "Using a Gaussian pillbox with zero internal field gives E = σ/ε₀ just outside a conductor.",
+          "explanationHi": "गाउसीय पिलबॉक्स और शून्य आंतरिक क्षेत्र से चालक के बाहर E = σ/ε₀ मिलता है।"
+        },
+        {
+          "id": 28,
+          "category": "Formula",
+          "questionEn": "Electrostatic pressure on a conductor carrying surface charge density σ is:",
+          "questionHi": "पृष्ठ आवेश घनत्व σ वाले चालक पर विद्युत स्थैतिक दाब है:",
+          "options": [
+            {
+              "en": "σ²/(2ε₀)",
+              "hi": "σ²/(2ε₀)"
+            },
+            {
+              "en": "σ/ε₀",
+              "hi": "σ/ε₀"
+            },
+            {
+              "en": "2σ²/ε₀",
+              "hi": "2σ²/ε₀"
+            },
+            {
+              "en": "ε₀σ²",
+              "hi": "ε₀σ²"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "The outward electrostatic pressure is P = ½ε₀E² = σ²/(2ε₀).",
+          "explanationHi": "बाहर की ओर विद्युत स्थैतिक दाब P = ½ε₀E² = σ²/(2ε₀) होता है।"
+        },
+        {
+          "id": 29,
+          "category": "Fact",
+          "questionEn": "The capacitance of an isolated sphere is directly proportional to its:",
+          "questionHi": "विलगित गोले की धारिता किसके समानुपाती होती है?",
+          "options": [
+            {
+              "en": "Radius",
+              "hi": "त्रिज्या"
+            },
+            {
+              "en": "Surface charge only",
+              "hi": "केवल सतही आवेश"
+            },
+            {
+              "en": "Potential squared",
+              "hi": "विभव के वर्ग"
+            },
+            {
+              "en": "Mass",
+              "hi": "द्रव्यमान"
+            }
+          ],
+          "correctOption": 0,
+          "explanationEn": "For an isolated sphere C = 4πε₀R, hence C ∝ R.",
+          "explanationHi": "विलगित गोले के लिए C = 4πε₀R, अतः C ∝ R।"
+        },
+        {
+          "id": 30,
+          "category": "Fact",
+          "questionEn": "The electric charge carried by an electron is:",
+          "questionHi": "इलेक्ट्रॉन द्वारा वहन किया गया विद्युत आवेश है:",
+          "options": [
+            {
+              "en": "+e",
+              "hi": "+e"
+            },
+            {
+              "en": "-e",
+              "hi": "-e"
+            },
+            {
+              "en": "0",
+              "hi": "0"
+            },
+            {
+              "en": "+2e",
+              "hi": "+2e"
+            }
+          ],
+          "correctOption": 1,
+          "explanationEn": "An electron carries one negative elementary charge, -e.",
+          "explanationHi": "इलेक्ट्रॉन एक ऋणात्मक मूल आवेश -e वहन करता है।"
+        }
+      ]
+    }
+  ]
+}

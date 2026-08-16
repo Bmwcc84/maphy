@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import BrandLogo from "@/components/BrandLogo";
 import { supabase } from "@/lib/supabase";
 
 const pdfPath = "/notes/formula-chart.pdf";
@@ -49,9 +50,8 @@ export default function NotesPage() {
     <main className="min-h-screen bg-[#f7f9fc] text-slate-950">
       <header className="border-b border-white/10 bg-[#07111f] px-5 py-4 text-white sm:px-8 lg:px-16">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-          <Link href="/dashboard" className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-300 font-black text-slate-950">M</span>
-            <span className="text-xl font-black">MAPHY</span>
+          <Link href="/dashboard" aria-label="MAPHY dashboard">
+            <BrandLogo />
           </Link>
           <Link href="/dashboard" className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-bold transition hover:bg-white/15">
             Back to dashboard

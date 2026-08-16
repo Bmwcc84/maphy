@@ -1,16 +1,14 @@
 import Link from "next/link";
-import ElectrostaticsPreview from "../../../components/ElectrostaticsPreview";
+import BrandLogo from "@/components/BrandLogo";
+import HandwrittenNotesPreview from "../../../components/HandwrittenNotesPreview";
 
 export default function ElectrostaticsPreviewPage() {
   return (
     <main className="min-h-screen bg-[#07111f] px-5 py-8 text-white sm:px-8 lg:px-16">
       <div className="mx-auto max-w-5xl">
         <header className="flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-3 text-white">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-300 text-lg font-black text-slate-950">
-              M
-            </span>
-            <span className="text-xl font-black">MAPHY</span>
+          <Link href="/" className="text-white" aria-label="MAPHY home">
+            <BrandLogo />
           </Link>
           <Link
             href="/"
@@ -25,15 +23,21 @@ export default function ElectrostaticsPreviewPage() {
             Electrostatics Preview
           </p>
           <h1 className="mt-3 text-4xl font-black tracking-normal sm:text-5xl">
-            1 minute free preview
+            ELECTROSTATICS HANDWRITTEN NOTES
           </h1>
           <p className="mt-4 max-w-2xl leading-7 text-slate-300">
-            Timer yahin start hota hai. 1 minute ke baad preview lock hoga aur
-            full handwritten notes ke liye Rs 50 payment demand aayegi.
+            Email login ke baad is chapter ka preview sirf ek baar milega.
+            Poora PDF 2 minute tak scroll karein; uske baad account permanently
+            lock hoga aur full notes Rs 50 me milenge.
           </p>
         </section>
 
-        <ElectrostaticsPreview />
+        <HandwrittenNotesPreview
+          courseId="electrostatics-handwritten-notes"
+          pageCount={93}
+          previewId="electrostatics"
+          title="Electrostatics Handwritten Notes"
+        />
       </div>
     </main>
   );

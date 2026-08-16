@@ -1,5 +1,57 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import JsonLd from "../components/JsonLd";
+import { createPublicMetadata, siteConfig } from "../lib/seo";
+
+const homeDescription =
+  "Class 12 Physics bilingual test series, handwritten chapter notes and BPSC TRE 4 online practice tests with instant results and explanations.";
+
+export const metadata: Metadata = createPublicMetadata({
+  title: "Class 12 Physics Tests & Handwritten Notes | MAPHY",
+  description: homeDescription,
+  path: "/",
+});
+
+const homeJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      url: `${siteConfig.url}/`,
+      name: siteConfig.name,
+      alternateName: "MAPHY Physics Learning",
+      description: homeDescription,
+      inLanguage: ["en-IN", "hi-IN"],
+      publisher: { "@id": `${siteConfig.url}/#organization` },
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": `${siteConfig.url}/#organization`,
+      name: siteConfig.name,
+      alternateName: "MAPHY Physics Learning",
+      url: `${siteConfig.url}/`,
+      description: homeDescription,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/maphy-logo-final.png`,
+        width: 1254,
+        height: 1254,
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/#webpage`,
+      url: `${siteConfig.url}/`,
+      name: "Class 12 Physics Tests & Handwritten Notes",
+      description: homeDescription,
+      isPartOf: { "@id": `${siteConfig.url}/#website` },
+      about: { "@id": `${siteConfig.url}/#organization` },
+      inLanguage: ["en-IN", "hi-IN"],
+    },
+  ],
+};
 
 const highlights = [
   { value: "3+", label: "Exam tracks" },
@@ -55,22 +107,135 @@ const resources = [
 export default function Home() {
   return (
     <>
+      <JsonLd data={homeJsonLd} />
       <Navbar />
 
       <main className="min-h-screen bg-[#f7f9fc] text-[#0f172a]">
-        <section className="relative overflow-hidden bg-[#07111f] px-5 pb-20 pt-32 text-white sm:px-8 lg:px-16">
+        <section className="relative overflow-hidden bg-[#07111f] px-5 pb-8 pt-32 text-white sm:px-8 lg:px-16">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(14,165,233,0.18),transparent_30%),radial-gradient(circle_at_84%_16%,rgba(249,115,22,0.13),transparent_28%)]" />
+          <Link
+            href="/bpsc-physics-tre-4?tab=tests"
+            className="relative mx-auto flex max-w-7xl flex-col gap-5 rounded-lg border border-amber-300/40 bg-amber-300 px-5 py-5 text-slate-950 shadow-lg shadow-black/20 transition hover:bg-amber-200 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-slate-700">Complete shuffled test</p>
+              <h2 className="mt-1 text-2xl font-black">BPSC Physics TRE 4.0</h2>
+              <p className="mt-1 font-semibold text-slate-700">All 43 questions in one Hindi-English test with instant result and PDF.</p>
+            </div>
+            <div className="flex shrink-0 items-center gap-3">
+              <span className="text-3xl font-black">Rs 99</span>
+              <span className="rounded-lg bg-slate-950 px-5 py-3 text-sm font-black text-white">View Test</span>
+            </div>
+          </Link>
+        </section>
+
+        <section
+          id="board-2027-tests"
+          className="border-y border-slate-200 bg-white px-5 py-12 sm:px-8 lg:px-16"
+        >
+          <div className="mx-auto mb-10 grid max-w-7xl overflow-hidden rounded-lg bg-[#07111f] text-white lg:grid-cols-[1fr_auto] lg:items-center">
+            <div className="border-l-4 border-cyan-400 px-6 py-7 sm:px-8">
+              <h2 className="max-w-3xl text-3xl font-black uppercase leading-tight text-white sm:text-4xl">
+                Class 12 Physics Test Series Offer
+              </h2>
+              <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-2">
+                <strong className="text-4xl font-black sm:text-5xl">Rs 1 per test</strong>
+                <span className="font-bold text-slate-300">effective series price</span>
+              </div>
+              <p className="mt-3 max-w-2xl font-semibold leading-7 text-slate-300">
+                Complete 30-test series sirf Rs 30 mein. Cycle 30 unique tests complete
+                hone ya activation ke 30 days baad, jo pehle ho, renew hoga.
+                Electrostatics ke 4 sets ab available hain.
+              </p>
+            </div>
+            <div className="flex flex-col items-start gap-4 border-t border-slate-700 px-6 py-7 lg:items-end lg:border-l lg:border-t-0 sm:px-8">
+              <div>
+                <span className="block text-sm font-bold text-slate-400">Full package</span>
+                <strong className="block text-3xl font-black">30 Tests / Rs 30</strong>
+              </div>
+              <Link
+                href="/class-12-board-2027/electrostatics-test"
+                className="rounded-lg bg-orange-500 px-6 py-3 text-sm font-black text-white transition hover:bg-orange-600"
+              >
+                Get Complete Series - Rs 30
+              </Link>
+            </div>
+          </div>
+
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-orange-600">
+                Class 12 Board Exam 2027
+              </p>
+              <h2 className="mt-3 text-4xl font-black leading-tight text-slate-950 sm:text-5xl">
+                Physics Test Series
+              </h2>
+              <p className="mt-5 max-w-xl leading-8 text-slate-600">
+                Chapter-wise bilingual tests for 2027 board preparation. Questions
+                English aur Hindi dono me milenge, aur result submit karte hi dikhega.
+              </p>
+              <div className="mt-7 grid grid-cols-3 gap-4 border-y border-slate-200 py-5">
+                {[
+                  ["4", "Test Sets"],
+                  ["2", "Languages"],
+                  ["120", "Questions"],
+                ].map(([value, label]) => (
+                  <div key={label}>
+                    <strong className="block text-2xl font-black text-cyan-700">{value}</strong>
+                    <span className="mt-1 block text-xs font-bold text-slate-500">{label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href="/class-12-board-2027/electrostatics-test"
+              className="group block rounded-lg border border-slate-200 bg-[#f7f9fc] p-6 shadow-sm transition hover:-translate-y-1 hover:border-cyan-300 hover:shadow-xl sm:p-8"
+            >
+              <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-700">
+                    Folder 01 - Online Test
+                  </p>
+                  <h3 className="mt-3 text-3xl font-black text-slate-950">
+                    Electrostatics
+                  </h3>
+                  <p className="mt-1 text-xl font-bold text-slate-700">
+                    स्थिर वैद्युतिकी
+                  </p>
+                  <p className="mt-4 max-w-2xl leading-7 text-slate-600">
+                    4 sets with 120 different bilingual questions, optional skipping,
+                    detailed explanations and a separate PDF after every result.
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-lg bg-cyan-100 px-4 py-2 text-sm font-black text-cyan-900">
+                  Included in Rs 30 Plan
+                </span>
+              </div>
+              <div className="mt-7 flex items-center justify-between gap-4 border-t border-slate-200 pt-5">
+                <span className="font-bold text-slate-600">Sets 01-04 of Physics Series</span>
+                <span className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-black text-white transition group-hover:bg-orange-600">
+                  View Test Series
+                </span>
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden bg-[#07111f] px-5 py-20 text-white sm:px-8 lg:px-16">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(14,165,233,0.18),transparent_30%),radial-gradient(circle_at_84%_16%,rgba(249,115,22,0.13),transparent_28%)]" />
           <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
             <div>
               <p className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-white/[0.08] px-4 py-2 text-sm font-semibold text-cyan-100">
                 Class 12 Physics handwritten notes
               </p>
-              <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal sm:text-6xl lg:text-7xl">
-                Electrostatics handwritten notes ready hain.
+              <h1 className="max-w-4xl break-words text-4xl font-black leading-[1.04] tracking-normal sm:text-6xl lg:text-7xl">
+                ELECTROSTATICS HANDWRITTEN NOTES
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 Student ko pehle notes ka card dikhega. Click karne ke baad
-                1 minute preview milega, phir Rs 50 payment demand aayegi.
+                2 minute tak poora PDF scroll karke dekh sakta hai. Uske baad
+                Rs 50 payment demand aayegi.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
@@ -105,10 +270,11 @@ export default function Home() {
               </div>
             </div>
 
-            <Link
-              href="/preview/electrostatics"
-              className="group block overflow-hidden rounded-lg border border-white/10 bg-white/[0.07] p-5 shadow-2xl shadow-black/30 transition hover:-translate-y-1 hover:bg-white/[0.1]"
-            >
+            <div className="space-y-5">
+              <Link
+                href="/preview/electrostatics"
+                className="group block overflow-hidden rounded-lg border border-white/10 bg-white/[0.07] p-5 shadow-2xl shadow-black/30 transition hover:-translate-y-1 hover:bg-white/[0.1]"
+              >
               <div className="rounded-lg bg-slate-950/70 p-6">
                 <div className="flex items-start justify-between gap-4 border-b border-white/10 pb-5">
                   <div>
@@ -126,7 +292,7 @@ export default function Home() {
 
                 <div className="mt-6 space-y-4">
                   {[
-                    ["Free preview", "Click ke baad 1 minute tak notes dikhenge"],
+                    ["One-time preview", "Har email login ko preview sirf ek baar milega"],
                     ["Handwritten PDF", "Electrostatics chapter revision material"],
                     ["Unlock full notes", "Preview ke baad payment demand aayegi"],
                   ].map(([title, text], index) => (
@@ -149,7 +315,28 @@ export default function Home() {
                   Click to preview
                 </div>
               </div>
-            </Link>
+              </Link>
+
+              <Link
+                href="/preview/current-electricity"
+                className="group flex items-center justify-between gap-5 rounded-lg border border-cyan-300/20 bg-cyan-300/10 p-5 transition hover:-translate-y-1 hover:bg-cyan-300/15"
+              >
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">
+                    New - 12th Physics Notes
+                  </p>
+                  <h2 className="mt-2 text-2xl font-black text-white">
+                    Current Electricity Handwritten Notes
+                  </h2>
+                  <p className="mt-2 text-sm text-slate-300">
+                    One-time email preview, paid PDF download.
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-lg bg-orange-500 px-4 py-3 font-black text-white">
+                  Rs 50
+                </span>
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -257,31 +444,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="tests" className="bg-[#07111f] px-5 py-20 text-white sm:px-8 lg:px-16">
+        <section id="bpsc-tests" className="bg-[#07111f] px-5 py-20 text-white sm:px-8 lg:px-16">
           <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-200">
-                Start Now
+                BPSC TRE 4.0
               </p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black tracking-normal">
-                Ready for focused Maths and Physics preparation?
+                BPSC Physics Complete Bilingual Test
               </h2>
               <p className="mt-5 max-w-2xl leading-8 text-slate-300">
-                Join MAPHY to get live learning, planned revision, test practice
-                and exam-ready notes in one place.
+                Attempt all 43 shuffled Hindi-English questions in one test, skip any
+                question and get an instant result, explanations and PDF download.
               </p>
             </div>
             <Link
-              href="/login"
+              href="/bpsc-physics-tre-4?tab=tests"
               className="w-full rounded-lg bg-orange-500 px-7 py-4 text-center text-base font-bold text-white shadow-lg shadow-orange-950/30 transition hover:bg-orange-400 md:w-auto"
             >
-              Join MAPHY
+              Get 30-day Access - Rs 99
             </Link>
           </div>
         </section>
 
-        <footer className="bg-slate-950 px-5 py-7 text-center text-sm text-slate-400">
-          MAPHY - Maths and Physics Learning Platform
+        <footer className="bg-slate-950 px-5 py-7 text-sm text-slate-400">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+            <span>MAPHY - Maths and Physics Learning Platform</span>
+            <div className="flex items-center gap-5 font-bold">
+              <Link href="/help" className="transition hover:text-cyan-200">
+                Help Centre
+              </Link>
+              <Link href="/help#feedback" className="transition hover:text-cyan-200">
+                Send Feedback
+              </Link>
+            </div>
+          </div>
         </footer>
       </main>
     </>
