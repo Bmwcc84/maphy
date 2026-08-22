@@ -58,9 +58,9 @@ export default function ClassPage() {
       <section className="bg-slate-950 text-white">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <p className="mb-3 text-sm font-black tracking-[0.25em] text-cyan-300">
-            CONCEPT CLASS
+            CLASS 12 VIDEO CLASSES
           </p>
-          <h1 className="text-4xl font-black sm:text-5xl">Kinematics Sprint</h1>
+          <h1 className="text-4xl font-black sm:text-5xl">Physics Classes & Test Solutions</h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300">
             Video ko dhyan se dekhein aur important points apne notes mein likhein.
           </p>
@@ -96,6 +96,22 @@ export default function ClassPage() {
             </a>
           </div>
         </div>
+
+        <article className="mt-6 rounded-2xl border border-cyan-200 bg-cyan-50 p-6 shadow-sm sm:flex sm:items-center sm:justify-between sm:gap-6">
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-cyan-700">Test solution 01</p>
+            <h2 className="mt-2 text-2xl font-black">Class 12 Test 1 Solution</h2>
+            <p className="mt-2 max-w-2xl text-slate-700">
+              Electrostatics Test 1 ke answers aur explanations yahan dekhein.
+            </p>
+          </div>
+          <Link
+            href="/class-12-board-2027/electrostatics-test"
+            className="mt-5 inline-flex shrink-0 rounded-xl bg-cyan-700 px-6 py-3 font-black text-white transition hover:bg-cyan-800 sm:mt-0"
+          >
+            Test 1 Solution kholen
+          </Link>
+        </article>
       </section>
     </main>
   );
