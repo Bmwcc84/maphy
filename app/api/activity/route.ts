@@ -24,5 +24,9 @@ export async function POST(request: Request) {
 export async function GET(request: Request) {
   const user = await getAuthenticatedUser(request);
   if (user?.email.toLowerCase() !== ADMIN_EMAIL) return NextResponse.json({ error: "Admin access only." }, { status: 403 });
-  return NextResponse.json({ records: await listPrivateActivity() });
+  try {
+    return NextResponse.json({ records: await listPrivateActivity() });
+  } catch {
+    return NextResponse.json({ error: "Private activity storage is not ready yet." }, { status: 503 });
+  }
 }
