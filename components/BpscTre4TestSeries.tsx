@@ -10,6 +10,7 @@ import { splitBpscMathText } from "@/lib/bpsc-math";
 import { bpscTre4AllQuestions, type BpscQuestionFigureCrop } from "@/lib/bpsc-tre-4-series";
 import { bpscTre4Test2Questions, type BpscTre4OnlineQuestion } from "@/lib/bpsc-tre-4-test-2";
 import { bpscTre4Test3Questions } from "@/lib/bpsc-tre-4-test-3";
+import { bpscTre4Test4Questions } from "@/lib/bpsc-tre-4-test-4";
 import { bpscPhysicsTest } from "@/lib/courses";
 import { supabase } from "@/lib/supabase";
 
@@ -47,7 +48,7 @@ type EnrollmentResponse = {
 const tabs: Array<{ id: ResourceTab; label: string; count: string }> = [
   { id: "videos", label: "Video Classes", count: "2 classes" },
   { id: "pdfs", label: "PDF Notes", count: "2 PDFs" },
-  { id: "tests", label: "Online Tests", count: "3 complete tests" },
+  { id: "tests", label: "Online Tests", count: "4 tests" },
 ];
 
 const onlineTests = [
@@ -71,6 +72,13 @@ const onlineTests = [
     description: "Final Test 3 · 80 questions · 90 minutes",
     questions: bpscTre4Test3Questions,
     downloadPath: "/downloads/bpsc-tre-4-test-3-final.pdf",
+    durationMinutes: 90,
+  },
+  {
+    number: 4,
+    title: ["Test 4 - BPSC TRE 4.0 Physics Draft Preview", "टेस्ट 4 - BPSC TRE 4.0 भौतिकी ड्राफ्ट प्रीव्यू"] as [string, string],
+    description: "Draft preview · 80 questions · 90 minutes",
+    questions: bpscTre4Test4Questions,
     durationMinutes: 90,
   },
 ];
@@ -519,10 +527,10 @@ export default function BpscTre4TestSeries() {
           <section className="mx-auto max-w-4xl rounded-lg border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
             <p className="text-xs font-black uppercase text-cyan-700">30-day complete access</p>
             <div className="mt-3 grid gap-6 sm:grid-cols-[1fr_auto] sm:items-start">
-              <div><h2 className="text-3xl font-black">BPSC TRE 4.0 Complete Physics Tests</h2><p className="mt-3 max-w-2xl leading-7 text-slate-600">Test 1 ke 43, Test 2 ke 30 aur Test 3 ke 80 questions, automatic shuffle, timed auto-submit, instant result aur bilingual explanations.</p></div>
+              <div><h2 className="text-3xl font-black">BPSC TRE 4.0 Complete Physics Tests</h2><p className="mt-3 max-w-2xl leading-7 text-slate-600">Test 1 ke 43, Test 2 ke 30, Test 3 ke 80 aur Test 4 ka 80-question draft preview. Test 4 ki Hindi language review ke baad final solutions publish honge.</p></div>
               <div className="border-l-4 border-orange-500 pl-5"><strong className="block text-4xl font-black">Rs 99</strong><span className="mt-1 block text-sm font-bold text-slate-600">30 days</span></div>
             </div>
-            <div className="mt-6 grid gap-3 border-y border-slate-200 py-5 text-sm font-black text-slate-700 sm:grid-cols-3"><span>3 complete tests</span><span>English + Hindi</span><span>Instant result</span></div>
+            <div className="mt-6 grid gap-3 border-y border-slate-200 py-5 text-sm font-black text-slate-700 sm:grid-cols-3"><span>3 complete tests + Test 4 preview</span><span>English + Hindi</span><span>Instant result</span></div>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <button type="button" onClick={() => void startSubscription()} disabled={processing || recovering} className="rounded-lg bg-orange-500 px-6 py-4 font-black text-white hover:bg-orange-600 disabled:opacity-60">{processing ? "Opening checkout..." : "Get 30-day Access - Rs 99"}</button>
               <button type="button" onClick={() => void recoverSubscription()} disabled={processing || recovering} className="rounded-lg border border-slate-300 bg-white px-6 py-4 font-black text-slate-800 hover:bg-slate-50 disabled:opacity-60">{recovering ? "Checking payment..." : "Already paid? Recover Access"}</button>
@@ -537,7 +545,7 @@ export default function BpscTre4TestSeries() {
             <section className="mt-8" aria-labelledby="choose-bpsc-test">
               <p className="text-xs font-black uppercase text-cyan-700">Online test series</p>
               <h2 id="choose-bpsc-test" className="mt-2 text-3xl font-black">Choose your test</h2>
-              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+              <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 {onlineTests.map((test) => {
                   const selected = test.number === selectedTestNumber;
                   return (
