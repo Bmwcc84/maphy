@@ -30,6 +30,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <Link
+            href="/admin/activity"
+            className="rounded-lg border border-cyan-300/70 px-3 py-2.5 text-sm font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-slate-950 sm:px-4"
+          >
+            Admin Activity
+          </Link>
+          <Link
             href="/help"
             className="px-2 py-2 text-sm font-bold text-slate-200 transition hover:text-cyan-200 md:hidden"
           >
