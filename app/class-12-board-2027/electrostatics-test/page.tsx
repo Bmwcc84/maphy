@@ -114,6 +114,8 @@ export default function Class12ElectrostaticsTestPage() {
       const { data } = await supabase.auth.getSession();
       if (!data.session) throw new Error("Progress save karne ke liye dobara login karein.");
 
+      void fetch("/api/activity", { method: "POST", headers: { "Content-Type": "application/json", Authorization: `Bearer ${data.session.access_token}` }, body: JSON.stringify({ kind: "test_attempt", testName: `Class 12 Electrostatics ${selectedTest.id}`, score, totalQuestions: selectedTest.questions.length }) });
+
       const response = await fetch("/api/tests/class-12/complete", {
         method: "POST",
         headers: {

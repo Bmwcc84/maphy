@@ -325,6 +325,9 @@ export default function BpscTre4TestSeries() {
     event.preventDefault();
     setAutoSubmitted(false);
     setShowResult(true);
+    void supabase.auth.getSession().then(({ data }) => {
+      void fetch("/api/activity", { method: "POST", headers: { "Content-Type": "application/json", ...(data.session ? { Authorization: `Bearer ${data.session.access_token}` } : {}) }, body: JSON.stringify({ kind: "test_attempt", testName: selectedTest.title[0], score, totalQuestions: selectedTest.questions.length }) });
+    });
     requestAnimationFrame(() => {
       document.getElementById("bpsc-test-result")?.scrollIntoView({ behavior: "smooth", block: "center" });
     });

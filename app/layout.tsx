@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "katex/dist/katex.min.css";
 import "./globals.css";
 import { siteConfig } from "@/lib/seo";
+import SiteActivityTracker from "@/components/SiteActivityTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -54,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-IN" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col"><SiteActivityTracker />{children}</body>
     </html>
   );
 }

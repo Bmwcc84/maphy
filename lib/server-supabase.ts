@@ -39,6 +39,17 @@ export type StudentFeedback = {
   created_at: string;
 };
 
+export type ActivityRecord = {
+  kind: "visit" | "test_attempt";
+  createdAt: string;
+  pageUrl?: string;
+  testName?: string;
+  score?: number;
+  totalQuestions?: number;
+  userId?: string;
+  userEmail?: string;
+};
+
 function getSupabaseAdminConfig() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceRoleKey =
@@ -112,6 +123,47 @@ export async function getEnrollmentsForUser(userId: string) {
   }
 
   return (await response.json()) as Enrollment[];
+}
+
+export async function savePrivateActivity(record: ActivityRecord) {
+  const { url, serviceRoleKey } = getSupabaseAdminConfig();
+  const bucket = "maphy-private-activity";
+  const headers = adminHeaders(serviceRoleKey);
+  const exists = await fetch(`${url}/storage/v1/bucket/${bucket}`, { headers, cache: "no-store" });
+  if (!exists.ok) {
+    const created = await fetch(`${url}/storage/v1/bucket`, {
+      method: "POST", headers,
+      body: JSON.stringify({ id: bucket, name: bucket, public: false, allowed_mime_types: ["application/json"] }), cache: "no-store",
+    });
+    if (!created.ok && created.status !== 409) throw new Error("Unable to create private activity storage.");
+  }
+  const stamp = record.createdAt.replace(/[:.]/g, "-");
+  const prefix = record.createdAt.slice(0, 10);
+  const object = `${prefix}/${stamp}-${crypto.randomUUID()}.json`;
+  const upload = await fetch(`${url}/storage/v1/object/${bucket}/${object}`, {
+    method: "POST", headers: { ...headers, "x-upsert": "false" }, body: JSON.stringify(record), cache: "no-store",
+  });
+  if (!upload.ok) throw new Error("Unable to save activity.");
+}
+
+export async function listPrivateActivity(limit = 300) {
+  const { url, serviceRoleKey } = getSupabaseAdminConfig();
+  const headers = adminHeaders(serviceRoleKey);
+  const bucket = "maphy-private-activity";
+  const root = await fetch(`${url}/storage/v1/object/list/${bucket}`, { method: "POST", headers, body: JSON.stringify({ prefix: "", limit: 100, sortBy: { column: "name", order: "desc" } }), cache: "no-store" });
+  if (!root.ok) return [] as ActivityRecord[];
+  const folders = (await root.json()) as Array<{ name: string }>;
+  const records: ActivityRecord[] = [];
+  for (const folder of folders.slice(0, 31)) {
+    const list = await fetch(`${url}/storage/v1/object/list/${bucket}`, { method: "POST", headers, body: JSON.stringify({ prefix: folder.name, limit, sortBy: { column: "name", order: "desc" } }), cache: "no-store" });
+    if (!list.ok) continue;
+    for (const item of (await list.json()) as Array<{ name: string }>) {
+      const object = await fetch(`${url}/storage/v1/object/${bucket}/${folder.name}/${item.name}`, { headers, cache: "no-store" });
+      if (object.ok) records.push(await object.json() as ActivityRecord);
+      if (records.length >= limit) return records.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    }
+  }
+  return records.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 }
 
 export async function createStudentFeedback(input: StudentFeedbackInput) {
