@@ -100,6 +100,7 @@ export default function DashboardPage() {
 
   const hasPremiumAccess = enrolledCourseIds.length > 0;
   const hasClass12SeriesAccess = enrolledCourseIds.includes(class12BoardTestSeries.id);
+  const isAdmin = email.toLowerCase() === "amitkumar847308@gmail.com";
 
   if (isChecking) {
     return (
@@ -121,6 +122,14 @@ export default function DashboardPage() {
           </Link>
           <div className="flex items-center gap-3">
             <span className="hidden max-w-60 truncate text-sm text-slate-300 sm:block">{email}</span>
+            {isAdmin ? (
+              <Link
+                href="/admin/activity"
+                className="rounded-lg border border-cyan-300/70 px-4 py-2 text-sm font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-slate-950"
+              >
+                Admin Activity
+              </Link>
+            ) : null}
             <button type="button" onClick={logout} disabled={isSigningOut} className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-bold transition hover:bg-white/15 disabled:opacity-60">
               {isSigningOut ? "Logging out..." : "Logout"}
             </button>
