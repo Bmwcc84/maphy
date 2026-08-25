@@ -46,7 +46,7 @@ type EnrollmentResponse = {
 };
 
 const tabs: Array<{ id: ResourceTab; label: string; count: string }> = [
-  { id: "videos", label: "Video Classes", count: "2 classes" },
+  { id: "videos", label: "Video Classes", count: "3 classes" },
   { id: "pdfs", label: "PDF Notes", count: "2 PDFs" },
   { id: "tests", label: "Online Tests", count: "4 complete tests" },
 ];
@@ -502,6 +502,10 @@ export default function BpscTre4TestSeries() {
               <article className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
                 <div className="aspect-video bg-black"><iframe className="h-full w-full" src="https://www.youtube-nocookie.com/embed/BcLcJZfjB9Q?rel=0&modestbranding=1" title="BPSC Physics TRE 4.0 video class 02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
                 <div className="p-6"><p className="text-xs font-black uppercase text-cyan-700">Video class 02</p><h3 className="mt-2 text-xl font-black">Test 1 Solution</h3><p className="mt-2 text-slate-600">BPSC Physics TRE 4.0 Test 1 ka complete solution video.</p></div>
+              </article>
+              <article className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+                <div className="aspect-video bg-black"><iframe className="h-full w-full" src="https://www.youtube-nocookie.com/embed/iSEpc1UAvdA?rel=0&modestbranding=1" title="BPSC TRE 4 Mock Test 3 Solutions and Explanation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+                <div className="p-6"><p className="text-xs font-black uppercase text-cyan-700">Video class 03</p><h3 className="mt-2 text-xl font-black">Mock Test 3 Solutions and Explanation</h3><p className="mt-2 text-slate-600">BPSC Physics TRE 4.0 Mock Test 3 ka complete solution aur explanation video.</p></div>
               </article>
             </div>
           </div>
