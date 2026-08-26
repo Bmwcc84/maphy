@@ -12,8 +12,8 @@
         {
           "id": 1,
           "category": "Electrostatics",
-          "questionEn": "A body has charge +4.8 x $10^{-19}$ C. How many electrons have been removed from it?",
-          "questionHi": "किसी पिंड पर +4.8 x $10^{-19}$ C आवेश है। उससे कितने इलेक्ट्रॉन हटाए गए हैं?",
+          "questionEn": "A body has charge $+4.8\\times10^{-19}\\,\\mathrm{C}$. How many electrons have been removed from it?",
+          "questionHi": "किसी पिंड पर $+4.8\\times10^{-19}\\,\\mathrm{C}$ आवेश है। उससे कितने इलेक्ट्रॉन हटाए गए हैं?",
           "options": [
             {
               "en": "1",
@@ -33,8 +33,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "n = $\\frac{q}{e}$ = (4.8 x $10^{-19}$)/(1.6 x $10^{-19}$) = 3.",
-          "explanationHi": "n = $\\frac{q}{e}$ = (4.8 x $10^{-19}$)/(1.6 x $10^{-19}$) = 3 है।"
+          "explanationEn": "$n=\\frac{q}{e}=\\frac{4.8\\times10^{-19}}{1.6\\times10^{-19}}=3$.",
+          "explanationHi": "$n=\\frac{q}{e}=\\frac{4.8\\times10^{-19}}{1.6\\times10^{-19}}=3$ है।"
         },
         {
           "id": 2,
@@ -74,8 +74,8 @@
               "hi": "1.6 x $10^{-5}$ C $\\mathrm{m}^{-2}$"
             },
             {
-              "en": "1.6 x 10^-4 C $\\mathrm{m}^{-2}$",
-              "hi": "1.6 x 10^-4 C $\\mathrm{m}^{-2}$"
+              "en": "$1.6\\times10^{-4}\\,\\mathrm{C\\,m^{-2}}$",
+              "hi": "$1.6\\times10^{-4}\\,\\mathrm{C\\,m^{-2}}$"
             },
             {
               "en": "6.4 x $10^{-5}$ C $\\mathrm{m}^{-2}$",
@@ -749,8 +749,8 @@
               "hi": "nr"
             },
             {
-              "en": "n^($\\frac{1}{2}$) r",
-              "hi": "n^($\\frac{1}{2}$) r"
+              "en": "$n^{1/2}r$",
+              "hi": "$n^{1/2}r$"
             },
             {
               "en": "$\\sqrt[3]{n}$ r",
