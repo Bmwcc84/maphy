@@ -185,8 +185,8 @@ export default function Class12ElectrostaticsTestPage() {
                 {selectedTest.titleHi}
               </p>
               <p className="mt-5 max-w-3xl leading-7 text-slate-300">
-                4 sets mein 120 different bilingual questions. Theory, formula,
-                applications, units, dimensions aur important facts cover kiye gaye hain.
+                4 live online sets aur Set 05 ka verification draft available hai.
+                Theory, formula, applications, units, dimensions aur important facts cover kiye gaye hain.
               </p>
             </div>
             <div className="grid w-full max-w-md grid-cols-3 text-center">
@@ -213,11 +213,25 @@ export default function Class12ElectrostaticsTestPage() {
           </p>
           <div className="mt-2 flex flex-col justify-between gap-3 md:flex-row md:items-end">
             <div>
-              <h2 className="text-3xl font-black">Choose one of 4 test sets</h2>
-              <p className="mt-2 text-slate-600">Har set mein 30 अलग questions aur submit ke baad usi set ka PDF download.</p>
+              <h2 className="text-3xl font-black">Choose an online test set</h2>
+              <p className="mt-2 text-slate-600">Har live set mein 30 अलग questions aur submit ke baad usi set ka PDF download.</p>
             </div>
             <strong className="text-sm text-cyan-800">120 unique questions</strong>
           </div>
+
+          <a
+            href="/downloads/class-12-board-2027-electrostatics-test-set-05-draft.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 flex flex-col gap-3 rounded-lg border border-amber-300 bg-amber-50 p-5 transition hover:border-amber-500 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-amber-800">Set 05 - verification draft</p>
+              <h3 className="mt-2 text-xl font-black text-slate-950">Electrostatics Complete Mix - 30 Questions</h3>
+              <p className="mt-1 font-semibold text-slate-700">4 options, correct answers aur detailed explanations ke saath PDF.</p>
+            </div>
+            <span className="shrink-0 rounded-lg bg-amber-400 px-5 py-3 text-center text-sm font-black text-slate-950">Open Set 05 PDF</span>
+          </a>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {testSetsData.tests.map((test) => {
               const isSelected = selectedTest.id === test.id;
