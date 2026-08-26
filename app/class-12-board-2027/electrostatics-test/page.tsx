@@ -5,6 +5,7 @@ import { type FormEvent, useMemo, useState } from "react";
 import BrandLogo from "@/components/BrandLogo";
 import Class12BoardTestAccess from "@/components/Class12BoardTestAccess";
 import testSetsData from "@/content/tests/class-12-board-2027-electrostatics-sets.json";
+import set05Data from "@/content/tests/class-12-board-2027-electrostatics-set-05.json";
 import { supabase } from "@/lib/supabase";
 
 type LanguageMode = "both" | "english" | "hindi";
@@ -25,6 +26,8 @@ const languageOptions: Array<{ id: LanguageMode; label: string }> = [
   { id: "english", label: "English" },
   { id: "hindi", label: "हिन्दी" },
 ];
+
+const allTestSets = [...testSetsData.tests, ...set05Data.tests];
 
 function BilingualText({
   english,
@@ -50,14 +53,14 @@ function BilingualText({
 }
 
 export default function Class12ElectrostaticsTestPage() {
-  const [selectedSetId, setSelectedSetId] = useState(testSetsData.tests[0].id);
+  const [selectedSetId, setSelectedSetId] = useState(allTestSets[0].id);
   const [languageMode, setLanguageMode] = useState<LanguageMode>("both");
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [showResult, setShowResult] = useState(false);
   const [progressMessage, setProgressMessage] = useState("");
   const [progressFailed, setProgressFailed] = useState(false);
   const selectedTest =
-    testSetsData.tests.find((test) => test.id === selectedSetId) ?? testSetsData.tests[0];
+    allTestSets.find((test) => test.id === selectedSetId) ?? allTestSets[0];
 
   const answeredCount = Object.keys(answers).length;
   const score = useMemo(
@@ -185,7 +188,7 @@ export default function Class12ElectrostaticsTestPage() {
                 {selectedTest.titleHi}
               </p>
               <p className="mt-5 max-w-3xl leading-7 text-slate-300">
-                4 live online sets aur Set 05 ka verification draft available hai.
+                5 live online sets mein 150 different bilingual questions available hain.
                 Theory, formula, applications, units, dimensions aur important facts cover kiye gaye hain.
               </p>
             </div>
@@ -213,27 +216,14 @@ export default function Class12ElectrostaticsTestPage() {
           </p>
           <div className="mt-2 flex flex-col justify-between gap-3 md:flex-row md:items-end">
             <div>
-              <h2 className="text-3xl font-black">Choose an online test set</h2>
+              <h2 className="text-3xl font-black">Choose one of 5 test sets</h2>
               <p className="mt-2 text-slate-600">Har live set mein 30 अलग questions aur submit ke baad usi set ka PDF download.</p>
             </div>
             <strong className="text-sm text-cyan-800">120 unique questions</strong>
           </div>
 
-          <a
-            href="/downloads/class-12-board-2027-electrostatics-test-set-05-draft.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 flex flex-col gap-3 rounded-lg border border-amber-300 bg-amber-50 p-5 transition hover:border-amber-500 sm:flex-row sm:items-center sm:justify-between"
-          >
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-amber-800">Set 05 - verification draft</p>
-              <h3 className="mt-2 text-xl font-black text-slate-950">Electrostatics Complete Mix - 30 Questions</h3>
-              <p className="mt-1 font-semibold text-slate-700">4 options, correct answers aur detailed explanations ke saath PDF.</p>
-            </div>
-            <span className="shrink-0 rounded-lg bg-amber-400 px-5 py-3 text-center text-sm font-black text-slate-950">Open Set 05 PDF</span>
-          </a>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-            {testSetsData.tests.map((test) => {
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
+            {allTestSets.map((test) => {
               const isSelected = selectedTest.id === test.id;
               return (
                 <button
