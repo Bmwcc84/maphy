@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { type FormEvent, useMemo, useState } from "react";
+import katex from "katex";
 import BrandLogo from "@/components/BrandLogo";
 import Class12BoardTestAccess from "@/components/Class12BoardTestAccess";
 import testSetsData from "@/content/tests/class-12-board-2027-electrostatics-sets.json";
@@ -40,14 +41,29 @@ function BilingualText({
   mode: LanguageMode;
   hindiClassName?: string;
 }) {
+  const render = (value: string) => value.split(/(\$[^$]+\$)/g).filter(Boolean).map((part, index) =>
+    part.startsWith("$") && part.endsWith("$") ? (
+      <span
+        key={`${part}-${index}`}
+        className="inline-block align-middle"
+        dangerouslySetInnerHTML={{
+          __html: katex.renderToString(part.slice(1, -1), {
+            throwOnError: false,
+            displayMode: false,
+          }),
+        }}
+      />
+    ) : <span key={`${part}-${index}`}>{part}</span>,
+  );
+
   if (english === hindi) {
-    return <span className="block">{english}</span>;
+    return <span className="block">{render(english)}</span>;
   }
 
   return (
     <>
-      {mode !== "hindi" ? <span className="block">{english}</span> : null}
-      {mode !== "english" ? <span className={`block ${hindiClassName}`}>{hindi}</span> : null}
+      {mode !== "hindi" ? <span className="block">{render(english)}</span> : null}
+      {mode !== "english" ? <span className={`block ${hindiClassName}`}>{render(hindi)}</span> : null}
     </>
   );
 }

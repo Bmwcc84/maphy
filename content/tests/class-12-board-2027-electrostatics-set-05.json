@@ -12,8 +12,8 @@
         {
           "id": 1,
           "category": "Electrostatics",
-          "questionEn": "A body has charge +4.8 x 10^-19 C. How many electrons have been removed from it?",
-          "questionHi": "किसी पिंड पर +4.8 x 10^-19 C आवेश है। उससे कितने इलेक्ट्रॉन हटाए गए हैं?",
+          "questionEn": "A body has charge +4.8 x $10^{-19}$ C. How many electrons have been removed from it?",
+          "questionHi": "किसी पिंड पर +4.8 x $10^{-19}$ C आवेश है। उससे कितने इलेक्ट्रॉन हटाए गए हैं?",
           "options": [
             {
               "en": "1",
@@ -33,62 +33,62 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "n = q/e = (4.8 x 10^-19)/(1.6 x 10^-19) = 3.",
-          "explanationHi": "n = q/e = (4.8 x 10^-19)/(1.6 x 10^-19) = 3 है।"
+          "explanationEn": "n = $\\frac{q}{e}$ = (4.8 x $10^{-19}$)/(1.6 x $10^{-19}$) = 3.",
+          "explanationHi": "n = $\\frac{q}{e}$ = (4.8 x $10^{-19}$)/(1.6 x $10^{-19}$) = 3 है।"
         },
         {
           "id": 2,
           "category": "Electrostatics",
-          "questionEn": "Two identical metal spheres carry +6 uC and -2 uC. After touching and separating, charge on each sphere is:",
-          "questionHi": "दो समान धातु गोलों पर +6 uC और -2 uC आवेश है। स्पर्श कराकर अलग करने पर प्रत्येक गोले का आवेश होगा:",
+          "questionEn": "Two identical metal spheres carry +6 $\\mu\\mathrm{C}$ and -2 $\\mu\\mathrm{C}$. After touching and separating, charge on each sphere is:",
+          "questionHi": "दो समान धातु गोलों पर +6 $\\mu\\mathrm{C}$ और -2 $\\mu\\mathrm{C}$ आवेश है। स्पर्श कराकर अलग करने पर प्रत्येक गोले का आवेश होगा:",
           "options": [
             {
-              "en": "+4 uC",
-              "hi": "+4 uC"
+              "en": "+4 $\\mu\\mathrm{C}$",
+              "hi": "+4 $\\mu\\mathrm{C}$"
             },
             {
-              "en": "+2 uC",
-              "hi": "+2 uC"
+              "en": "+2 $\\mu\\mathrm{C}$",
+              "hi": "+2 $\\mu\\mathrm{C}$"
             },
             {
-              "en": "+1 uC",
-              "hi": "+1 uC"
+              "en": "+1 $\\mu\\mathrm{C}$",
+              "hi": "+1 $\\mu\\mathrm{C}$"
             },
             {
-              "en": "-2 uC",
-              "hi": "-2 uC"
+              "en": "-2 $\\mu\\mathrm{C}$",
+              "hi": "-2 $\\mu\\mathrm{C}$"
             }
           ],
           "correctOption": 1,
-          "explanationEn": "Total charge is +4 uC. Equal spheres share it equally, so each gets +2 uC.",
-          "explanationHi": "कुल आवेश +4 uC है। समान गोलों में बराबर बँटने पर प्रत्येक पर +2 uC होगा।"
+          "explanationEn": "Total charge is +4 $\\mu\\mathrm{C}$. Equal spheres share it equally, so each gets +2 $\\mu\\mathrm{C}$.",
+          "explanationHi": "कुल आवेश +4 $\\mu\\mathrm{C}$ है। समान गोलों में बराबर बँटने पर प्रत्येक पर +2 $\\mu\\mathrm{C}$ होगा।"
         },
         {
           "id": 3,
           "category": "Electrostatics",
-          "questionEn": "A charge of 2 uC is uniformly spread on a sphere of radius 0.10 m. Its surface charge density is closest to:",
-          "questionHi": "2 uC आवेश 0.10 m त्रिज्या के गोले पर समान रूप से फैला है। पृष्ठ आवेश घनत्व लगभग है:",
+          "questionEn": "A charge of 2 $\\mu\\mathrm{C}$ is uniformly spread on a sphere of radius 0.10 m. Its surface charge density is closest to:",
+          "questionHi": "2 $\\mu\\mathrm{C}$ आवेश 0.10 m त्रिज्या के गोले पर समान रूप से फैला है। पृष्ठ आवेश घनत्व लगभग है:",
           "options": [
             {
-              "en": "1.6 x 10^-5 C m^-2",
-              "hi": "1.6 x 10^-5 C m^-2"
+              "en": "1.6 x $10^{-5}$ C $\\mathrm{m}^{-2}$",
+              "hi": "1.6 x $10^{-5}$ C $\\mathrm{m}^{-2}$"
             },
             {
-              "en": "1.6 x 10^-4 C m^-2",
-              "hi": "1.6 x 10^-4 C m^-2"
+              "en": "1.6 x 10^-4 C $\\mathrm{m}^{-2}$",
+              "hi": "1.6 x 10^-4 C $\\mathrm{m}^{-2}$"
             },
             {
-              "en": "6.4 x 10^-5 C m^-2",
-              "hi": "6.4 x 10^-5 C m^-2"
+              "en": "6.4 x $10^{-5}$ C $\\mathrm{m}^{-2}$",
+              "hi": "6.4 x $10^{-5}$ C $\\mathrm{m}^{-2}$"
             },
             {
-              "en": "2.0 x 10^-5 C m^-2",
-              "hi": "2.0 x 10^-5 C m^-2"
+              "en": "2.0 x $10^{-5}$ C $\\mathrm{m}^{-2}$",
+              "hi": "2.0 x $10^{-5}$ C $\\mathrm{m}^{-2}$"
             }
           ],
           "correctOption": 0,
-          "explanationEn": "sigma = Q/(4 pi R^2) = 2 x 10^-6/(4 pi x 0.01) about 1.6 x 10^-5 C m^-2.",
-          "explanationHi": "sigma = Q/(4 pi R^2) = 2 x 10^-6/(4 pi x 0.01) लगभग 1.6 x 10^-5 C m^-2 है।"
+          "explanationEn": "$\\sigma$ = Q/(4 $\\pi$ $R^2$) = 2 x $10^{-6}$/(4 $\\pi$ x 0.01) about 1.6 x $10^{-5}$ C $\\mathrm{m}^{-2}$.",
+          "explanationHi": "$\\sigma$ = Q/(4 $\\pi$ $R^2$) = 2 x $10^{-6}$/(4 $\\pi$ x 0.01) लगभग 1.6 x $10^{-5}$ C $\\mathrm{m}^{-2}$ है।"
         },
         {
           "id": 4,
@@ -136,13 +136,13 @@
               "hi": "F/2"
             },
             {
-              "en": "F/4",
-              "hi": "F/4"
+              "en": "$\\frac{F}{4}$",
+              "hi": "$\\frac{F}{4}$"
             }
           ],
           "correctOption": 3,
-          "explanationEn": "By Coulomb law F is proportional to 1/r^2. Doubling r makes the force F/4.",
-          "explanationHi": "कूलॉम नियम में F, 1/r^2 के समानुपाती है। r दोगुना करने पर बल F/4 होगा।"
+          "explanationEn": "By Coulomb law F is proportional to 1/$r^2$. Doubling r makes the force $\\frac{F}{4}$.",
+          "explanationHi": "कूलॉम नियम में F, 1/$r^2$ के समानुपाती है। r दोगुना करने पर बल $\\frac{F}{4}$ होगा।"
         },
         {
           "id": 6,
@@ -168,8 +168,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "The medium changes permittivity to K epsilon0, so force reduces to F/K = 18/3 = 6 N.",
-          "explanationHi": "माध्यम में विद्युतशीलता K epsilon0 हो जाती है, इसलिए बल F/K = 18/3 = 6 N होगा।"
+          "explanationEn": "The medium changes permittivity to K $\\varepsilon_0$, so force reduces to $\\frac{F}{K}$ = 18/3 = 6 N.",
+          "explanationHi": "माध्यम में विद्युतशीलता K $\\varepsilon_0$ हो जाती है, इसलिए बल $\\frac{F}{K}$ = 18/3 = 6 N होगा।"
         },
         {
           "id": 7,
@@ -195,8 +195,8 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "For finite separation, F = k|q1 q2|/r^2. It is zero if either charge is zero.",
-          "explanationHi": "सीमित दूरी पर F = k|q1 q2|/r^2 है। किसी एक आवेश के शून्य होने पर ही बल शून्य होगा।"
+          "explanationEn": "For finite separation, F = k|q1 q2|/$r^2$. It is zero if either charge is zero.",
+          "explanationHi": "सीमित दूरी पर F = k|q1 q2|/$r^2$ है। किसी एक आवेश के शून्य होने पर ही बल शून्य होगा।"
         },
         {
           "id": 8,
@@ -228,35 +228,35 @@
         {
           "id": 9,
           "category": "Electrostatics",
-          "questionEn": "At 0.30 m from a point charge 3 uC, electric field in vacuum is:",
-          "questionHi": "3 uC बिंदु आवेश से 0.30 m दूरी पर निर्वात में विद्युत क्षेत्र है:",
+          "questionEn": "At 0.30 m from a point charge 3 $\\mu\\mathrm{C}$, electric field in vacuum is:",
+          "questionHi": "3 $\\mu\\mathrm{C}$ बिंदु आवेश से 0.30 m दूरी पर निर्वात में विद्युत क्षेत्र है:",
           "options": [
             {
-              "en": "3 x 10^4 N C^-1",
-              "hi": "3 x 10^4 N C^-1"
+              "en": "3 x $10^{4}$ N $\\mathrm{C}^{-1}$",
+              "hi": "3 x $10^{4}$ N $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "3 x 10^5 N C^-1",
-              "hi": "3 x 10^5 N C^-1"
+              "en": "3 x $10^{5}$ N $\\mathrm{C}^{-1}$",
+              "hi": "3 x $10^{5}$ N $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "9 x 10^4 N C^-1",
-              "hi": "9 x 10^4 N C^-1"
+              "en": "9 x $10^{4}$ N $\\mathrm{C}^{-1}$",
+              "hi": "9 x $10^{4}$ N $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "1 x 10^5 N C^-1",
-              "hi": "1 x 10^5 N C^-1"
+              "en": "1 x $10^{5}$ N $\\mathrm{C}^{-1}$",
+              "hi": "1 x $10^{5}$ N $\\mathrm{C}^{-1}$"
             }
           ],
           "correctOption": 1,
-          "explanationEn": "E = kq/r^2 = 9 x 10^9 x 3 x 10^-6/0.09 = 3 x 10^5 N C^-1.",
-          "explanationHi": "E = kq/r^2 = 9 x 10^9 x 3 x 10^-6/0.09 = 3 x 10^5 N C^-1 है।"
+          "explanationEn": "E = kq/$r^2$ = 9 x $10^{9}$ x 3 x $10^{-6}$/0.09 = 3 x $10^{5}$ N $\\mathrm{C}^{-1}$.",
+          "explanationHi": "E = kq/$r^2$ = 9 x $10^{9}$ x 3 x $10^{-6}$/0.09 = 3 x $10^{5}$ N $\\mathrm{C}^{-1}$ है।"
         },
         {
           "id": 10,
           "category": "Electrostatics",
-          "questionEn": "A dipole of moment p is in a uniform field E at angle 90 degrees. Its torque magnitude is:",
-          "questionHi": "p आघूर्ण वाला द्विध्रुव E एकसमान क्षेत्र में 90 degrees पर है। टॉर्क का परिमाण है:",
+          "questionEn": "A dipole of moment p is in a uniform field E at angle $90^\\circ$. Its torque magnitude is:",
+          "questionHi": "p आघूर्ण वाला द्विध्रुव E एकसमान क्षेत्र में $90^\\circ$ पर है। टॉर्क का परिमाण है:",
           "options": [
             {
               "en": "0",
@@ -276,8 +276,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "tau = pE sin theta. At theta = 90 degrees, tau = pE.",
-          "explanationHi": "tau = pE sin theta है। theta = 90 degrees पर tau = pE होगा।"
+          "explanationEn": "$\\tau$ = pE sin $\\theta$. At $\\theta$ = $90^\\circ$, $\\tau$ = pE.",
+          "explanationHi": "$\\tau$ = pE sin $\\theta$ है। $\\theta$ = $90^\\circ$ पर $\\tau$ = pE होगा।"
         },
         {
           "id": 11,
@@ -303,14 +303,14 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "Potential energy U = -pE cos theta is minimum at theta = 0, so p is parallel to E.",
-          "explanationHi": "U = -pE cos theta, theta = 0 पर न्यूनतम है; अतः p, E के समानांतर होता है।"
+          "explanationEn": "Potential energy U = -pE cos $\\theta$ is minimum at $\\theta$ = 0, so p is parallel to E.",
+          "explanationHi": "U = -pE cos $\\theta$, $\\theta$ = 0 पर न्यूनतम है; अतः p, E के समानांतर होता है।"
         },
         {
           "id": 12,
           "category": "Electrostatics",
-          "questionEn": "Work done by an external agent in slowly rotating a dipole from 0 to 90 degrees is:",
-          "questionHi": "द्विध्रुव को धीरे-धीरे 0 से 90 degrees तक घुमाने में बाहरी एजेंट द्वारा किया गया कार्य है:",
+          "questionEn": "Work done by an external agent in slowly rotating a dipole from 0 to $90^\\circ$ is:",
+          "questionHi": "द्विध्रुव को धीरे-धीरे 0 से $90^\\circ$ तक घुमाने में बाहरी एजेंट द्वारा किया गया कार्य है:",
           "options": [
             {
               "en": "-pE",
@@ -336,47 +336,47 @@
         {
           "id": 13,
           "category": "Electrostatics",
-          "questionEn": "Electric flux through a square of side 0.20 m in a uniform field 50 N C^-1 normal to it is:",
-          "questionHi": "0.20 m भुजा वाले वर्ग से, उसके लम्बवत 50 N C^-1 एकसमान क्षेत्र का विद्युत फ्लक्स है:",
+          "questionEn": "Electric flux through a square of side 0.20 m in a uniform field 50 N $\\mathrm{C}^{-1}$ normal to it is:",
+          "questionHi": "0.20 m भुजा वाले वर्ग से, उसके लम्बवत 50 N $\\mathrm{C}^{-1}$ एकसमान क्षेत्र का विद्युत फ्लक्स है:",
           "options": [
             {
-              "en": "1 N m^2 C^-1",
-              "hi": "1 N m^2 C^-1"
+              "en": "1 N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "1 N m^2 $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "2 N m^2 C^-1",
-              "hi": "2 N m^2 C^-1"
+              "en": "2 N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "2 N m^2 $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "5 N m^2 C^-1",
-              "hi": "5 N m^2 C^-1"
+              "en": "5 N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "5 N m^2 $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "10 N m^2 C^-1",
-              "hi": "10 N m^2 C^-1"
+              "en": "10 N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "10 N m^2 $\\mathrm{C}^{-1}$"
             }
           ],
           "correctOption": 1,
-          "explanationEn": "Phi = EA = 50 x (0.20)^2 = 2 N m^2 C^-1.",
-          "explanationHi": "Phi = EA = 50 x (0.20)^2 = 2 N m^2 C^-1 है।"
+          "explanationEn": "$\\Phi$ = EA = 50 x (0.20)^2 = 2 N m^2 $\\mathrm{C}^{-1}$.",
+          "explanationHi": "$\\Phi$ = EA = 50 x (0.20)^2 = 2 N m^2 $\\mathrm{C}^{-1}$ है।"
         },
         {
           "id": 14,
           "category": "Electrostatics",
-          "questionEn": "By Gauss law, net flux through a closed surface enclosing charge +5 uC is approximately:",
-          "questionHi": "गाउस नियम से +5 uC आवेश घेरने वाले बंद पृष्ठ से कुल फ्लक्स लगभग है:",
+          "questionEn": "By Gauss law, net flux through a closed surface enclosing charge +5 $\\mu\\mathrm{C}$ is approximately:",
+          "questionHi": "गाउस नियम से +5 $\\mu\\mathrm{C}$ आवेश घेरने वाले बंद पृष्ठ से कुल फ्लक्स लगभग है:",
           "options": [
             {
-              "en": "5.65 x 10^5 N m^2 C^-1",
-              "hi": "5.65 x 10^5 N m^2 C^-1"
+              "en": "5.65 x $10^{5}$ N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "5.65 x $10^{5}$ N m^2 $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "4.43 x 10^-17 N m^2 C^-1",
-              "hi": "4.43 x 10^-17 N m^2 C^-1"
+              "en": "4.43 x 10^-17 N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "4.43 x 10^-17 N m^2 $\\mathrm{C}^{-1}$"
             },
             {
-              "en": "5 x 10^-6 N m^2 C^-1",
-              "hi": "5 x 10^-6 N m^2 C^-1"
+              "en": "5 x $10^{-6}$ N m^2 $\\mathrm{C}^{-1}$",
+              "hi": "5 x $10^{-6}$ N m^2 $\\mathrm{C}^{-1}$"
             },
             {
               "en": "Zero",
@@ -384,8 +384,8 @@
             }
           ],
           "correctOption": 0,
-          "explanationEn": "Phi = q/epsilon0 = 5 x 10^-6/(8.85 x 10^-12) about 5.65 x 10^5 N m^2 C^-1.",
-          "explanationHi": "Phi = q/epsilon0 = 5 x 10^-6/(8.85 x 10^-12) लगभग 5.65 x 10^5 N m^2 C^-1 है।"
+          "explanationEn": "$\\Phi$ = $\\frac{q}{e}$psilon0 = 5 x $10^{-6}$/(8.85 x 10^-12) about 5.65 x $10^{5}$ N m^2 $\\mathrm{C}^{-1}$.",
+          "explanationHi": "$\\Phi$ = $\\frac{q}{e}$psilon0 = 5 x $10^{-6}$/(8.85 x 10^-12) लगभग 5.65 x $10^{5}$ N m^2 $\\mathrm{C}^{-1}$ है।"
         },
         {
           "id": 15,
@@ -398,12 +398,12 @@
               "hi": "Zero everywhere"
             },
             {
-              "en": "kQ/r^2",
-              "hi": "kQ/r^2"
+              "en": "kQ/$r^2$",
+              "hi": "kQ/$r^2$"
             },
             {
-              "en": "kQ/R^2",
-              "hi": "kQ/R^2"
+              "en": "kQ/$R^2$",
+              "hi": "kQ/$R^2$"
             },
             {
               "en": "Proportional to r",
@@ -417,62 +417,62 @@
         {
           "id": 16,
           "category": "Electrostatics",
-          "questionEn": "Field due to an infinite plane sheet of surface charge density sigma is:",
-          "questionHi": "पृष्ठ आवेश घनत्व sigma वाली अनंत समतल चादर का क्षेत्र है:",
+          "questionEn": "Field due to an infinite plane sheet of surface charge density $\\sigma$ is:",
+          "questionHi": "पृष्ठ आवेश घनत्व $\\sigma$ वाली अनंत समतल चादर का क्षेत्र है:",
           "options": [
             {
-              "en": "sigma/epsilon0",
-              "hi": "sigma/epsilon0"
+              "en": "$\\sigma$/$\\varepsilon_0$",
+              "hi": "$\\sigma$/$\\varepsilon_0$"
             },
             {
-              "en": "sigma/(2 epsilon0)",
-              "hi": "sigma/(2 epsilon0)"
+              "en": "$\\sigma$/(2 $\\varepsilon_0$)",
+              "hi": "$\\sigma$/(2 $\\varepsilon_0$)"
             },
             {
-              "en": "2 sigma/epsilon0",
-              "hi": "2 sigma/epsilon0"
+              "en": "2 $\\sigma$/$\\varepsilon_0$",
+              "hi": "2 $\\sigma$/$\\varepsilon_0$"
             },
             {
-              "en": "sigma/(4 pi epsilon0 r^2)",
-              "hi": "sigma/(4 pi epsilon0 r^2)"
+              "en": "$\\sigma$/(4 $\\pi$ $\\varepsilon_0$ $r^2$)",
+              "hi": "$\\sigma$/(4 $\\pi$ $\\varepsilon_0$ $r^2$)"
             }
           ],
           "correctOption": 1,
-          "explanationEn": "Using a pillbox, 2EA = sigma A/epsilon0, hence E = sigma/(2 epsilon0).",
-          "explanationHi": "पिलबॉक्स के लिए 2EA = sigma A/epsilon0, अतः E = sigma/(2 epsilon0) है।"
+          "explanationEn": "Using a $\\pi$llbox, 2EA = $\\sigma$ A/$\\varepsilon_0$, hence E = $\\sigma$/(2 $\\varepsilon_0$).",
+          "explanationHi": "पिलबॉक्स के लिए 2EA = $\\sigma$ A/$\\varepsilon_0$, अतः E = $\\sigma$/(2 $\\varepsilon_0$) है।"
         },
         {
           "id": 17,
           "category": "Electrostatics",
-          "questionEn": "The electric potential at 0.20 m from a +4 uC charge is:",
-          "questionHi": "+4 uC आवेश से 0.20 m दूरी पर विद्युत विभव है:",
+          "questionEn": "The electric potential at 0.20 m from a +4 $\\mu\\mathrm{C}$ charge is:",
+          "questionHi": "+4 $\\mu\\mathrm{C}$ आवेश से 0.20 m दूरी पर विद्युत विभव है:",
           "options": [
             {
-              "en": "1.8 x 10^4 V",
-              "hi": "1.8 x 10^4 V"
+              "en": "1.8 x $10^{4}$ V",
+              "hi": "1.8 x $10^{4}$ V"
             },
             {
-              "en": "1.8 x 10^5 V",
-              "hi": "1.8 x 10^5 V"
+              "en": "1.8 x $10^{5}$ V",
+              "hi": "1.8 x $10^{5}$ V"
             },
             {
-              "en": "9.0 x 10^4 V",
-              "hi": "9.0 x 10^4 V"
+              "en": "9.0 x $10^{4}$ V",
+              "hi": "9.0 x $10^{4}$ V"
             },
             {
-              "en": "4.5 x 10^5 V",
-              "hi": "4.5 x 10^5 V"
+              "en": "4.5 x $10^{5}$ V",
+              "hi": "4.5 x $10^{5}$ V"
             }
           ],
           "correctOption": 1,
-          "explanationEn": "V = kq/r = 9 x 10^9 x 4 x 10^-6/0.20 = 1.8 x 10^5 V.",
-          "explanationHi": "V = kq/r = 9 x 10^9 x 4 x 10^-6/0.20 = 1.8 x 10^5 V है।"
+          "explanationEn": "V = k$\\frac{q}{r}$ = 9 x $10^{9}$ x 4 x $10^{-6}$/0.20 = 1.8 x $10^{5}$ V.",
+          "explanationHi": "V = k$\\frac{q}{r}$ = 9 x $10^{9}$ x 4 x $10^{-6}$/0.20 = 1.8 x $10^{5}$ V है।"
         },
         {
           "id": 18,
           "category": "Electrostatics",
-          "questionEn": "Work done in moving charge 2 uC through potential difference 12 V is:",
-          "questionHi": "2 uC आवेश को 12 V विभवान्तर से ले जाने में किया गया कार्य है:",
+          "questionEn": "Work done in moving charge 2 $\\mu\\mathrm{C}$ through potential difference 12 V is:",
+          "questionHi": "2 $\\mu\\mathrm{C}$ आवेश को 12 V विभवान्तर से ले जाने में किया गया कार्य है:",
           "options": [
             {
               "en": "24 J",
@@ -492,8 +492,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "W = q DeltaV = 2 x 10^-6 x 12 = 24 x 10^-6 J = 24 uJ.",
-          "explanationHi": "W = q DeltaV = 2 x 10^-6 x 12 = 24 x 10^-6 J = 24 uJ है।"
+          "explanationEn": "W = q DeltaV = 2 x $10^{-6}$ x 12 = 24 x $10^{-6}$ J = 24 uJ.",
+          "explanationHi": "W = q DeltaV = 2 x $10^{-6}$ x 12 = 24 x $10^{-6}$ J = 24 uJ है।"
         },
         {
           "id": 19,
@@ -529,25 +529,25 @@
           "questionHi": "R त्रिज्या के विलगित चालक गोले की धारिता है:",
           "options": [
             {
-              "en": "4 pi epsilon0 R",
-              "hi": "4 pi epsilon0 R"
+              "en": "4 $\\pi$ $\\varepsilon_0$ R",
+              "hi": "4 $\\pi$ $\\varepsilon_0$ R"
             },
             {
-              "en": "epsilon0 R",
-              "hi": "epsilon0 R"
+              "en": "$\\varepsilon_0$ R",
+              "hi": "$\\varepsilon_0$ R"
             },
             {
-              "en": "4 pi epsilon0/R",
-              "hi": "4 pi epsilon0/R"
+              "en": "4 $\\pi$ $\\varepsilon_0$/R",
+              "hi": "4 $\\pi$ $\\varepsilon_0$/R"
             },
             {
-              "en": "epsilon0/R",
-              "hi": "epsilon0/R"
+              "en": "$\\varepsilon_0$/R",
+              "hi": "$\\varepsilon_0$/R"
             }
           ],
           "correctOption": 0,
-          "explanationEn": "For an isolated sphere V = Q/(4 pi epsilon0 R); therefore C = Q/V = 4 pi epsilon0 R.",
-          "explanationHi": "विलगित गोले के लिए V = Q/(4 pi epsilon0 R); अतः C = Q/V = 4 pi epsilon0 R है।"
+          "explanationEn": "For an isolated sphere V = Q/(4 $\\pi$ $\\varepsilon_0$ R); therefore C = Q/V = 4 $\\pi$ $\\varepsilon_0$ R.",
+          "explanationHi": "विलगित गोले के लिए V = Q/(4 $\\pi$ $\\varepsilon_0$ R); अतः C = Q/V = 4 $\\pi$ $\\varepsilon_0$ R है।"
         },
         {
           "id": 21,
@@ -564,8 +564,8 @@
               "hi": "C"
             },
             {
-              "en": "C/2",
-              "hi": "C/2"
+              "en": "$\\frac{C}{2}$",
+              "hi": "$\\frac{C}{2}$"
             },
             {
               "en": "C/4",
@@ -573,8 +573,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "C = epsilon0 A/d. With d replaced by 2d, capacitance is C/2.",
-          "explanationHi": "C = epsilon0 A/d है। d के स्थान पर 2d रखने पर धारिता C/2 होगी।"
+          "explanationEn": "C = $\\varepsilon_0$ A/d. With d replaced by 2d, capacitance is $\\frac{C}{2}$.",
+          "explanationHi": "C = $\\varepsilon_0$ A/d है। d के स्थान पर 2d रखने पर धारिता $\\frac{C}{2}$ होगी।"
         },
         {
           "id": 22,
@@ -595,8 +595,8 @@
               "hi": "KC"
             },
             {
-              "en": "K^2 C",
-              "hi": "K^2 C"
+              "en": "$K^2$ C",
+              "hi": "$K^2$ C"
             }
           ],
           "correctOption": 2,
@@ -627,8 +627,8 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "1/Ceq = 1/3 + 1/6 = 1/2, hence Ceq = 2 uF.",
-          "explanationHi": "1/Ceq = 1/3 + 1/6 = 1/2, इसलिए Ceq = 2 uF है।"
+          "explanationEn": "1/Ceq = $\\frac{1}{3}$ + 1/6 = $\\frac{1}{2}$, hence Ceq = 2 uF.",
+          "explanationHi": "1/Ceq = $\\frac{1}{3}$ + 1/6 = $\\frac{1}{2}$, इसलिए Ceq = 2 uF है।"
         },
         {
           "id": 24,
@@ -681,8 +681,8 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "U = 1/2 CV^2 = 1/2 x 2 x 10^-6 x 10000 = 0.01 J.",
-          "explanationHi": "U = 1/2 CV^2 = 1/2 x 2 x 10^-6 x 10000 = 0.01 J है।"
+          "explanationEn": "U = $\\frac{1}{2}$ CV^2 = $\\frac{1}{2}$ x 2 x $10^{-6}$ x 10000 = 0.01 J.",
+          "explanationHi": "U = $\\frac{1}{2}$ CV^2 = $\\frac{1}{2}$ x 2 x $10^{-6}$ x 10000 = 0.01 J है।"
         },
         {
           "id": 26,
@@ -708,8 +708,8 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "The battery fixes V. C, Q = CV and U = 1/2 CV^2 all change.",
-          "explanationHi": "बैटरी V को नियत रखती है। C, Q = CV और U = 1/2 CV^2 बदलते हैं।"
+          "explanationEn": "The battery fixes V. C, Q = CV and U = $\\frac{1}{2}$ CV^2 all change.",
+          "explanationHi": "बैटरी V को नियत रखती है। C, Q = CV और U = $\\frac{1}{2}$ CV^2 बदलते हैं।"
         },
         {
           "id": 27,
@@ -726,17 +726,17 @@
               "hi": "U"
             },
             {
-              "en": "U/K",
-              "hi": "U/K"
+              "en": "$\\frac{U}{K}$",
+              "hi": "$\\frac{U}{K}$"
             },
             {
-              "en": "U/K^2",
-              "hi": "U/K^2"
+              "en": "U/$K^2$",
+              "hi": "U/$K^2$"
             }
           ],
           "correctOption": 2,
-          "explanationEn": "For an isolated capacitor Q is constant and U = Q^2/(2C). Since C becomes KC, U becomes U/K.",
-          "explanationHi": "विलगित संधारित्र के लिए Q नियत है और U = Q^2/(2C)। C, KC होने पर U, U/K हो जाती है।"
+          "explanationEn": "For an isolated capacitor Q is constant and U = Q^2/(2C). Since C becomes KC, U becomes $\\frac{U}{K}$.",
+          "explanationHi": "विलगित संधारित्र के लिए Q नियत है और U = Q^2/(2C)। C, KC होने पर U, $\\frac{U}{K}$ हो जाती है।"
         },
         {
           "id": 28,
@@ -749,12 +749,12 @@
               "hi": "nr"
             },
             {
-              "en": "n^(1/2) r",
-              "hi": "n^(1/2) r"
+              "en": "n^($\\frac{1}{2}$) r",
+              "hi": "n^($\\frac{1}{2}$) r"
             },
             {
-              "en": "n^(1/3) r",
-              "hi": "n^(1/3) r"
+              "en": "$\\sqrt[3]{n}$ r",
+              "hi": "$\\sqrt[3]{n}$ r"
             },
             {
               "en": "r/n",
@@ -762,8 +762,8 @@
             }
           ],
           "correctOption": 2,
-          "explanationEn": "Volume is conserved: R^3 = nr^3, hence R = n^(1/3) r.",
-          "explanationHi": "आयतन संरक्षित है: R^3 = nr^3, इसलिए R = n^(1/3) r है।"
+          "explanationEn": "Volume is conserved: R^3 = nr^3, hence R = $\\sqrt[3]{n}$ r.",
+          "explanationHi": "आयतन संरक्षित है: R^3 = nr^3, इसलिए R = $\\sqrt[3]{n}$ r है।"
         },
         {
           "id": 29,
@@ -772,12 +772,12 @@
           "questionHi": "n समान आवेशित बूंदें मिलती हैं। यदि प्रत्येक मूल बूंद का विभव V है, तो बनी हुई बूंद का विभव होगा:",
           "options": [
             {
-              "en": "n^(1/3) V",
-              "hi": "n^(1/3) V"
+              "en": "$\\sqrt[3]{n}$ V",
+              "hi": "$\\sqrt[3]{n}$ V"
             },
             {
-              "en": "n^(2/3) V",
-              "hi": "n^(2/3) V"
+              "en": "$n^{2/3}$ V",
+              "hi": "$n^{2/3}$ V"
             },
             {
               "en": "nV",
@@ -789,8 +789,8 @@
             }
           ],
           "correctOption": 1,
-          "explanationEn": "Q = nq and R = n^(1/3)r. Thus V' = kQ/R = n^(2/3) kq/r = n^(2/3)V.",
-          "explanationHi": "Q = nq तथा R = n^(1/3)r। अतः V' = kQ/R = n^(2/3) kq/r = n^(2/3)V।"
+          "explanationEn": "Q = nq and R = $\\sqrt[3]{n}$r. Thus V' = k$\\frac{Q}{R}$ = $n^{2/3}$ k$\\frac{q}{r}$ = $n^{2/3}$V.",
+          "explanationHi": "Q = nq तथा R = $\\sqrt[3]{n}$r। अतः V' = k$\\frac{Q}{R}$ = $n^{2/3}$ k$\\frac{q}{r}$ = $n^{2/3}$V।"
         },
         {
           "id": 30,
