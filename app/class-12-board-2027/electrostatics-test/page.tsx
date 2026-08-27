@@ -471,10 +471,14 @@ export default function Class12ElectrostaticsTestPage() {
                         <span className="text-xs font-black text-amber-800">Skipped / छोड़ा गया</span>
                       ) : null}
                     </div>
-                    <p className="mt-2 font-semibold leading-7 text-slate-800">
-                      {question.explanationEn}
-                    </p>
-                    <p className="mt-2 leading-7 text-slate-700">{question.explanationHi}</p>
+                    <div className="mt-2 font-semibold leading-7 text-slate-800">
+                      <BilingualText
+                        english={question.explanationEn}
+                        hindi={question.explanationHi}
+                        mode={languageMode}
+                        hindiClassName="mt-2 font-normal leading-7 text-slate-700"
+                      />
+                    </div>
                   </div>
                 ) : null}
               </fieldset>
