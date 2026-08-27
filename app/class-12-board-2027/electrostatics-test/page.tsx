@@ -7,7 +7,6 @@ import BrandLogo from "@/components/BrandLogo";
 import Class12BoardTestAccess from "@/components/Class12BoardTestAccess";
 import testSetsData from "@/content/tests/class-12-board-2027-electrostatics-sets.json";
 import set05Data from "@/content/tests/class-12-board-2027-electrostatics-set-05.json";
-import sets06To15Data from "@/content/tests/class-12-board-2027-electrostatics-sets-06-15.json";
 import { supabase } from "@/lib/supabase";
 
 type LanguageMode = "both" | "english" | "hindi";
@@ -29,7 +28,7 @@ const languageOptions: Array<{ id: LanguageMode; label: string }> = [
   { id: "hindi", label: "हिन्दी" },
 ];
 
-const allTestSets = [...testSetsData.tests, ...set05Data.tests, ...sets06To15Data.tests];
+const allTestSets = [...testSetsData.tests, ...set05Data.tests];
 
 function BilingualText({
   english,
@@ -205,7 +204,7 @@ export default function Class12ElectrostaticsTestPage() {
                 {selectedTest.titleHi}
               </p>
               <p className="mt-5 max-w-3xl leading-7 text-slate-300">
-                15 live online sets mein 450 bilingual questions available hain.
+                5 live online sets mein 150 bilingual questions available hain.
                 Theory, formula, applications, units, dimensions aur important facts cover kiye gaye hain.
               </p>
             </div>
@@ -233,10 +232,10 @@ export default function Class12ElectrostaticsTestPage() {
           </p>
           <div className="mt-2 flex flex-col justify-between gap-3 md:flex-row md:items-end">
             <div>
-              <h2 className="text-3xl font-black">Choose one of 15 test sets</h2>
+              <h2 className="text-3xl font-black">Choose one of 5 test sets</h2>
               <p className="mt-2 text-slate-600">Har live set mein 30 अलग questions aur submit ke baad usi set ka PDF download.</p>
             </div>
-            <strong className="text-sm text-cyan-800">450 questions</strong>
+            <strong className="text-sm text-cyan-800">150 questions</strong>
           </div>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
